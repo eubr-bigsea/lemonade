@@ -24,9 +24,8 @@ operations.each do |operation|
   if subgroup != ''
     Dir.mkdir(group + '/' + subgroup) unless File.exists?(group + '/' + subgroup)
   end
-filename = group + '/' + subgroup + '/' + operation['name'].downcase.gsub(' ', '_').gsub('/','_') + '.md'
+  filename = group + '/' + subgroup + '/' + operation['name'].gsub('/','-').capitalize + '.md'
   File.open(filename, 'w') do |f|
-    f.write('# ' + operation['name'] + "\n")
     f.write("###  Description\n")
     f.write(operation['description'] + "\n")
     f.write("###  Options\n")
