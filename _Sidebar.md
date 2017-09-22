@@ -2,6 +2,8 @@
 
 **About**
 * [[About Lemonade]]
+* [[FAQ]]
+* [[Support]]
 
 **Getting Started**
 * [[Tutorials]]
