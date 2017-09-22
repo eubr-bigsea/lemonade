@@ -1,4 +1,5 @@
 Welcome to the citron wiki!
+![](https://teste.ctweb.inweb.org.br/assets/images/logo2.png)
 
 
 ## Data transformation
