@@ -1,3 +1,5 @@
+![](https://teste.ctweb.inweb.org.br/assets/images/minilogo.png)
+
 **Intro**
 * [[About Lemonade]]
 
