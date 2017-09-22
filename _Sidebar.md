@@ -1,5 +1,5 @@
 **Intro**
-* [[Home]]
+* [[About Lemonade]]
 
 **Getting Started**
 * [[Tutorials]]
