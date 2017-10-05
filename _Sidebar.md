@@ -6,6 +6,8 @@
 * [[Support]]
 
 **Getting Started**
+* [[Lastest Version]]
+* [[Basic Usage]]
 * [[Tutorials]]
 * [[Examples]]
 
