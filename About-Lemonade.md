@@ -5,7 +5,7 @@
 ### Project & Community
 
 ### More Information
-* [Lemonade website](https://teste.ctweb.inweb.org.br/landing-page)
+* [Lastest Release](https://teste.ctweb.inweb.org.br/landing-page)
 * [[Basic Usage]]
 * [Technical Documentation](https://github.com/eubr-bigsea/citron/wiki/API)
 
