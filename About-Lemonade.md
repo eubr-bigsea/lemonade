@@ -10,5 +10,4 @@
 * [Technical Documentation](https://github.com/eubr-bigsea/citron/wiki/API)
 
 ### Additional Support
-* Email support
-* Issues
+* [[Support]]
