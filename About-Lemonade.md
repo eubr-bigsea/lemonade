@@ -11,3 +11,4 @@
 
 ### Additional Support
 * [[Support]]
+* [[FAQ]]
