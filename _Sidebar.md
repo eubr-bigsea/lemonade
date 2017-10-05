@@ -9,7 +9,7 @@
 * [[Lastest Version]]
 * [[Basic Usage]]
 * [[Tutorials]]
-* [[Examples]]
+
 
 **Technical Information**
 * [[API]]
