@@ -1,11 +1,11 @@
 # About Lemonade
 
-## Lemonade Overview
+### Lemonade Overview
 
-## Project & Community
+### Project & Community
 
-## More Information
-
-### Lemonade website
+### More Information
+* Lemonade website
+* 
 
 ### Additional Support
