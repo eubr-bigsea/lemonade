@@ -1,1 +1,1 @@
-[[https://github.com/eubr-bigsea/citron/wiki/img/basic_usage/home.png|alt=home]]
+[[https://github.com/eubr-bigsea/citron/wiki/img/basic_usage/landing_page.png|alt=landingpage]]
