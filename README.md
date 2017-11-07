@@ -2,93 +2,96 @@
 Lemonade platform
 
 **Overview**
-* [[About Lemonade]]
-    * [[Origin and motivations]]
-    * [[Target users]]
-    * [[Basic concepts]]
-        * [[Data sources and storages]]
-        * [[Operations, ports and parameters]]
-        * [[Workflows, tasks and flows]]
-        * [[Jobs, steps, results and clusters]]
-        * [[Visualizations and dashboards]]
-    * [[Supported platforms]]
-* [[What is data science?]]
-    * [[Data analytics]]
-    * [[Data mining]]
-    * [[Machine learning]]
-    * [[Data science 101]]
-        * [[Techniques, algorithms and models]]
-        * [[How to choose between the different available techniques?]]
-        * [[Is my data set ready for what I want to do?]]
-        * [[How to formulate the correct question about data?]]
-        * [[Predict and evaluate an answer]]
-        * [[Standing over the shoulders of giants (or Ctrl+C, Ctrl+V)]]
-            * [[Copy workflows]]
-            * [[Use external tutorials]]
-            * [[Repositories of machine learning experiments]]
-    * [[Resources]]
-        * [[Kaggle]]
-        * [[Cortana Intelligence Gallery]]
-* [[Frequent Asked Questions]]
-* [[Support]]
-* [[What is new?]]
+
+* [About Lemonade](About-Lemonade)
+    * [Origin and motivations](About-Lemonade#origin-and-motivations)
+    * [Lemonade's Features](About-Lemonade#lemonade-features)
+    * [Target users](About-Lemonade#target-users)
+    * [Basic concepts](About-Lemonade#basic-concepts)
+        * [Data sources and storages](About-Lemonade#data-sources-and-storages)
+        * [Operations, ports and parameters](About-Lemonade#operations-ports-and-parameters)
+        * [Workflows, tasks and flows](About-Lemonade#workflows-task-and-flows)
+        * [Jobs, steps, results and clusters](About-Lemonade#job-steps-results-and-clusters)
+        * [Visualizations and dashboards](About-Lemonade#visualizations-and-dashboards)
+    * [Supported platforms](About-Lemonade#supported-platforms)
+* [What is data science?](Data-Science)
+    * [Data analytics](Data-Science#)
+    * [Data mining](Data-Science#)
+    * [Machine learning](Data-Science#)
+    * [Data science 101](Data-Science#)
+        * [Techniques, algorithms and models](Data-Science#)
+        * [How to choose between the different available techniques?](Data-Science#)
+        * [Is my data set ready for what I want to do?](Data-Science#)
+        * [How to formulate the correct question about data?](Data-Science#)
+        * [Predict and evaluate an answer](Data-Science#)
+        * [Standing over the shoulders of giants (or Ctrl+C, Ctrl+V)](Data-Science#)
+            * [Copy workflows](Data-Science#)
+            * [Use external tutorials](Data-Science#)
+            * [Repositories of machine learning experiments](Data-Science#)
+    * [Resources](Data-Science#)
+        * [Kaggle](Data-Science#)
+        * [Cortana Intelligence Gallery](Data-Science#)
+* [Frequent Asked Questions](FAQ)
+* [Support](Support)
+* [What is new?](What-is-New)
 
 **Getting Started**
-* [[Installation]]
-    * [[Installing the lastest Version]]
-    * [[Using a Docker container version]]
-    * [[Services configuration]]
-    * [[Apache Spark Integration]]
-    * [[Upgrading from previous versions]]
-* [[Basic Usage]]
-    * [[Step-by-step walthrough]]
-        * [[Importing data sets]]
-        * [[Creating your first predictive experiment]]
-        * [[Train a model and evaluate results]]
-        * [[Deploy a trained model (not ready yet)]]
-    
-* [[Tutorials]]
-    * [[Extraction, transformation and loading]]
-        * [[Data cleaning]]
-        * [[Handling missings]]
-        * [[Data transformation]]
-        * [[Grouping data]]
-    * [[Feature engineering]]
-        * [[Handling text]]
-    * [[Classification]]
-        * [[What is the classification technique?]]
-        * [[Binary classification]]
-        * [[Multiclass classification]]
-        * [[Evaluating classification with metrics]]
-        * [[Training better models with cross validation]]
-    * [[Clustering]]
-        * [[What is the clustering technique?]]
-        * [[Clustering numerical data]]
-        * [[Extracting topics from text]]
-    * [[Data mining]]
-        * [[Basket analysis]]
-        * [[Association rules]]
-        * [[Sequence mining]]
-    * [[Text processing]]
-    * [[Dimension reduction]]
+
+* [Installation](Installation)
+    * [Installing the lastest Version](Installation#installling-the-latest-version)
+    * [Using a Docker container version](Installation##using-a-docker-container-version)
+    * [Services configuration](Installation#services-configuration)
+    * [Apache Spark Integration](Installation#apache-spark-integration)
+    * [Upgrading from previous versions](Installation#upgrading-from-previous-versions)
+* [Basic Usage](Basic-Usage)
+    * [Step-by-step walthrough](Basic-Usage#step-by-step-walthrough)
+        * [Importing data sets](Basic-Usage#importing-data-sets)
+        * [Workflow editor](Basic-Usage#workflow-editor)
+        * [Creating your first predictive experiment](Basic-Usage#creating-your-first-predictive-experiment)
+        * [Train a model and evaluate results](Basic-Usage#train-a-model-and-evaluate-results)
+        * [Deploy a trained model (not ready yet)](Basic-Usage#deploy-a-trained-model)
+* [Tutorials](Tutorials)
+    * [Extraction, transformation and loading](ETL)
+        * [Data cleaning](ETL#data-cleaning)
+        * [Handling missings](ETL#handling-missings)
+        * [Data transformation](ETL#data-transformation)
+        * [Grouping data](ETL#grouping-data)
+    * [Feature engineering](Feature)
+        * [Handling text](Feature#handling-text)
+    * [Classification](Classification)
+        * [What is the classification technique?](Classification#what-is-the-classification-technique)
+        * [Binary classification](Classification#binary-classification)
+        * [Multiclass classification](Classification#multiclass-classification)
+        * [Evaluating classification with metrics](Classification#evaluating-classification-with-metrics)
+        * [Training better models with cross validation](Classification#training-better-models-with-cross-validation)
+    * [Clustering](Clustering)
+        * [What is the clustering technique?](Clustering#what-is-the-clustering-technique)
+        * [Clustering numerical data](Clustering#clustering-numerical-data)
+        * [Extracting topics from text](Clustering#extracting-topics-from-text)
+    * [Data mining](Data-Mining)
+        * [Basket analysis](Data-Mining#basket-analysis)
+        * [Association rules](Data-Mining#association-rules)
+        * [Sequence mining](Data-Mining#sequence-mining)
+    * [Text processing](Text-Processing)
+    * [Dimension reduction](Dimension-Reduction)
 
 **Technical Information**
-* [[Lemonade Architecture]]
-    * [[Micro-services organization]]
-    * [[Services communication]]
-    * [[Source code generation]]
-    * [[Code execution and platforms]]
-* [[Administration]]
-    * [[User management]]
-    * [[Backup]]
-    * [[Scalability]]
-    * [[Troubleshooting]]
-* [[Extending Lemonade]]
-    * [[Adding new operations]]
-    * [[Adding a new execution platform]]
-    * [[Changing the user interface]]
-    * [[Changing APIs]]
 
-* [[Reference]]
-    * [[Micro-services APIs]]
-    * [[Supported operations]]
+* [Lemonade Architecture](Architecture)
+    * [Micro-services organization](Architecture=)
+    * [Services communication](Architecture=)
+    * [Source code generation](Architecture=)
+    * [Code execution and platforms](Architecture=)
+* [Administration](Administration)
+    * [User management](Administration#)
+    * [Backup](Administration#)
+    * [Scalability](Administration#)
+    * [Troubleshooting](Administration#)
+* [Extending Lemonade](Extending)
+    * [Adding new operations](Extending#)
+    * [Adding a new execution platform](Extending#)
+    * [Changing the user interface](Extending#)
+    * [Changing APIs](Extending#)
+* [Reference](Reference#)
+    * [Micro-services APIs](Reference#)
+    * [Supported operations](Reference#)
