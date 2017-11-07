@@ -38,8 +38,8 @@ Lemonade platform
 **Getting Started**
 
 * [Installation](Installation.md)
-    * [Installing the lastest Version](Installation.md#installling-the-latest-version)
-    * [Using a Docker container version](Installation.md##using-a-docker-container-version)
+    * [Installing the lastest version](Installation.md#installling-the-latest-version)
+    * [Using a Docker container version](Installation.md#using-a-docker-container-version)
     * [Services configuration](Installation.md#services-configuration)
     * [Apache Spark Integration](Installation.md#apache-spark-integration)
     * [Upgrading from previous versions](Installation.md#upgrading-from-previous-versions)
@@ -78,10 +78,10 @@ Lemonade platform
 **Technical Information**
 
 * [Lemonade Architecture](Architecture.md)
-    * [Micro-services organization](Architecture.md=)
-    * [Services communication](Architecture.md=)
-    * [Source code generation](Architecture.md=)
-    * [Code execution and platforms](Architecture.md=)
+    * [Micro-services organization](Architecture.md#micro-services-organization)
+    * [Services communication](Architecture.md#services-communication)
+    * [Source code generation](Architecture.md#source-code-generation)
+    * [Code execution and platforms](Architecture.md#code-execution-and-platforms)
 * [Administration](Administration.md)
     * [User management](Administration.md#)
     * [Backup](Administration.md#)
