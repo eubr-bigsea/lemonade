@@ -1,5 +1,9 @@
 ###  Description
 Area chart
+
+###  Supported platforms
+* Spark
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -14,10 +18,12 @@ Area chart
 | Y-axis prefix (added to value when displaying it) | Y-axis prefix (added to the value display) | TEXT | false |
 | X-axis suffix (added to the value when displaying it) | X-axis suffix(added to the value display) | TEXT | false |
 | Y-axis suffix (added to the value when displaying it) | Y-axis suffix (added to the value display) | TEXT | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
 | Input data | Input data | One |
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

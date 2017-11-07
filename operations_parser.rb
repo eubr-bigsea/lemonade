@@ -1,5 +1,5 @@
 require 'json'
-require 'pry'
+# require 'pry'
 
 file = File.read('operations.json')
 operations = JSON.parse(file)
@@ -28,6 +28,14 @@ operations.each do |operation|
   File.open(filename, 'w') do |f|
     f.write("###  Description\n")
     f.write(operation['description'] + "\n")
+
+    f.write("\n")
+    f.write("###  Supported platforms\n")
+    operation['platforms'].each do |platform|
+      f.write("* #{platform['name']}\n")
+    end
+    
+    f.write("\n")
     f.write("###  Options\n")
     f.write("| Label | Description | Type | Required |\n")
     f.write("|---|---|---|---|\n")
@@ -38,6 +46,7 @@ operations.each do |operation|
         end
       end
     end
+    f.write("\n")
     f.write("###  Inputs\n")
     f.write("| Label | Description | Multiplicity |\n")
     f.write("|---|---|---|\n")
@@ -46,6 +55,7 @@ operations.each do |operation|
         f.write("| #{port['name'].capitalize} | #{port['description']} | #{port['multiplicity'].capitalize} |\n")
       end
     end
+    f.write("\n")
     f.write("###  Outputs\n")
     f.write("| Label | Description | Multiplicity |\n")
     f.write("|---|---|---|\n")

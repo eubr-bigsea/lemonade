@@ -1,5 +1,10 @@
 ###  Description
 Tokenize the input text in a vector of words using a simple tokenizer or one based on regular expression.
+
+###  Supported platforms
+* Spark
+* COMPSs
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -12,10 +17,12 @@ Tokenize the input text in a vector of words using a simple tokenizer or one bas
 | Display output(s) schema(s) | Display output(s) schema(s) | INTEGER | false |
 | Display text reports (if available) | Display text reports (if available) | INTEGER | false |
 | Display images and charts (if available) | Display images and charts (if available) | INTEGER | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
 | Input data | Input data with a text attribute to be tokenized | One |
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

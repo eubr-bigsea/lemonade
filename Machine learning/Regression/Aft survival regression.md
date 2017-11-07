@@ -1,5 +1,9 @@
 ###  Description
 Accelerated Failure Time (AFT) Model Survival Regression
+
+###  Supported platforms
+* Spark
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -9,9 +13,11 @@ Accelerated Failure Time (AFT) Model Survival Regression
 | Censor | Censor | INTEGER | false |
 | Quantile probabilities | Quantile probabilities | TEXT | false |
 | Quantiles attribute | Quantiles attribute | TEXT | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

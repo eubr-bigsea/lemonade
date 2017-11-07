@@ -1,5 +1,10 @@
 ###  Description
 Association rules
+
+###  Supported platforms
+* Spark
+* COMPSs
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -10,10 +15,12 @@ Association rules
 | Display output(s) schema(s) | Display output(s) schema(s) | INTEGER | false |
 | Display text reports (if available) | Display text reports (if available) | INTEGER | false |
 | Display images and charts (if available) | Display images and charts (if available) | INTEGER | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
 | Input data | Input data | One |
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

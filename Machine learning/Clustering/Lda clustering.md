@@ -1,5 +1,9 @@
 ###  Description
 LDA Clustering
+
+###  Supported platforms
+* Spark
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -8,9 +12,11 @@ LDA Clustering
 | Max. iterations | Max. iterations | INTEGER | false |
 | Document concentration (alpha) | Document concentration (alpha) | FLOAT | false |
 | Topic concentration (beta) | Topic concentration (beta) | FLOAT | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

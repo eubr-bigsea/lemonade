@@ -1,5 +1,10 @@
 ###  Description
 Performs a data transformation
+
+###  Supported platforms
+* Spark
+* COMPSs
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -9,10 +14,12 @@ Performs a data transformation
 | Display output(s) schema(s) | Display output(s) schema(s) | INTEGER | false |
 | Display text reports (if available) | Display text reports (if available) | INTEGER | false |
 | Display images and charts (if available) | Display images and charts (if available) | INTEGER | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
 | Input data | Input data to be transformed | One |
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

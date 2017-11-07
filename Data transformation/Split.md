@@ -1,5 +1,10 @@
 ###  Description
 Splits dataset into 2 different data sets using weights
+
+###  Supported platforms
+* Spark
+* COMPSs
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -9,10 +14,12 @@ Splits dataset into 2 different data sets using weights
 | Display output(s) schema(s) | Display output(s) schema(s) | INTEGER | false |
 | Display text reports (if available) | Display text reports (if available) | INTEGER | false |
 | Display images and charts (if available) | Display images and charts (if available) | INTEGER | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
 | Input data | Input data to be splitted | One |
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

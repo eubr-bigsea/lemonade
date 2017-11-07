@@ -1,5 +1,10 @@
 ###  Description
 Selects a subset of the fields from data set
+
+###  Supported platforms
+* Spark
+* COMPSs
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -8,10 +13,12 @@ Selects a subset of the fields from data set
 | Display output(s) schema(s) | Display output(s) schema(s) | INTEGER | false |
 | Display text reports (if available) | Display text reports (if available) | INTEGER | false |
 | Display images and charts (if available) | Display images and charts (if available) | INTEGER | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
 | Input data | Input data to be projected | One |
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

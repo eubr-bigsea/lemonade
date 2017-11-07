@@ -1,5 +1,9 @@
 ###  Description
 Voting classifier
+
+###  Supported platforms
+* Spark
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -8,11 +12,13 @@ Voting classifier
 | Display text reports (if available) | Display text reports (if available) | INTEGER | false |
 | Display images and charts (if available) | Display images and charts (if available) | INTEGER | false |
 | Weights (comma-separated, if empty, all estimators will have same weight) | Weights (if empty, all estimators will have same weight, otherwise, implies "soft" voting) | TEXT | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
 | Models | Input models | Many |
 | Input data | Input data | One |
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

@@ -1,5 +1,10 @@
 ###  Description
 Locates a point in a shape
+
+###  Supported platforms
+* Spark
+* COMPSs
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -12,11 +17,13 @@ Locates a point in a shape
 | Display output(s) schema(s) | Display output(s) schema(s) | INTEGER | false |
 | Display text reports (if available) | Display text reports (if available) | INTEGER | false |
 | Display images and charts (if available) | Display images and charts (if available) | INTEGER | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
 | Input data | Input data | One |
 | Geo data | Geo data | One |
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

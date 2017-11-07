@@ -1,5 +1,9 @@
 ###  Description
 Gradient-Boosted Trees (GBTs) learning algorithm for regression. It supports both continuous and categorical featur
+
+###  Supported platforms
+* Spark
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -8,9 +12,11 @@ Gradient-Boosted Trees (GBTs) learning algorithm for regression. It supports bot
 | Min. instance | Min. instance | INTEGER | false |
 | Min. info gain | Min. info gain | DECIMAL | false |
 | Seed | Seed | INTEGER | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

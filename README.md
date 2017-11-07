@@ -26,7 +26,7 @@ Lemonade platform
         * [Predict and evaluate an answer](Data-Science.md#)
         * [Standing over the shoulders of giants (or Ctrl+C, Ctrl+V)](Data-Science.md#)
             * [Copy workflows](Data-Science.md#)
-            * [Use external Tutorials.md](Data-Science.md#)
+            * [Use external Tutorials](Data-Science.md#)
             * [Repositories of machine learning experiments](Data-Science.md#)
     * [Resources](Data-Science.md#)
         * [Kaggle](Data-Science.md#)
@@ -37,7 +37,7 @@ Lemonade platform
 
 **Getting Started**
 
-* [Installation.md](Installation.md)
+* [Installation](Installation.md)
     * [Installing the lastest Version](Installation.md#installling-the-latest-version)
     * [Using a Docker container version](Installation.md##using-a-docker-container-version)
     * [Services configuration](Installation.md#services-configuration)
@@ -50,7 +50,7 @@ Lemonade platform
         * [Creating your first predictive experiment](Basic-Usage#creating-your-first-predictive-experiment)
         * [Train a model and evaluate results](Basic-Usage#train-a-model-and-evaluate-results)
         * [Deploy a trained model (not ready yet)](Basic-Usage#deploy-a-trained-model)
-* [Tutorials.md](Tutorials.md)
+* [Tutorials](Tutorials.md)
     * [Extraction, transformation and loading](ETL.md)
         * [Data cleaning](ETL.md#data-cleaning)
         * [Handling missings](ETL.md#handling-missings)
@@ -60,8 +60,8 @@ Lemonade platform
         * [Handling text](Feature.md#handling-text)
     * [Classification](Classification.md)
         * [What is the Classification.md technique?](Classification.md#what-is-the-Classification.md-technique)
-        * [Binary Classification.md](Classification.md#binary-Classification.md)
-        * [Multiclass Classification.md](Classification.md#multiclass-Classification.md)
+        * [Binary Classification](Classification.md#binary-Classification.md)
+        * [Multiclass Classification](Classification.md#multiclass-Classification.md)
         * [Evaluating Classification.md with metrics](Classification.md#evaluating-Classification.md-with-metrics)
         * [Training better models with cross validation](Classification.md#training-better-models-with-cross-validation)
     * [Clustering](Clustering.md)
@@ -94,4 +94,4 @@ Lemonade platform
     * [Changing APIs](Extending.md#)
 * [Reference](Reference.md#)
     * [Micro-services APIs](Reference.md#)
-    * [Supported operations](Reference.md#)
+    * [Supported operations](Supported-Operations.md)
