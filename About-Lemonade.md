@@ -31,14 +31,14 @@ Each project's submodule has its own repository in Github:
 
 ## <a name="origin-and-motivations"></a> Origin and motivations
 
-Visual workflows tools provide a higher level of abstraction than general purpose programming languages, even those created specifically to data processing, such language R[R08]. 
+Visual workflows tools provide a higher level of abstraction than general purpose programming languages, even those created specifically to data processing, such [R language](https://www.r-project.org/). 
 
 Today, current processing infrastructure capacity and price and the availability of large amount of data enabled the development of new applications, previously restricted to very large companies and organizations. However, to fully exploit such opportunity, a team should deal with different expertises, such as business domain, programming skills and infrastructure maintenance. Sometimes, one wants just test an hypothesis about the data, not to learn technical details. 
 
-Available data processing tools have a very large spectrum regarding processing capacity, ranging from desktop spreadsheet tools to very large computer clusters. Also, abstraction level ranges from low level programming languages (e.g. GPU processing) to completely black box solutions. Visual programming [R1] is an approach where procedure or program is constructed by arranging program elements graphically instead of writing it in a programming language and has become popular thanks to the proliferation of tools, such as Knime[R2], Weka [R3], RapidMiner [R4], CloudFlows [R5] and Microsoft Azure ML Studio [R6]. 
+Available data processing tools have a very large spectrum regarding processing capacity, ranging from desktop spreadsheet tools to very large computer clusters. Also, abstraction level ranges from low level programming languages (e.g. GPU processing) to completely black box solutions. Visual programming is an approach where procedure or program is constructed by arranging program elements graphically instead of writing it in a programming language and has become popular thanks to the proliferation of tools, such as [Knime](https://www.knime.com/), [Weka](https://www.cs.waikato.ac.nz/ml/weka/), [RapidMiner](https://www.cs.waikato.ac.nz/ml/weka/), [ClowdFlows](http://clowdflows.org) and [Microsoft Azure ML Studio](https://studio.azureml.net). 
 
-Lemonade shares many similarities with aforementioned technologies. We believe Lemonade is different regarding its integration with big data processing technologies included in the project (COMPSs. Spark, Ophidia) and with other project teams/work packages. Lemonade integrates with WP3 by allowing users to specify QoS constraints for the execution. Such constraints will be used to statically or dynamically allocate resources for process the workflow. Integration with WP6 is in progress and we foresee security and data privacy constraints implemented as parameters or operators in Lemonade. 
-All operations available in Lemonade user interface are kept as metadata information. It is easy to someone to define new operations by adding meta information and  changing backend implementation. 
+**Lemonade** shares many similarities with aforementioned technologies. We believe Lemonade is different regarding its integration with big data processing technologies included in the project (COMPSs. Spark, Ophidia) and with other project teams/work packages. Lemonade integrates with infrastructure by allowing users to specify QoS constraints for the execution. Such constraints will be used to statically or dynamically allocate resources for process the workflow. Privacy and security (under progress) are configurable by constraints implemented as parameters or operators in Lemonade. 
+All operations available in Lemonade user interface are kept as metadata information. It is easy to someone to define new operations by adding meta information and changing backend implementation. 
 
 #### Related work
 
@@ -49,8 +49,6 @@ The Weka [R3] is  a project aims to provide machine learning algorithms and dat
 The platform ClowdFlows [R5] is a cloud-based web application for distributed computing (with batch or real-time processing mode). It allows to create and perform data mining workflows through visual programming. An application in visual programming is constructed by “dragging and dropping” graphical elements instead of writing the source code as text. The ClowdFlows for batch processing uses MapReduce programming model through DiscoMLL library. MapReduce programming simplifies execution of parallel and distributed processing to multiples machines.
 
 Mention Azure Machine Learning Studio [R6] is a cloud service that enables to easily build, deploy, and share predictive analytics solutions.  There’s no code required, but needs commercial license to use whole functions and tools. Azure provides visual workflows with state of the art algorithms, that can be run in parallel/cloud. 
-
-In none these platforms Apache Spark was evaluated. Its reveals the potentiality of new platforms. 
 
 ## <a name="target-users"></a> Target users
 Todo

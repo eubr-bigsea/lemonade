@@ -1,5 +1,4 @@
 # Data science
-
 Data Science arises as a new area that aims to materialize processes and practices to explore, analyze and generate models that enable the description and prediction from a wide range of data types. Ultimately, these processes and practices will support better performance and efficacy of the organizations and quality of life of the citizens.
 
 Data Science models and transforms data to subsidize the decision process through computational thinking, towards data-driven decision making.
@@ -44,3 +43,23 @@ Motivations
 * Data scientists need to abstract algorithmically tasks
 * Cloud-fashion web-based platforms provide good interactive support
 * Visual programming is a need
+
+## Data mining
+## Machine learning
+## Data science 101
+### Techniques, algorithms and models
+### How to choose between the different available techniques?
+### Is my data set ready for what I want to do?
+### How to formulate the correct question about data?
+### Predict and evaluate an answer
+### Standing over the shoulders of giants (or Ctrl+C, Ctrl+V)
+#### Copy workflows
+#### Use external Tutorials
+#### Repositories of machine learning experiments
+
+## Resources
+### Kaggle
+### Cortana Intelligence Gallery
+
+"[Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) enables our growing community of developers and data scientists to share their analytics solutions".
+
