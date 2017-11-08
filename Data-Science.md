@@ -18,6 +18,8 @@ Profile:
 
 ## Data Science in Practice
 
+<a href="http://www.azquotes.com/quote/593283" title="Ronald Coase quote"><img src="http://www.azquotes.com/picture-quotes/quote-if-you-torture-the-data-long-enough-it-will-confess-ronald-coase-59-32-83.jpg" alt="If you torture the data long enough, it will confess. - Ronald Coase"></a>
+
 Data management: several general or specialized platforms for all kinds of data
 
 Data mining: several implementations of each technique
@@ -46,8 +48,12 @@ Motivations
 
 ## Data mining
 ## Machine learning
+
 ## Data science 101
 ### Techniques, algorithms and models
+
+![](http://scikit-learn.org/stable/_static/ml_map.png)
+
 ### How to choose between the different available techniques?
 ### Is my data set ready for what I want to do?
 ### How to formulate the correct question about data?
@@ -63,3 +69,11 @@ Motivations
 
 "[Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) enables our growing community of developers and data scientists to share their analytics solutions".
 
+## Graph analysis
+https://blog.cloudera.com/blog/2016/10/how-to-do-scalable-graph-analytics-with-apache-spark/
+
+# Regression
+https://hortonworks.com/tutorial/predicting-airline-delays-using-sparkr/
+
+# Sentiment analysis
+https://hortonworks.com/tutorial/sentiment-analysis-with-apache-spark/

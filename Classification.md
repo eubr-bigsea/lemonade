@@ -2,7 +2,11 @@
 
 ## <a name=""></a> What is the Classification technique?
 
-## <a name=""></a> Binary Classification
+## <a name="binary-classification"></a> Binary Classification
+
+### Titanic's sinking dataset
+
+https://github.com/ramansah/kaggle-titanic/blob/master/Analysis.ipynb
 
 ## <a name="multiclass-classification"></a> Multiclass Classification
 
@@ -61,3 +65,13 @@ Now, the Iris dataset is available to be used in workflows.
 ## <a name=""></a> Evaluating Classification with metrics
 
 ## <a name=""></a> Training better models with cross validation
+
+http://nasdag.github.io/blog/2016/01/02/predicting-heart-disease-with-hadoop-spark-and-python/
+https://mapr.com/blog/churn-prediction-sparkml/
+https://blog.cloudera.com/blog/2016/02/how-to-predict-telco-churn-with-apache-spark-mllib/
+https://mapr.com/blog/churn-prediction-pyspark-using-mllib-and-ml-packages/
+https://mapr.com/blog/predicting-breast-cancer-using-apache-spark-machine-learning-logistic-regression/?utm_content=buffercd8bc&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+
+## Record linkage
+
+http://aseigneurin.github.io/2016/02/22/record-inkage-a-real-use-case-with-spark-ml.html
