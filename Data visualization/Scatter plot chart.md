@@ -1,5 +1,9 @@
 ###  Description
 Scatter plot chart
+
+###  Supported platforms
+* Spark
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -8,6 +12,7 @@ Scatter plot chart
 | Z-axis attribute (optional) | Z-axis attribute | TEXT | false |
 | Size attribute (optional) | Size attribute | TEXT | false |
 | Title | Title | TEXT | false |
+| Attribute used for series (optional) | Attribute used for series (optional) | TEXT | false |
 | X-axis title | X-axis title | TEXT | false |
 | Y-axis title | Y-axis title | TEXT | false |
 | Z-axis title(optional) | Z-axis title | TEXT | false |
@@ -24,10 +29,12 @@ Scatter plot chart
 | Y-axis suffix | Y-axis suffix | TEXT | false |
 | Z-axis suffix(optional) | Z-axis suffix | TEXT | false |
 | Size suffix(optional) | Size suffix | TEXT | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
 | Input data | Input data | One |
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

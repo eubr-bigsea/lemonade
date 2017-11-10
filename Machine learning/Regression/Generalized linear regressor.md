@@ -1,5 +1,9 @@
 ###  Description
 Generalized Linear Regressor
+
+###  Supported platforms
+* Spark
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -8,9 +12,11 @@ Generalized Linear Regressor
 | Max. iterations | Maximum number of iterations | INTEGER | false |
 | Regularization | Regularization | DECIMAL | false |
 | Solver | Solver | TEXT | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

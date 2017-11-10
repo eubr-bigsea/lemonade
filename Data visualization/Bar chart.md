@@ -1,5 +1,9 @@
 ###  Description
 Bar chart
+
+###  Supported platforms
+* Spark
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -15,10 +19,12 @@ Bar chart
 | X-axis suffix (added to the value when displaying it) | X-axis suffix(added to the value display) | TEXT | false |
 | Y-axis suffix (added to the value when displaying it) | Y-axis suffix (added to the value display) | TEXT | false |
 | Orientation | Orientation | TEXT | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
 | Input data | Input data | One |
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

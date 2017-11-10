@@ -1,0 +1,27 @@
+###  Description
+Applies a PageRank algorithm
+
+###  Supported platforms
+* COMPSs
+
+###  Options
+| Label | Description | Type | Required |
+|---|---|---|---|
+| Display sample(s) of output(s) (max. 50 records) | Display sample(s) of output(s) (max. 50 records) | INTEGER | false |
+| Display output(s) schema(s) | Display output(s) schema(s) | INTEGER | false |
+| Display text reports (if available) | Display text reports (if available) | INTEGER | false |
+| Display images and charts (if available) | Display images and charts (if available) | INTEGER | false |
+| Out-links attribute | Out-links attribute | TEXT | true |
+| In-links attribute | In-links attribute | TEXT | true |
+| Max iterations | Max iterations | INTEGER | false |
+| Damping Factor | Damping Factor | FLOAT | false |
+
+###  Inputs
+| Label | Description | Multiplicity |
+|---|---|---|
+| Input data | Input Data | One |
+
+###  Outputs
+| Label | Description | Multiplicity |
+|---|---|---|
+| Output data | Output Data | Many |

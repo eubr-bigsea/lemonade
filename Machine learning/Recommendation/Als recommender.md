@@ -1,5 +1,9 @@
 ###  Description
 ALS Recommender
+
+###  Supported platforms
+* Spark
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -9,9 +13,11 @@ ALS Recommender
 | Evaluated item id attrbiute | Evaluated item id attribute | TEXT | true |
 | Attribute with evaluation | Attribute with evaluation | TEXT | true |
 | Experiment regularization | Experiment regularization | FLOAT | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|

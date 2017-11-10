@@ -1,5 +1,9 @@
 ###  Description
 Map visualization
+
+###  Supported platforms
+* Spark
+
 ###  Options
 | Label | Description | Type | Required |
 |---|---|---|---|
@@ -9,10 +13,12 @@ Map visualization
 | Attribute with the longitude | Attribute with the longitude | TEXT | false |
 | Attribute for the value (optional) | Attribute for the value (optional) | TEXT | false |
 | Label attribute (optional) | Label attribute (optional) | TEXT | false |
+
 ###  Inputs
 | Label | Description | Multiplicity |
 |---|---|---|
 | Input data | Input data | One |
+
 ###  Outputs
 | Label | Description | Multiplicity |
 |---|---|---|
