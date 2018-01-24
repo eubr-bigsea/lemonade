@@ -45,6 +45,7 @@ Lemonade platform
     * [Upgrading from previous versions](Installation.md#upgrading-from-previous-versions)
 * [Basic Usage](Basic-Usage.md)
     * [Step-by-step walthrough](Basic-Usage.md#step-by-step-walthrough)
+        * [Create user](Basic-Usage.md#create-user)
         * [Importing data sets](Basic-Usage.md#importing-data-sets)
         * [Workflow editor](Basic-Usage.md#workflow-editor)
         * [Creating your first predictive experiment](Basic-Usage.md#creating-your-first-predictive-experiment)
