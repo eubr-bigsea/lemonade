@@ -57,49 +57,49 @@ expression. The data set's description can also be altered.
 
 Among the other fields, the editing screen is composed by:
 
-*Format ->* It makes explicit the format in which the data set is. In the
+- Format -> It makes explicit the format in which the data set is. In the
 example, the data set is in CSV format
-*Encode ->* Encoding treatment to be used in the data set. e.g. UTF-8, LATIN 1,
+- Encode -> Encoding treatment to be used in the data set. e.g. UTF-8, LATIN 1,
 etc.
-*Public ->* Whether the data set can be seen and used by all of the platform's
+- Public -> Whether the data set can be seen and used by all of the platform's
 users or not.
 Treat as missing -> A value or expression to be treated as null or absent in
 the data set. e.g. n/a, none, etc.
-*Infer Schema ->* Infers the attribute schema for the data set, without the
+- Infer Schema -> Infers the attribute schema for the data set, without the
 need for manual addition. The process occurs in the following way:
-  - Firstly, the *delimiter* of the data present in the set must be chosen. In
+  + Firstly, the *delimiter* of the data present in the set must be chosen. In
 the example, it is the comma.
-  - On second place, the punctuation sign used to highlight data, the
+  + On second place, the punctuation sign used to highlight data, the
 *enclosure*, must be chosen. This is an optional feature, and many data sets do
 not use it, such as Iris. Therefore, nothing will be selected in the example.
-  - Lastly, it must be chosen whether the data set has a *header* - that gives
+  + Lastly, it must be chosen whether the data set has a *header* - that gives
 name to the attributes - or not. Iris does not have it, thus it will not be
 selected in the example.
 
-![datasource-inferschema0](img/importing_data_sets/datasource-inferschema0.png)
+    ![datasource-inferschema0](img/importing_data_sets/datasource-inferschema0.png)
 
-  - With all those fields filled, click on `Infer Schema`, and the attributes
+  + With all those fields filled, click on `Infer Schema`, and the attributes
 will be added, as it can be seen in the example.
 
-![datasource-inferschema1](img/importing_data_sets/datasource-inferschema1.png)
+    ![datasource-inferschema1](img/importing_data_sets/datasource-inferschema1.png)
 
-  - Renaming the inferred attributes to the data set's attribute names
+  + Renaming the inferred attributes to the data set's attribute names
 approached earlier, the schema appears in the following way.
 
-![datasource-inferschema2](img/importing_data_sets/datasource-inferschema2.png)
+    ![datasource-inferschema2](img/importing_data_sets/datasource-inferschema2.png)
 
-*Attributes ->* Adds/edits attributes belonging to the data set, manually.
+- Attributes -> Adds/edits attributes belonging to the data set, manually.
 Contains the following fields:
 
-![datasource-attributes](img/importing_data_sets/datasource-attributes.png)
+    ![datasource-attributes](img/importing_data_sets/datasource-attributes.png)
 
-  - Name -> Attribute's name
-  - Type -> Corresponding data type. e.g. CHARACTER, FLOAT, DECIMAL, etc.
-  - Size -> Data's size, in case it is non-numerical.
-  - Precision -> Value's precision, used only for numerical data.
-  - Scale -> Value's scale, also used only for numerical data.
-  - Allow null -> Allow null values for the attribute.
-  - Treat as Missing -> A value or expression to be treated as null or absent,
+  + Name -> Attribute's name
+  + Type -> Corresponding data type. e.g. CHARACTER, FLOAT, DECIMAL, etc.
+  + Size -> Data's size, in case it is non-numerical.
+  + Precision -> Value's precision, used only for numerical data.
+  + Scale -> Value's scale, also used only for numerical data.
+  + Allow null -> Allow null values for the attribute.
+  + Treat as Missing -> A value or expression to be treated as null or absent,
 but specific for the attribute. e.g. n/a, none, etc.
 
 To save changes made, click on `Save`, and to cancel those changes, click on
