@@ -41,7 +41,7 @@ Currently: data source upload, soon data source download.
 
 ### Juicer
 
-uicer has four main responsibilities: 
+Juicer has four main responsibilities: 
 Receive a workflow specification (JSON) from Stand and convert it into executable code (transpile operations into respective underlying technology code). 
 Execute the generated code, controlling the execution flow. 
 Report execution status to Stand.
