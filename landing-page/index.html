@@ -1,0 +1,422 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Lemonade</title>
+</head>
+<style>
+
+    .logo {
+        background: url(data:image/png;base64,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);
+        width: 64px;
+        height: 64px;
+        background-size: auto 64px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 75px;
+    }
+
+    
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu a {
+        margin: 0 10px;
+    }
+
+    .services {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .services h6 {
+        margin-top: 10px;
+    }
+
+    .services img {
+        height: 64px;
+    }
+
+    .disabled {
+        opacity: 0.5;
+    }
+
+    .disabled p {
+        display: none;
+    }
+
+    .nav-link {
+        width: 16px;
+        height: 16px;
+        padding: 0;
+        margin-bottom: 16px;
+        background-color: #CCC;
+        border-radius: 100% !important;
+    }
+
+    .nav-link.active {
+        background-color: #ffca26 !important;
+    }
+
+    .supporters div {
+        text-align: center;
+    }
+
+    .supporters img {
+        max-height: 60px;
+        vertical-align: middle;
+        margin: 22px;
+    }
+
+    .enter {
+        background-color: white;
+        border: 0;
+        outline: none;
+        border-radius: 4px 4px 4px 4px;
+        color: #ff4b95;
+        font-weight: 500;
+        height: 32px;
+        margin: 0;
+        padding: 8px 16px;
+        text-decoration: none;
+        box-shadow: -1px 1px 4px #EEE;
+        line-height: 16px;
+        transition: all 0.3s; 
+        box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
+    }
+
+    h3 {
+        text-transform: uppercase;
+    }
+
+    hr {
+        border-color: #FFF;
+    }
+
+    .div-out {
+        position: absolute;
+        right: 0;
+        height: 600px;
+        width: 50%;
+        min-width: 500px;
+        background-image: linear-gradient(-56.47deg, #ff4b95, #ffca26);
+        overflow: hidden;
+        float: right;
+        z-index: -1;
+    }
+
+    .div-in {
+        display: block;
+        position: relative;
+        height: 100%;
+        width: 130%;
+        min-width: 580px;
+        background-color: white;
+        border-radius: 0 100% 0 0;
+    }
+
+    
+    svg {
+        width: 36px !important;
+        height: 36px !important;
+        fill: #007bff !important;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+    <div class="div-out">
+        <div class="div-in">
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="logo"></div>
+        <div class="menu d-none d-sm-block">
+            <a>ABOUT</a>
+            <a>SERVICES</a>
+            <a>TEAM</a>
+            <a>SUPPORTERS</a>
+        </div>
+        <a href="#" class="enter">SIGN IN</a>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <br>
+        <h1 class="text-center display-4">Welcome to Lemonade</h1>
+        <p class="text-center lead">Live Exploration and Mining Of a Non-trivial Amount of Data from Everywhere</p>
+
+        <br>
+        <br>
+
+        <h3 class="text-center"><span>About Lemonade</span></h3>
+
+        <br>
+        
+        <p class="text-center">Data analytics is a concept related to pattern and relevant knowledge discovery from
+            large amounts of data. In feneral, the task is complex and demands knowledge in very specific areas, such as
+            massive data processing and parallel programming languages. However, analysts are usually not versed in
+            Computer Science, but in the original data domain. In order to support them in such analysis, we present
+            <strong>Lemonade</strong> - Live Exploration and Mining Of a Non-trivial Amount of Data from Everywhere - A Platform for
+            visual creation and execution of data analysis workflow</p>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-6 col-lg-3">
+                <div class="text-center">
+                    
+
+                    <svg height="487pt" viewBox="0 -4 487.23412 487" width="487pt" xmlns="http://www.w3.org/2000/svg"><path d="m392.042969 304.117188c-48.601563 0-88 39.398437-88 88 0 48.601562 39.398437 88 88 88 48.601562 0 88-39.398438 88-88-.058594-48.578126-39.421875-87.941407-88-88zm0 160c-39.765625 0-72-32.234376-72-72 0-39.765626 32.234375-72 72-72s72 32.234374 72 72c-.042969 39.746093-32.253907 71.957031-72 72zm0 0"/><path d="m168.042969 304.117188h-72v-84.6875l23.601562 23.597656c3.136719 3.035156 8.128907 2.988281 11.214844-.097656 3.085937-3.082032 3.128906-8.074219.097656-11.210938l-37.257812-37.257812c-3.125-3.121094-8.1875-3.121094-11.3125 0l-37.253907 37.257812c-3.03125 3.136719-2.988281 8.128906.097657 11.210938 3.085937 3.085937 8.074219 3.132812 11.214843.097656l23.597657-23.597656v84.6875h-72c-4.417969 0-8.0000002 3.582031-8.0000002 8v160c0 4.417968 3.5820312 8 8.0000002 8h160c4.417969 0 8-3.582032 8-8v-160c0-4.417969-3.582031-8-8-8zm-8 160h-144v-144h144zm0 0"/><path d="m240.445312 45.203125c-2.011718-2.078125-4.984374-2.910156-7.78125-2.179687-2.796874.730468-4.980468 2.917968-5.714843 5.714843-.730469 2.796875.101562 5.769531 2.183593 7.777344l23.597657 23.601563h-77.09375c-4.277344-46.847657-44.644531-82.050782-91.640625-79.910157s-83.996094 40.867188-83.996094 87.910157c0 47.042968 37 85.769531 83.996094 87.910156s87.363281-33.0625 91.640625-79.910156h77.09375l-23.597657 23.601562c-2.082031 2.007812-2.914062 4.980469-2.183593 7.777344.734375 2.796875 2.917969 4.980468 5.714843 5.714844 2.796876.730468 5.769532-.101563 7.78125-2.183594l37.253907-37.253906c3.125-3.125 3.125-8.1875 0-11.3125zm-152.402343 114.914063c-39.765625 0-72-32.234376-72-72 0-39.765626 32.234375-72 72-72s72 32.234374 72 72c-.042969 39.746093-32.253907 71.957031-72 72zm0 0"/><path d="m484.300781 81.925781-87.203125-71.199219c-2.945312-2.410156-7.179687-2.410156-10.125 0l-87.199218 71.199219c-1.859376 1.519531-2.9375 3.792969-2.9375 6.191407 0 2.398437 1.078124 4.671874 2.9375 6.191406l84.269531 68.800781v97.695313l-23.597657-23.601563c-3.140624-3.03125-8.128906-2.988281-11.214843.097656-3.085938 3.085938-3.128907 8.078125-.097657 11.214844l37.253907 37.257813c3.125 3.121093 8.1875 3.121093 11.3125 0l37.257812-37.257813c3.03125-3.136719 2.988281-8.128906-.097656-11.214844-3.085937-3.085937-8.078125-3.128906-11.214844-.097656l-23.601562 23.601563v-97.695313l84.257812-68.800781c1.855469-1.519532 2.933594-3.792969 2.933594-6.191406 0-2.398438-1.078125-4.671876-2.933594-6.191407zm-92.257812 67.054688-74.542969-60.863281 74.542969-60.863282 74.542969 60.863282zm0 0"/></svg>
+                </div>
+                <h5 class="text-center">Create a Processing Workflow</h5>
+                <p class="text-center">You can create and cutomize workflows from scratch! There are several operations
+                    and filters available so
+                    you can manipulate your data by simply adding functionality boxes to your workflow with an easy
+                    drag-and-drop process.</p>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="text-center">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 413.184 413.184"
+                        style="enable-background:new 0 0 413.184 413.184;" xml:space="preserve">
+                        <path d="M206.584,0C103.578,0,22.886,34.79,22.886,79.213v43.236c0,44.406,80.692,79.197,183.698,79.197
+                            c103.013,0,183.714-34.79,183.714-79.197V79.213C390.298,34.79,309.597,0,206.584,0z M374.04,122.441
+                            c0,37.091-88.244,62.94-167.457,62.94c-79.197,0-167.441-25.849-167.441-62.94V79.205c0-37.099,88.236-62.956,167.441-62.956
+                            S374.04,42.106,374.04,79.205V122.441z" />
+                        <path d="M31.015,173.992c-4.495,0-8.129,3.642-8.129,8.129v43.236c0,44.406,80.692,79.197,183.698,79.197
+                            c103.013,0,183.714-34.79,183.714-79.197v-43.236c0-4.487-3.633-8.129-8.129-8.129c-4.495,0-8.129,3.642-8.129,8.129v43.236
+                            c0,37.091-88.244,62.94-167.457,62.94c-79.197,0-167.441-25.849-167.441-62.94v-43.236
+                            C39.143,177.634,35.51,173.992,31.015,173.992z" />
+                        <path d="M22.886,333.995c0,44.406,80.692,79.189,183.698,79.189c103.013,0,183.714-34.782,183.714-79.189
+                            v-43.236c0-4.487-3.633-8.129-8.129-8.129c-4.495,0-8.129,3.642-8.129,8.129v43.236c0,37.083-88.244,62.931-167.457,62.931
+                            c-79.197,0-167.441-25.849-167.441-62.931v-43.236c0-4.487-3.633-8.129-8.129-8.129s-8.129,3.642-8.129,8.129
+                            C22.886,290.759,22.886,333.995,22.886,333.995z" />
+                    </svg>
+                </div>
+                <h5 class="text-center">
+                    Import, Export or Manage Datasets</h5>
+                <p class="text-center">All your data can be imported in different formats to the application for proper
+                    manipulation. You can
+                    manage the imported datasets and later on you can export the resulting data with the formats of your
+                    choice.</p>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="text-center">
+                    <svg height="380pt" viewBox="-68 0 380 380.24835" width="380pt" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m6.949219 380.25c-1.539063 0-3.070313-.519531-4.339844-1.558594-2.61328125-2.148437-3.25-5.894531-1.503906-8.792968l95.386719-158.273438h-56.179688c-2.730469 0-5.195312-1.625-6.273438-4.132812-1.074218-2.507813-.554687-5.417969 1.324219-7.394532l188.054688-197.972656c2.292969-2.425781 6.011719-2.816406 8.773437-.953125 2.757813 1.871094 3.765625 5.464844 2.378906 8.5l-67.566406 147.339844h71.28125c2.820313 0 5.355469 1.738281 6.367188 4.371093 1.019531 2.632813.308594 5.621094-1.78125 7.515626l-231.335938 209.582031c-1.300781 1.175781-2.9375 1.769531-4.585937 1.769531zm49.261719-182.277344h52.367187c2.457031 0 4.730469 1.324219 5.945313 3.46875 1.207031 2.144532 1.175781 4.773438-.101563 6.878906l-77.6875 128.902344 183.847656-166.558594h-64.21875c-2.328125 0-4.496093-1.183593-5.746093-3.140624-1.253907-1.957032-1.429688-4.421876-.460938-6.535157l54.898438-119.714843zm0 0" />
+                        </svg>
+                </div>
+                <h5 class="text-center">
+                    Execute and Manage Existing Workflows</h5>
+                <p class="text-center">All your workflows are manageable, so you can access, create, edit or delete them
+                    at any time. You can
+                    also follow the progress of a workflow that is being executed and pause or stop it if you want.</p>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="text-center">
+                    <svg height="512pt" viewBox="0 -15 512.00002 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m68.925781 246.800781h-61.320312c-4.199219 0-7.605469 3.402344-7.605469 7.601563v220.210937c0 4.199219 3.40625 7.605469 7.605469 7.605469h61.320312c4.199219 0 7.605469-3.40625 7.605469-7.605469v-69.492187c0-4.199219-3.40625-7.601563-7.605469-7.601563s-7.601562 3.402344-7.601562 7.601563v61.890625h-46.117188v-205.003907h46.117188v117.765626c0 4.203124 3.402343 7.605468 7.601562 7.605468s7.605469-3.402344 7.605469-7.605468v-125.371094c0-4.199219-3.40625-7.601563-7.605469-7.601563zm0 0" />
+                        <path
+                            d="m177.792969 317.5625h-61.320313c-4.199218 0-7.605468 3.402344-7.605468 7.601562v149.449219c0 4.199219 3.40625 7.605469 7.605468 7.605469h61.320313c4.203125 0 7.605469-3.40625 7.605469-7.605469v-149.449219c0-4.199218-3.402344-7.601562-7.605469-7.601562zm-7.601563 149.449219h-46.117187v-134.242188h46.117187zm0 0" />
+                        <path
+                            d="m286.664062 199.625h-61.324218c-4.199219 0-7.605469 3.402344-7.605469 7.601562v267.386719c0 4.199219 3.40625 7.605469 7.605469 7.605469h61.324218c4.199219 0 7.601563-3.40625 7.601563-7.605469v-267.386719c0-4.199218-3.402344-7.601562-7.601563-7.601562zm-7.605468 267.386719h-46.117188v-252.179688h46.117188zm0 0" />
+                        <path
+                            d="m395.53125 235.007812h-61.324219c-4.199219 0-7.605469 3.402344-7.605469 7.601563v232.003906c0 4.199219 3.40625 7.605469 7.605469 7.605469h61.324219c4.199219 0 7.601562-3.40625 7.601562-7.605469v-232.003906c0-4.199219-3.402343-7.601563-7.601562-7.601563zm-7.605469 232.003907h-46.117187v-216.796875h46.117187zm0 0" />
+                        <path
+                            d="m504.394531 128.863281h-61.320312c-4.199219 0-7.605469 3.402344-7.605469 7.601563v100.355468c0 4.199219 3.40625 7.605469 7.605469 7.605469s7.601562-3.40625 7.601562-7.605469v-92.75h46.117188v322.941407h-46.117188v-204.839844c0-4.199219-3.402343-7.605469-7.601562-7.605469s-7.605469 3.40625-7.605469 7.605469v212.441406c0 4.199219 3.40625 7.605469 7.605469 7.605469h61.320312c4.199219 0 7.605469-3.40625 7.605469-7.605469v-338.148437c0-4.199219-3.40625-7.601563-7.605469-7.601563zm0 0" />
+                        <path
+                            d="m452.195312 69.875c6.140626 4.195312 13.558594 6.65625 21.539063 6.65625 21.101563 0 38.265625-17.167969 38.265625-38.265625 0-21.101563-17.164062-38.265625-38.265625-38.265625s-38.265625 17.164062-38.265625 38.265625c0 7.628906 2.253906 14.738281 6.117188 20.714844l-55.183594 53.816406c-6.136719-4.195313-13.554688-6.652344-21.535156-6.652344-14.261719 0-26.714844 7.847657-33.296876 19.445313l-37.5625-12.199219c.164063-1.433594.257813-2.886719.257813-4.363281 0-21.097656-17.167969-38.265625-38.265625-38.265625-21.101562 0-38.265625 17.167969-38.265625 38.265625 0 8.351562 2.699219 16.085937 7.257813 22.382812l-58.015626 62.847656c-5.789062-3.523437-12.585937-5.558593-19.84375-5.558593-10.671874 0-20.332031 4.394531-27.277343 11.464843l-46.011719-29.902343c1.726562-4.355469 2.6875-9.097657 2.6875-14.058594 0-21.101563-17.167969-38.265625-38.269531-38.265625-21.097657 0-38.261719 17.164062-38.261719 38.265625 0 21.097656 17.164062 38.265625 38.265625 38.265625 10.671875 0 20.332031-4.398438 27.28125-11.46875l46.007813 29.902344c-1.726563 4.355468-2.6875 9.097656-2.6875 14.0625 0 21.101562 17.167968 38.265625 38.265624 38.265625 21.101563 0 38.269532-17.164063 38.269532-38.265625 0-8.351563-2.699219-16.082032-7.257813-22.382813l58.015625-62.847656c5.789063 3.527344 12.582032 5.558594 19.84375 5.558594 14.257813 0 26.714844-7.847657 33.296875-19.445313l37.558594 12.199219c-.164063 1.433594-.253906 2.886719-.253906 4.363281 0 21.101563 17.164062 38.265625 38.265625 38.265625 21.101562 0 38.265625-17.164062 38.265625-38.265625 0-7.632812-2.253907-14.742187-6.117188-20.714844zm-413.929687 109.386719c-12.714844 0-23.058594-10.34375-23.058594-23.058594s10.34375-23.058594 23.058594-23.058594 23.058594 10.34375 23.058594 23.058594-10.34375 23.058594-23.058594 23.058594zm108.867187 70.761719c-12.714843 0-23.058593-10.34375-23.058593-23.058594s10.34375-23.058594 23.058593-23.058594c12.714844 0 23.058594 10.34375 23.058594 23.058594s-10.34375 23.058594-23.058594 23.058594zm108.867188-117.9375c-12.714844 0-23.058594-10.34375-23.058594-23.058594s10.34375-23.058594 23.058594-23.058594 23.058594 10.34375 23.058594 23.058594-10.34375 23.058594-23.058594 23.058594zm217.734375-116.878907c12.714844 0 23.058594 10.34375 23.058594 23.058594s-10.34375 23.058594-23.058594 23.058594-23.058594-10.34375-23.058594-23.058594 10.34375-23.058594 23.058594-23.058594zm-108.867187 152.257813c-12.714844 0-23.058594-10.339844-23.058594-23.054688s10.34375-23.058594 23.058594-23.058594c12.714843 0 23.058593 10.34375 23.058593 23.058594s-10.34375 23.054688-23.058593 23.054688zm0 0" />
+                        </svg>
+                </div>
+                <h5 class="text-center">
+                    Data Visualization
+                </h5>
+                <p class="text-center">At the end of the process, you have features avaiable for a better visualization
+                    of the data, abstracting
+                    its schematic information into graphs and other visual forms.</p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <h3 class="text-center">Our Services</h3>
+
+        <p class="text-center">We split our service in 6 micro-components </p>
+
+        <br>
+        <br>
+
+        <div class="services">
+            <div class="disabled" id='caipirinha'>
+                <img src="caipirinha.png" />
+                <h6 class="text-center">Caipirinha</h6>
+            </div>
+            <div class="disabled" id='juicer'>
+                <img src="juicer.png" />
+                <h6 class="text-center">Juicer</h6>
+            </div>
+            <div id='limonero'>
+                <img src="limonero.png" />
+                <h6 class="text-center">Limonero</h6>
+            </div>
+            <div class="disabled" id='stand'>
+                <img src="stand.png" />
+                <h6 class="text-center">Stand</h6>
+            </div>
+            <div class="disabled" id='tahiti'>
+                <img src="tahiti.png" />
+                <h6 class="text-center">Tahiti</h6>
+            </div>
+            <div class="disabled" id='thorn'>
+                <img src="thorn.png" />
+                <h6 class="text-center">Thorn</h6>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <p id="service-description">Thorn is responsible for security, privacy and access control (AAA) in Lemonade. Some of its tasks are
+            challenging, such as determining who will be able to access the results from applying an operation to a
+            database that contains sensitive attributes.Further, when an operation has multiple inputs, each with a
+            different permission level, it must decide what should be the access policy for the resulting output. The
+            current version implements simple control metrics, but its modular design allows more sophisticated control
+            policies to be easily inserted.</p>
+
+
+        <br>
+        <br>
+
+        <h3 class="text-center">Meet our team</h3>
+
+        <br>
+
+        <div class="row">
+            <div class="col-sm">
+                <ul class="text-center">
+                    <li><b>PRINCIPAL INVESTIGATORS</b></li>
+                    <li>Adriano Cesar Machado Pereira</li>
+                    <li>Adriano Alonso Veloso</li>
+                    <li>Clodoveu Alves Davis Jr.</li>
+                    <li>Dorgival Guedes Neto</li>
+                    <li>Gisele Lobo Pappa</li>
+                    <li>Humberto Torres Marques Neto</li>
+                    <li>Leandro Balby Marinho</li>
+                    <li>Loic Cerf</li>
+                    <li>Marco Vieira</li>
+                    <li>Nazareno Andrade</li>
+                    <li>Nuno Antunes</li>
+                    <li>Raquel Cardoso Melo Minardi</li>
+                    <li>Regina Moraes</li>
+                    <li>Renato Antonio Celso Ferreira</li>
+                    <li>Wagner Meira Jr.</li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <ul class="text-center">
+                    <li><b>RESEARCHERS AND DEVELOPERS</b></li>
+                    <li>Fernando Carvalho</li>
+                    <li>Geraldo Franciscani</li>
+                    <li>Gustavo Avelar</li>
+                    <li>Israel Guerra de Moura</li>
+                    <li>João Víctor Bárbara</li>
+                    <li>Lucas Ponce</li>
+                    <li>Matheus Gonçalves</li>
+                    <li>Michel Boaventura</li>
+                    <li>Pedro Nascimento</li>
+                    <li>Saulo Antunes Silva</li>
+                    <li>Tania Basso</li>
+                    <li>Vinícius Dias</li>
+                    <li>Walter dos Santos Filho</li>
+                    <li>Yuri Carvalho Pains</li>
+                    <li>Zilton Júnior</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <h3 class="text-center">Our supporters</h3>
+
+        <br>
+
+        <div class="row supporters">
+            <div class="col-xs-1 col-md-4"><a href="http://www.eubra-bigsea.eu/"><img
+                        src="bigsea.png"></a></div>
+            <div class="col-xs-1 col-md-4"><a href="http://www.inweb.org.br/"><img
+                        src="inweb.png"></a></div>
+            <div class="col-xs-1 col-md-4"><a href="http://www.citc.rnp.br/"><img
+                        src="ctic.png"></a></div>
+            <div class="col-xs-1 col-md-4"><a href="http://www.rnp.br/"><img
+                        src="rnp.png"></a></div>
+            <div class="col-xs-1 col-md-4"><a href="http://www.ceweb.br/"><img
+                        src="ceweb.png"></a></div>
+            <div class="col-xs-1 col-md-4"><a href="http://www.nic.br/"><img
+                        src="nic.png"></a></div>
+            <div class="col-xs-1 col-md-4"><a href="http://www.cnpq.br/"><img
+                        src="cnpq.png"></a></div>
+            <div class="col-xs-1 col-md-4"><a href="http://www.capes.br/"><img
+                        src="capes.png"></a></div>
+            <div class="col-xs-1 col-md-4"><a href="http://www.fapemig.br/"><img
+                        src="fapemig.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <script>
+
+        var serviceDescriptions = {
+            caipirinha: 'Caipirinha provides visualizations through different visual metaphors. Those include static data visualizations in well-defined formats, such as displaying samples from database records, time series graphs and histograms, and exploratory  views where users can parametrize the display according to their interests , such as zooming in on a particular region of a complex graph.',
+            juicer: 'Juicer is the module that actually runs the data flows and supports the monitoring of their execution. Upon receiving a data flow, it generates the equivalent Spark source code, acting as a transpiler (source-to-source compiler), where each operation becomes a method. The Spark code is then instantiated in the cloud execution environment, observing the user-defined QoS parameters to make sure operations execute with sufficient resources to meet user demands (e.g., the user may indicate the number of compute nodes required). During execution, Juicer is also responsible for logging any new datasets produced as output, recording any runtime events, and reporting status changes.',
+            limonero: 'Limonero stores meta-data about data sources and provides them as service.For each data source, it has information about its location access permissions, storage details (such as name, data type, size, precision, data format) and data characteristics such as distribution, missing values, mean and maximum values.',
+            stand: 'Stand coordinates the communication between Citron and Juicer, ensuring independence between the two components. Execution starts when a user requests to run a dataflow through the Citron interface, which then invokes Stand,  which connects back to the first to provide feedback to the user.',
+            tahiti: 'Tahiti maintains metadata about individual operations and dataflows created by users and provides them as service. Operations are the smallest units in Lemonade, and they are divided in five categories: execution, privacy/security, monitoring, appearance, and quality of service requirements (QoS).',
+            thorn: 'Thorn is responsible for security, privacy and access control (AAA) in Lemonade. Some of its tasks are challenging, such as determining who will be able to access the results from applying an operation to a database that contains sensitive attributes. Further, when an operation has multiple inputs, each with a different permission level, it must decide what should be the access policy for the resulting output. The current version implements simple control metrics, but its modular design allows more sophisticated control policies to be easily inserted.',
+        }
+
+        window.onload = function(e){ 
+            document.querySelectorAll('.services div').forEach(el => {
+                el.addEventListener('click', function(a, b) {
+                    document.querySelectorAll('.services div').forEach(el => el.classList = ['disabled'] )
+                    this.classList = [];
+
+                    document.getElementById('service-description').innerHTML = serviceDescriptions[this.id]
+
+                }, false)
+            })
+        }
+
+
+
+    </script>
+</body>
+
+</html>
