@@ -1,3 +1,0 @@
-# Graph
-
-* [PageRank](Pagerank.md)
