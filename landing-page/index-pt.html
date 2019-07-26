@@ -292,7 +292,7 @@
         <h3 class="text-center"><strong>Nossos Serviços</strong></h3>
         <br>
 
-        <div class="services text-center">
+        <div class="services text-center" style="cursor: pointer">
             <div id='data-science-courses'>
                 <span class="fa fa-university fa-3x"></span>
                 <h6><strong>Cursos de Ciência dos Dados</strong></h6>
@@ -300,6 +300,10 @@
             <div class="disabled" id='consulting'>
                     <span class="fa fa-suitcase fa-3x"></span>
                 <h6><strong>Consultorias</strong></h6>
+            </div>
+	    <div class="disabled" id='residency'>
+                    <span class="fa fa-globe fa-3x"></span>
+                <h6><strong>Residência em Ciência dos Dados</strong></h6>
             </div>
         </div>
 
@@ -394,8 +398,9 @@
     <script>
 
         var serviceDescriptions = {
-            'data-science-courses': 'A plataforma LEMONADE pode apoiar escolas e professores in largo espectro de cursos de Ciência de Dados. Alguns deles são disponíveis livremente e podem ser cursados de acordo com o nível de proficiência e habilidades desejadas pelo interessado.',
+            'data-science-courses': 'A plataforma LEMONADE pode apoiar escolas e professores em um amplo espectro de cursos de Ciência dos Dados. Alguns deles são disponíveis livremente e podem ser cursados de acordo com o nível de proficiência e habilidades desejadas pelo interessado.',
             'consulting': 'Nossos serviços de consultoria  focam nos problemas e oportunidades mais importantes de nossos clientes: estratégia, marketing, organização, operações, tecnologia, transformação, digital, análise avançada, finanças corporativas, fusões & aquisições, e sustentabilidade em todas as indústrias e regiões geográficas. Trazemos uma expertise profunda e funcional, mas somos conhecidos por nossa perspectiva holística: nós captamos valor através das fronteiras e entre os silos de qualquer organização. Provamos um efeito multiplicador da otimização da soma das partes, não apenas das peças individuais.',
+	    'residency': 'O Programa de Residência em Ciência dos Dados surge da decisão de estruturar, formalizar e dar continuidade à formação de profissionais de alto nível técnico. Além disso, visa propiciar aos participantes uma formação abrangente e sólida, através de um processo de formação organizado e consistente. O Programa de Residência tem como objetivo capacitar profissionais para atuar na área de Ciência dos Dados em parceria com uma grande empresa do mercado ou órgãos governamentais, em atividades de melhorias de processos e solução de problemas importantes da empresa/órgão.'
         }
 
         window.onload = function (e) {
