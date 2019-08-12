@@ -23,7 +23,7 @@ Nome
 **Objetivo:** Objetivo: Concatenar duas bases de dados divididas em dois arquivos separados.\
 **Base de Dados:** [Íris][1].
 
-![Ler dados](/docs/img/spark/manipulacao_de_dados/linha_adicionar_nova/image1.png)
+![Ler dados](/lemonade/img/spark/manipulacao_de_dados/linha_adicionar_nova/image1.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][3].
 
@@ -33,7 +33,7 @@ Nome
 3. Adicione a operação **Adicionar nova(s) linhas(s)**
 
 4. Execute o fluzo e visualize o resultado.\
-	![Resultado](/docs/img/spark/manipulacao_de_dados/linha_adicionar_nova/image2.png)
+	![Resultado](/lemonade/img/spark/manipulacao_de_dados/linha_adicionar_nova/image2.png)
 
 -----
 

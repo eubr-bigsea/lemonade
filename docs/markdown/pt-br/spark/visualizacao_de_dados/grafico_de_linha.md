@@ -35,22 +35,22 @@ Nome da Tarefa
 
 **Base de Dados:** [Temperatura Global por País][3]
 	
-![Ler dados](/docs/img/spark/visualizacao_de_dados/grafico_de_linha/image5.png)
+![Ler dados](/lemonade/img/spark/visualizacao_de_dados/grafico_de_linha/image5.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].
 	
 2.  Adicione  a operação [Filtrar por função][5]. Na opção filtro, selecione o atributo *“Country”*, função *“Equals to =”* e preencha o Valor do atributo como *“Brazil”*. \
-	![Formulario classes](/docs/img/spark/visualizacao_de_dados/grafico_de_linha/image1.png)
+	![Formulario classes](/lemonade/img/spark/visualizacao_de_dados/grafico_de_linha/image1.png)
 	
 
 3. Na operação **Gráfico de linha(s)** selecione *“dt”* no **Atributo para eixo X** e *“AverageTemperature”* no **Atributos para eixo Y**. \
-	![Formulario agrupar](/docs/img/spark/visualizacao_de_dados/grafico_de_linha/image3.png)
+	![Formulario agrupar](/lemonade/img/spark/visualizacao_de_dados/grafico_de_linha/image3.png)
 
 4. Execute o fluxo e visualize o resultado. 
-	![Gráfico de linhas gerado](/docs/img/spark/visualizacao_de_dados/grafico_de_linha/image4.png)\
+	![Gráfico de linhas gerado](/lemonade/img/spark/visualizacao_de_dados/grafico_de_linha/image4.png)\
 		Gráfico de linhas gerado pelo fluxo acima.
 
-	![Janela de informação adicional](/docs/img/spark/visualizacao_de_dados/grafico_de_linha/image2.png)\
+	![Janela de informação adicional](/lemonade/img/spark/visualizacao_de_dados/grafico_de_linha/image2.png)\
 	Janela de informação adicional da visualização. 
 	
 ----- 

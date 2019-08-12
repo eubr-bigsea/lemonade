@@ -44,13 +44,13 @@ As funções calculadas no sumário estatístico são:
 7. Assimetria
 	O coeficiente de assimetria permite distinguir as distribuições assimétricas. \
 	Um valor negativo indica que a cauda do lado esquerdo da função densidade de probabilidade é maior que a do lado direito. Um valor positivo para a assimetria indica que a cauda do lado direito é maior que a do lado esquerdo. Um valor nulo indica que os valores são distribuídos de maneira relativamente igual em ambos os lados da média, mas não implica necessariamente, uma distribuição simétrica.
-	![Tipos de Simetria](/docs/img/spark/visualizacao_de_dados/sumario_estatistico/image2.png)
+	![Tipos de Simetria](/lemonade/img/spark/visualizacao_de_dados/sumario_estatistico/image2.png)
 
 8. Curtose:\
 	Curtose é uma medida de dispersão que caracteriza o "achatamento" da curva da função de distribuição. Quanto menor a curtose, mais achatada é a curva. Se a curtose for igual a 0, então a distribuição é normal e são chamadas mesocúrticas. Curvas com curtose maior do que 0 são denominadas leptocúrticas e possuem a curva da função de distribuição mais afunilada. Neste caso dizemos que essa distribuição possui caudas pesadas. Curvas com curtose menor do que 0 são denominadas platicúrticas e são mais achatadas do que uma distribuição normal.
-	![Curtose](/docs/img/spark/visualizacao_de_dados/sumario_estatistico/image4.png)\
+	![Curtose](/lemonade/img/spark/visualizacao_de_dados/sumario_estatistico/image4.png)\
 	Fonte: <https://www.biologyforlife.com/standard-deviation.html> \
-	![Tipos de Curtose](/docs/img/spark/visualizacao_de_dados/sumario_estatistico/image3.png)\
+	![Tipos de Curtose](/lemonade/img/spark/visualizacao_de_dados/sumario_estatistico/image3.png)\
 	Fonte: <http://www.portalaction.com.br/estatistica-basica/26-curtose>
 
 9. Correlação de Pearson
@@ -67,17 +67,17 @@ As funções calculadas no sumário estatístico são:
 
 **Base de Dados:** [Iris][3]
 	
-![Ler dados](/docs/img/spark/visualizacao_de_dados/sumario_estatistico/image1.png)
+![Ler dados](/lemonade/img/spark/visualizacao_de_dados/sumario_estatistico/image1.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4]. 
 
 2. Adicione a operação **Sumário Estatístico** e não preencha nenhum atributo. Preencha o título com *"Sumário"*
 	
-	![Sumario Estatístico](/docs/img/spark/visualizacao_de_dados/sumario_estatistico/image6.png)
+	![Sumario Estatístico](/lemonade/img/spark/visualizacao_de_dados/sumario_estatistico/image6.png)
 
 3. Observe o resultado final após cada execução do fluxo;
 	
-	![Resultados](/docs/img/spark/visualizacao_de_dados/sumario_estatistico/image5.png)
+	![Resultados](/lemonade/img/spark/visualizacao_de_dados/sumario_estatistico/image5.png)
 -----
 
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br

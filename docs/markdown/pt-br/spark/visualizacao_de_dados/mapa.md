@@ -35,18 +35,18 @@ Nome da Tarefa
 
 **Base de Dados:** [Aeroportos do Brasil][3]
 	
-![Ler dados](/docs/img/spark/visualizacao_de_dados/mapa/image1.png)
+![Ler dados](/lemonade/img/spark/visualizacao_de_dados/mapa/image1.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].
 
 2.  Na operação **Mapa**, selecione o valor *“pontos”* para o parâmetro **Tipo de Mapa**. Preencha o campo Título e selecione os valores *“latitude_deg”* para o campo **Atributo com Latitude** e *“longitude_deg”* para o campo **Atributo com Longitude**. \
-	![Formulario](/docs/img/spark/visualizacao_de_dados/mapa/image3.png)
+	![Formulario](/lemonade/img/spark/visualizacao_de_dados/mapa/image3.png)
 
 3. Execute o fluxo e visualize o resultado. \
-	![Execução](/docs/img/spark/visualizacao_de_dados/mapa/image2.png)
+	![Execução](/lemonade/img/spark/visualizacao_de_dados/mapa/image2.png)
 
 4. Na operação **Mapa**, altere o valor do parâmetro **Tipo de Mapa** para *“heatmap”* e visualize o resultado. \
-	![Execução](/docs/img/spark/visualizacao_de_dados/mapa/image4.png)
+	![Execução](/lemonade/img/spark/visualizacao_de_dados/mapa/image4.png)
 
 -----
 

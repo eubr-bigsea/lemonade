@@ -31,19 +31,19 @@ Nome da Tarefa
 
 **Base de Dados:** [Íris][3]
 	
-![Ler dados](/docs/img/spark/visualizacao_de_dados/grafico_de_pizza/image1.png)
+![Ler dados](/lemonade/img/spark/visualizacao_de_dados/grafico_de_pizza/image1.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].
 	
 2.  Adicione a operação [Agrupar linhas por função][4] e selecione *“class”* no campo **Selecione o(s) atributos para agrupamento**. Na função de agrupamento, selecione o **Atributo** *"class”*, **Função** *“count”* e preencha *“count_class”* em **Nome Novo**. \
-	![Formulario classes](/docs/img/spark/visualizacao_de_dados/grafico_de_pizza/image3.png)
+	![Formulario classes](/lemonade/img/spark/visualizacao_de_dados/grafico_de_pizza/image3.png)
 	
 
 3. Na operação **Gŕafico de pizza** preencha “*Classes”* no campo **Título**, selecione *“count_class”* **Atributos com valor** e *“class”* em **Atributo usado como rótulo**. \
-	![Formulario agrupar](/docs/img/spark/visualizacao_de_dados/grafico_de_pizza/image2.png)
+	![Formulario agrupar](/lemonade/img/spark/visualizacao_de_dados/grafico_de_pizza/image2.png)
 
 4. Execute o fluxo e visualize o resultado. \
-	![Execução](/docs/img/spark/visualizacao_de_dados/grafico_de_pizza/image4.png) \
+	![Execução](/lemonade/img/spark/visualizacao_de_dados/grafico_de_pizza/image4.png) \
 	Observe que todas as classes possuem 50 instâncias.
 
 -----

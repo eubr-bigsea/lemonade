@@ -44,35 +44,35 @@ Podem ser feitas três ações em caso de dados inválidos:
 **Objetivo:** Construir um fluxo de dados para ler uma base de dados.\
 **Base de Dados:** [Titanic][4]
 	
-![Ler dados](/docs/img/spark/entrada_e_saida/ler_dados/image5.png)
+![Ler dados](/lemonade/img/spark/entrada_e_saida/ler_dados/image5.png)
 
 ### Exemplo 1:
 A partir de metadados.
 
 1. Adicione uma base de dados por meio da operação **Ler dados**. Selecione *“A partir dos metadados”* no campo **Inferir esquema da fonte de dados** e *“Converter dados inválidos para NULO”* no campo **O que fazer em caso de dados inválidos**.\
-	![Tabela - Ler dados](/docs/img/spark/entrada_e_saida/ler_dados/image7.png)
+	![Tabela - Ler dados](/lemonade/img/spark/entrada_e_saida/ler_dados/image7.png)
 
 2. Execute o fluxo e visualize o resultado.\
-	![Resultado - Ler dados](/docs/img/spark/entrada_e_saida/ler_dados/image1.png)\
+	![Resultado - Ler dados](/lemonade/img/spark/entrada_e_saida/ler_dados/image1.png)\
 	Como pode ser observado, os tipos dos atributos e os metadados da base estão configurados (na coluna metadados), o que nos certifica da inferência a partir dos metadados.
 
 ### Exemplo 2:
 
 1. Adicione uma base de dados por meio da operação **Ler dados**. Selecione *“A partir dos dados”* no campo **Inferir esquema da fonte de dados**.\
-	![Tabela - Ler a partir de dados](/docs/img/spark/entrada_e_saida/ler_dados/image4.png)
+	![Tabela - Ler a partir de dados](/lemonade/img/spark/entrada_e_saida/ler_dados/image4.png)
 
 2. Execute o fluxo e visualize o resultado.\
-	![Resultado - Ler a partir de dados](/docs/img/spark/entrada_e_saida/ler_dados/image3.png)\
+	![Resultado - Ler a partir de dados](/lemonade/img/spark/entrada_e_saida/ler_dados/image3.png)\
 	Podemos verificar que os atributos estão inferidos, nomeados e com seus tipos definidos, porém os metadados não foram utilizados. Isso demonstra a inferência a partir dos dados.
 
 ### Exemplo 3:
 Não inferir
 
 1. Adicione uma base de dados por meio da operação Ler dados. Selecione “Não inferir” no campo Inferir esquema da fonte de dados.
-	![Tabela - Não inferir](/docs/img/spark/entrada_e_saida/ler_dados/image2.png)
+	![Tabela - Não inferir](/lemonade/img/spark/entrada_e_saida/ler_dados/image2.png)
 
 2. Execute o fluxo e visualize o resultado.\
-	![Resultado - Não inferir](/docs/img/spark/entrada_e_saida/ler_dados/image6.png)\
+	![Resultado - Não inferir](/lemonade/img/spark/entrada_e_saida/ler_dados/image6.png)\
 	Podemos observar que os atributos não foram inferidos, e permaneceram com o tipo string.
 
 -----

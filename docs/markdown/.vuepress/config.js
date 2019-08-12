@@ -1,12 +1,12 @@
 const path = require("path");
 
 module.exports = {
-	base: '/docs/',
+	base: '/lemonade/',
 
 	//html header
 	head: [
-		['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
-		['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css' }],
+		// ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
+		// ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css' }],
 		['link', { rel: 'icon', type: 'image/png', sizes:'96x96', href: '/img/logo.png' }]
 	],
 	//support languages

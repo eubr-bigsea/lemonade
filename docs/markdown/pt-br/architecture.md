@@ -2,7 +2,7 @@
 
 ## Micro-services organization
 
-![Micro-services architecture](/docs/img/image2.jpg "Micro-services")
+![Micro-services architecture](/lemonade/img/image2.jpg "Micro-services")
 
 ### Citron
 
@@ -63,7 +63,7 @@ Thorn is not used when components are communicating:
 Authentication is based on static tokens defined in configuration files.
 
 Thorn is the module responsible for provide security and privacy constraints in Lemonade. Current version only works with basic authentication and authorization but working groups from WP5 and WP6 are working together in order to create a common solution. The interaction between all components, except Caipirinha, is shown in Figure L3 below.
-![Micro-services interaction](/docs/img/image3.jpg "Micro-services interaction")
+![Micro-services interaction](/lemonade/img/image3.jpg "Micro-services interaction")
 
 
 ### Stand
@@ -78,7 +78,7 @@ Citron allows users to start the workflow execution and Juicer is responsible fo
 Stand a facade between user interface (Citron) and backend execution (Juicer). User interface should be responsiveness, while the backend is batch processing the workflow. Stand decouples the other two components by using async communication, implemented as a producer-consumer queue in Redis. Interactions between components are shown in Figure L2. When a user triggers the execution of a workflow, Citron invokes Stand in order to run the job (1a) and also connects to a websocket which provides feedback to the user interface (1b). Stand receives the request and pushes it into a queue (2a) and starts consuming status queue (2b) that feeds the websocket. Juicer consumes the execution queue (3a) and for again, reports execution status by pushing it to a publisher-subscriber topic in Redis (volatile) and updating rows in MySQL (persistent) (5). Citron then receives notifications about tasks execution status (6) and updates the interface. 
 
 
-![Micro-services interaction](/docs/img/image4.jpg "Micro-services interaction")
+![Micro-services interaction](/lemonade/img/image4.jpg "Micro-services interaction")
 
 ### Caipirinha
 

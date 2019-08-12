@@ -35,16 +35,16 @@ Nome da Tarefa
 
 **Base de Dados:** [Íris][3]
 	
-![Ler dados](/docs/img/spark/visualizacao_de_dados/histograma/image1.png)
+![Ler dados](/lemonade/img/spark/visualizacao_de_dados/histograma/image1.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].
-	![Formulario Ler Dados](/docs/img/spark/visualizacao_de_dados/histograma/image2.png)
+	![Formulario Ler Dados](/lemonade/img/spark/visualizacao_de_dados/histograma/image2.png)
 	
 2.  Adicione a operação **Histograma** e preencha o campo **Título**. Selecione *“petallength”*  no campo **Atributos de entrada** e preencha o valor *“'5*” no campo **Quantidade de intervalos**. \
-	![Formulario](/docs/img/spark/visualizacao_de_dados/histograma/image3.png)
+	![Formulario](/lemonade/img/spark/visualizacao_de_dados/histograma/image3.png)
 
 3. Execute o fluxo e visualize o resultado. \
-	![Execução](/docs/img/spark/visualizacao_de_dados/histograma/image4.png)
+	![Execução](/lemonade/img/spark/visualizacao_de_dados/histograma/image4.png)
 
 -----
 
