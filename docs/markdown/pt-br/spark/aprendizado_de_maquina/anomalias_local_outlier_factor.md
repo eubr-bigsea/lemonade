@@ -28,19 +28,19 @@ Nome da Tarefa
 **Objetivo:** detectar anomalias na base de dados Iris\
 **Base de Dados:** [Íris][3]
 
-![Fluxo de trabalho - ler dados](/lemonade/img/spark/aprendizado_de_maquina/anomalias_local_outlier_factor/image5.png)
+![Fluxo de trabalho - ler dados](/img/spark/aprendizado_de_maquina/anomalias_local_outlier_factor/image5.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].\
-![Formulário ler dados](/lemonade/img/spark/aprendizado_de_maquina/anomalias_local_outlier_factor/image1.png)
+![Formulário ler dados](/img/spark/aprendizado_de_maquina/anomalias_local_outlier_factor/image1.png)
 
 2. Adicione a operação **Local Outlier Factor (LOF)**, selecione *“Sepallength”*, *“Sepalwidth”*, *“Petallength”* e *“Petalwidth”*, como **Atributo(s) usados como feature(s)**. Preencha *“outlier”* no campo **Nome para o novo atributo** e *5* para o campo **Número mínimo de pontos**.\
-![Formulário Local Outlier Factor](/lemonade/img/spark/aprendizado_de_maquina/anomalias_local_outlier_factor/image3.png)
+![Formulário Local Outlier Factor](/img/spark/aprendizado_de_maquina/anomalias_local_outlier_factor/image3.png)
 
 3. Adicione a operação [Ordenar][5]. Abra o editor do campo **Atributo(s)**, selecione *“outlier”* como **Atributos** e “Decreasing” como **Função** para que as instâncias mais anômalas (maior grau de anomalia) sejam apresentadas primeiro.\
-![Operação Ordenar](/lemonade/img/spark/aprendizado_de_maquina/anomalias_local_outlier_factor/image2.png)
+![Operação Ordenar](/img/spark/aprendizado_de_maquina/anomalias_local_outlier_factor/image2.png)
 
 4.  Execute o fluxo e visualize o resultado. O resultado possui o atributo “outlier”, que representa o grau de anomalia para cada instância.
-![Resultado](/lemonade/img/spark/aprendizado_de_maquina/anomalias_local_outlier_factor/image4.png)\
+![Resultado](/img/spark/aprendizado_de_maquina/anomalias_local_outlier_factor/image4.png)\
 Os resultados indicam que a primeira instância retornada diverge amplamente do comportamento dos seus vizinhos. Ou seja, considerando uma vizinhança de 5 instâncias (parâmetro utilizado), a primeira setosa retornada com valor \~5.46 de outlier possui uma densidade diferente dos seus vizinhos, onde seus vizinhos são calculados através de uma distância Euclidiana. Por isso, esta instância possui o maior grau de anomalia e, o mesmo procedimento pode ser interpretado para as instâncias seguintes do resultado. Como os resultados são apresentados para todas as instâncias, normalmente as primeiras são de maior interesse, pois, serão aquelas com o maior grau de anomalia.
 
 ---

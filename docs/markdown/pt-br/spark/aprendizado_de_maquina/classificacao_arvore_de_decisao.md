@@ -45,7 +45,7 @@ Tipos de impureza:
 **Objetivo:** Utilizar o modelo de Árvore de Decisão para classificar a espécie da planta Íris.\
 **Base de Dados:** [Íris][3]
 
-![Fluxo de trabalho- Ler dados](/lemonade/img/spark/aprendizado_de_maquina/classificacao_arvore_de_decisao/image5.png)
+![Fluxo de trabalho- Ler dados](/img/spark/aprendizado_de_maquina/classificacao_arvore_de_decisao/image5.png)
 
 1. Leia a base de dados Irís por meio da operação [Ler dados][4].
 
@@ -54,16 +54,16 @@ Tipos de impureza:
 3. Utilize a operação [Divisão percentual][6] para dividir a base de dados em treino e teste. No parâmetro Percentual, calibre-o utilizando 50% dos dados para treinar (1.ª parte) e 50% para testar (2.ª parte).
 
 4. Na operação Árvore de decisão, selecione *“petal_length”*, *“petal_width”*, *“sepal_length”* e *“sepal_width”* no campo **Atributo(s) previsor(es)**. Selecione *“class_index”* no campo **Atributo com o rótulo** e preencha *“resultado”* no campo **Atributo com a predição (novo)**. Deixe os demais parâmetros inalterados.\
-![Formulário Arvore de Decisão - parte 1](/lemonade/img/spark/aprendizado_de_maquina/classificacao_arvore_de_decisao/image1.png)
-![Formulário Arvore de Decisão - parte 2](/lemonade/img/spark/aprendizado_de_maquina/classificacao_arvore_de_decisao/image2.png)
+![Formulário Arvore de Decisão - parte 1](/img/spark/aprendizado_de_maquina/classificacao_arvore_de_decisao/image1.png)
+![Formulário Arvore de Decisão - parte 2](/img/spark/aprendizado_de_maquina/classificacao_arvore_de_decisao/image2.png)
 
 5. Na operação [Aplicar Modelo][7], selecione *“petal_length”*, *“petal_width”*, *“sepal_length”* e *“sepal_width”* no campo **Atributo(s) previsor(es)** e preencha *“resultado”* no campo **Nome do novo atributo (herdado do modelo)**. 
 
 6. Na operação [Avaliar Modelo][8], selecione *“resultado”* no campo **Atributo usado para predição**. Selecione *“class_index”* no campo **Atributo usado como label**. E selecione a métrica *“F1”* como **Métrica para avaliação**. 
 
 7. Execute o fluxo e visualize o resultado, i.e., a matriz de confusão gerada para as predições do modelo de árvore de decisão e, consequentemente, a tabela representando as métricas de classificação (derivadas da matriz de confusão).\
-![Resultado - Gráfico](/lemonade/img/spark/aprendizado_de_maquina/classificacao_arvore_de_decisao/image4.png)\
-![Resultado - Tabela](/lemonade/img/spark/aprendizado_de_maquina/classificacao_arvore_de_decisao/image3.png)
+![Resultado - Gráfico](/img/spark/aprendizado_de_maquina/classificacao_arvore_de_decisao/image4.png)\
+![Resultado - Tabela](/img/spark/aprendizado_de_maquina/classificacao_arvore_de_decisao/image3.png)
 
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br

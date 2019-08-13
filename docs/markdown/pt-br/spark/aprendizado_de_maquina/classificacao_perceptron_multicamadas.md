@@ -39,7 +39,7 @@ Esse classificador utiliza a função (de ativação) logística nos neurônios 
 **Objetivo:** Utilizar o modelo do Perceptron Multicamadas para classificar a espécie da planta Íris.\
 **Base de Dados:** [Íris][3]
 
-![FLuxo de trabalho - Ler dados](/lemonade/img/spark/aprendizado_de_maquina/classificacao_perceptron_multicamadas/image4.png)
+![FLuxo de trabalho - Ler dados](/img/spark/aprendizado_de_maquina/classificacao_perceptron_multicamadas/image4.png)
 
 1. Leia a base de dados Irís por meio da operação [Ler dados][4].
 
@@ -48,16 +48,16 @@ Esse classificador utiliza a função (de ativação) logística nos neurônios 
 3. Utilize a operação [Divisão percentual][6] para dividir a base de dados em treino e teste. No parâmetro **Pesos**, calibre-o utilizando 50% dos dados para treinar e 50% para testar.
 
 4. Na operação **Perceptron Multicamadas**, selecione *“petal_length”*, *“petal_width”*, *“sepal_length”* e *“sepal_width”* no campo **Atributo(s) previsor(es)**. Selecione *“class_index”* no campo **Atributo com o rótulo** e preencha ‘resultado’ no campo **Atributo com a predição (novo)**. Além disso, indique que será utilizada uma camada de entrada, uma escondida e uma de saída, preenchendo **Camadas** com *“4,20,4”*. Isso indicará que irão existir quatro neurônios na primeira camada (iguais aos números de atributos da base Íris), 20 na camada escondida, e quatro na de saída (também iguais aos números de atributos da base Íris). Deixe os demais parâmetros inalterados.\
-![Formulário Perceptron Multicamadas - parte 1](/lemonade/img/spark/aprendizado_de_maquina/classificacao_perceptron_multicamadas/image3.png)
-![Formulário Perceptron Multicamadas - parte 2](/lemonade/img/spark/aprendizado_de_maquina/classificacao_perceptron_multicamadas/image2.png)
+![Formulário Perceptron Multicamadas - parte 1](/img/spark/aprendizado_de_maquina/classificacao_perceptron_multicamadas/image3.png)
+![Formulário Perceptron Multicamadas - parte 2](/img/spark/aprendizado_de_maquina/classificacao_perceptron_multicamadas/image2.png)
 
 5. Na operação [Aplicar Modelo][7], selecione *“petal_length”*, *“petal_width”*, *“sepal_length”* e *“sepal_width”* no campo **Atributo(s) previsor(es)** e preencha *“resultado”* no campo **Nome do novo atributo**. 
 
 6. Na operação [Avaliar Modelo][8], selecione *“resultado”* no campo **Atributo usado para predição**. Selecione *“class_index”* no campo **Atributo usado como label** e a métrica *“F1”* como **Métrica para avaliação**.
 
 7. Execute o fluxo e visualize o resultado, i.e., a matriz de confusão gerada para as predições do modelo de árvore de decisão e, consequentemente, a tabela representando as métricas de classificação (derivadas da matriz de confusão).\
-![Gráfico - resultado](/lemonade/img/spark/aprendizado_de_maquina/classificacao_perceptron_multicamadas/image1.png)
-![Tabela - resultado](/lemonade/img/spark/aprendizado_de_maquina/classificacao_perceptron_multicamadas/image5.png)
+![Gráfico - resultado](/img/spark/aprendizado_de_maquina/classificacao_perceptron_multicamadas/image1.png)
+![Tabela - resultado](/img/spark/aprendizado_de_maquina/classificacao_perceptron_multicamadas/image5.png)
 
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br

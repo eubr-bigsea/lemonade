@@ -27,25 +27,25 @@ Nome da Tarefa
 
 **Base de Dados:** [Iris][3]
 	
-![Ler dados](/lemonade/img/spark/visualizacao_de_dados/tabela/image1.png)
+![Ler dados](/img/spark/visualizacao_de_dados/tabela/image1.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4]. 
 
 2. Na operação **Tabela**, adicione um título. Deixe o campo **Atributos** vazio ou selecione todos os existentes.
 	
-	![Tabela](/lemonade/img/spark/visualizacao_de_dados/tabela/image3.png)
+	![Tabela](/img/spark/visualizacao_de_dados/tabela/image3.png)
 
 3. Execute o fluxo e visualize o resultado
 	
-	![Resultados](/lemonade/img/spark/visualizacao_de_dados/tabela/image4.png)
+	![Resultados](/img/spark/visualizacao_de_dados/tabela/image4.png)
 
 4. Selecione apenas os valores *“sepallength”* e *“sepalwidth”* para o parâmetro **Atributos**.
 	
-	![Valores de parâmetros](/lemonade/img/spark/visualizacao_de_dados/tabela/image5.png)
+	![Valores de parâmetros](/img/spark/visualizacao_de_dados/tabela/image5.png)
 
 5. Execute o fluxo novamente e visualize o resultado
 	
-	![Novos resultados](/lemonade/img/spark/visualizacao_de_dados/tabela/image2.png)
+	![Novos resultados](/img/spark/visualizacao_de_dados/tabela/image2.png)
 
 -----
 

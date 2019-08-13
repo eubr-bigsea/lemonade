@@ -61,23 +61,23 @@ O objetivo e a base de dados abaixo serão utilizados nos três exemplos a segui
 
 **Base de Dados:** [Titanic][1]
 	
-![Ler dados](/lemonade/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image2.png)
+![Ler dados](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image2.png)
 
 ### Exemplo 1
 **Substituir pela média:**
 
 1. Adicione uma base de dados por meio da operação [Ler dados][2]. \
-	![Tabela ler dados](/lemonade/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image1.png)
+	![Tabela ler dados](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image1.png)
 
 2. Adicione a operação **Tratar dados Ausentes** adicione *“Age”* no campo atributos e selecione o tipo **substituir pela média** no campo **Tipo de Limpeza**. \
-	![Substituir pela média](/lemonade/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image3.png)
+	![Substituir pela média](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image3.png)
 
 3. Execute e observe o resultado.\
 	Observe que é possível verificar qual valor foi utilizado para substituir os ausentes. Para o resultado da operação Ler Dados, observe que os passageiros de *PassengerId* 6, 18 e 20 não possuem valor no campo idade, ou seja, é null.\
-	![Resultado do exemplo 1 - Ler dados](/lemonade/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image5.png)
+	![Resultado do exemplo 1 - Ler dados](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image5.png)
 
 	Agora observe o resultado da operação Tratar Dados Ausentes. Os passageiros de *PassengerId* 6, 18 e 20 receberam a média das idades, ou seja, 18.90.\
-	![Resultado do exemplo 1 - Substituir pela média](/lemonade/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image4.png)
+	![Resultado do exemplo 1 - Substituir pela média](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image4.png)
 
 ### Exemplo 2
 **Substituir por um valor:**
@@ -85,31 +85,31 @@ O objetivo e a base de dados abaixo serão utilizados nos três exemplos a segui
 1. Adicione uma base de dados por meio da operação [Ler dados][2], assim como o [Exemplo 1]. 
 
 2. Adicione a operação **Tratar dados Ausentes** adicione *“Age”* no campo atributos e selecione o tipo **substituir por valor** no campo **Tipo de Limpeza**, preencha *“99”* no campo **valor**.\
-	![Substituir por valor](/lemonade/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image11.png)
+	![Substituir por valor](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image11.png)
 
 3. Execute e observe o resultado.\
 	Verifique o valor que foi utilizado para substituir os ausentes.\
-	![Resultado do exemplo 2 - Substituir por valor](/lemonade/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image14.png)\
+	![Resultado do exemplo 2 - Substituir por valor](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image14.png)\
 	A idade dos passageiros de *PassengerId* 6, 18 e 20 foi substituída por *99*.
 
 ### Exemplo 3
 **Remover uma linha inteira:**\
 Calcule a razão e utilize recursos da ferramenta para determinar se as linhas da base ou a coluna devem ser completamente removidas. Para calcular a razão entre os número de itens ausentes e válidos para a coluna Age, será utilizado o seguinte fluxo:
-![Fluxo - Calcular a razão](/lemonade/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image9.png)
+![Fluxo - Calcular a razão](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image9.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][2], assim como o [Exemplo 1].
 
 2. Utilize a operação **Transformar valores por função**. Ela é responsável por informar se um determinado item é ausente ou válido. \
-	![Transformar valores por função](/lemonade/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image12.png)
+	![Transformar valores por função](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image12.png)
 
 3. Execute e observe na visualização da tabela que uma nova coluna *booleana* de nome *is_null* aparece determinando o valor *true* para valores ausentes e *false* para todo o contrário. 
-	![Resultado - Transformar valores por função](/lemonade/img/spark/manipulacao_de_dados/tratar_dados_ausentes/10.png)
+	![Resultado - Transformar valores por função](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/10.png)
 
 4. Agrupe e conte o número de itens da coluna *is_null*. Para isto adicione a operação [Agrupar linhas por função][3] com os seguintes parâmetros:
-	![Agrupar por Linha](/lemonade/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image6.png)
+	![Agrupar por Linha](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image6.png)
 
 5. Execute e observe o resultado da tabela:
-	![Resultado - Agrupar por Linha](/lemonade/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image13.png)\
+	![Resultado - Agrupar por Linha](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image13.png)\
 	De acordo com a tabela:	
 	- Número de itens ausentes = 177
 	- Número Total de itens = 1309
@@ -129,12 +129,12 @@ Calcule a razão e utilize recursos da ferramenta para determinar se as linhas d
 
 	Neste estudo encontra-se que a coluna Age tem 10% de dados ausentes, logo para que a operação seja executada, este valor precisa estar contemplado no intervalo mínimo e máximo. \
 	Observe os seguintes parâmetros:\
-	![Tratar dados ausentes - Age](/lemonade/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image11.png)\
+	![Tratar dados ausentes - Age](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image11.png)\
 	O intervalo define como razão mínima para execução o valor 0% ou (0.0) e para razão máxima 20% (ou 0.2). Como o valor que foi encontrado está dentro deste intervalo, a operação de remoção completa da linha com valores nulos será executada. 
 
 9. Execute e observe os resultados.\
 	Observe que os passageiros com *PassengerId* 6, 18 e 20 foram removidas na preview do resultado.\
-	![Tratar dados ausentes - Age](/lemonade/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image8.png)
+	![Tratar dados ausentes - Age](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image8.png)
 
 -----
 

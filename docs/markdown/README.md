@@ -1,4 +1,4 @@
-# ![Logo](/lemonade/img/logo.png) LEMONADE
+# ![Logo](/img/logo.png) LEMONADE
 **L**ive **E**xploration and **M**ining **O**f **N**on-trivial **A**mount of **D**ata from **E**verywhere
 
 ## Overview
@@ -88,22 +88,22 @@ New platforms can be developed. See _[developing for new platforms]()_ in the Pr
 
 ## Supporters
 
-<div style="margin-top: 32px;width: 100%; text-align: center"><a style="" href="https://www.atmosphere-eubrazil.eu/" title="Atmosphere"><img src="/lemonade/img/atmosphere.png" alt="Atmosphere"></a></div>
+<div style="margin-top: 32px;width: 100%; text-align: center"><a style="" href="https://www.atmosphere-eubrazil.eu/" title="Atmosphere"><img src="/img/atmosphere.png" alt="Atmosphere"></a></div>
 
 <div style="width: 100%; text-align: center">
-	<a style="" href="https://www.atmosphere-eubrazil.eu/" title="EUBRA BIGSEA"><img style="margin-top: 32px;max-width: 200px;" src="/lemonade/img/bigsea.png" alt="EUBRA BIGSEA"></a>
-	<a style="margin: 0 64px;" href="https://www.atmosphere-eubrazil.eu/" title="Inweb"><img style="margin-top: 32px; max-width: 200px;" src="/lemonade/img/inweb.png" alt="Inweb"></a>
-	<a href="https://www.atmosphere-eubrazil.eu/" title="CTIC"><img style="margin-top: 32px; max-width: 200px;" src="/lemonade/img/ctic.png" alt="CTIC"></a>
+	<a style="" href="https://www.atmosphere-eubrazil.eu/" title="EUBRA BIGSEA"><img style="margin-top: 32px;max-width: 200px;" src="/img/bigsea.png" alt="EUBRA BIGSEA"></a>
+	<a style="margin: 0 64px;" href="https://www.atmosphere-eubrazil.eu/" title="Inweb"><img style="margin-top: 32px; max-width: 200px;" src="/img/inweb.png" alt="Inweb"></a>
+	<a href="https://www.atmosphere-eubrazil.eu/" title="CTIC"><img style="margin-top: 32px; max-width: 200px;" src="/img/ctic.png" alt="CTIC"></a>
 </div>
 
 <div style="width: 100%; text-align: center">
-	<a style="" href="https://www.atmosphere-eubrazil.eu/" title="RNP"><img style="margin-top: 32px;max-width: 200px;" src="/lemonade/img/rnp.png" alt="RNP"></a>
-	<a style="margin: 0 64px;" href="https://www.atmosphere-eubrazil.eu/" title="CEWEB"><img style="margin-top: 32px; max-width: 200px;" src="/lemonade/img/ceweb.png" alt="CEWEB"></a>
-	<a href="https://www.atmosphere-eubrazil.eu/" title="NICBR"><img style="margin-top: 32px; max-width: 200px;" src="/lemonade/img/nic.png" alt="NICBR"></a>
+	<a style="" href="https://www.atmosphere-eubrazil.eu/" title="RNP"><img style="margin-top: 32px;max-width: 200px;" src="/img/rnp.png" alt="RNP"></a>
+	<a style="margin: 0 64px;" href="https://www.atmosphere-eubrazil.eu/" title="CEWEB"><img style="margin-top: 32px; max-width: 200px;" src="/img/ceweb.png" alt="CEWEB"></a>
+	<a href="https://www.atmosphere-eubrazil.eu/" title="NICBR"><img style="margin-top: 32px; max-width: 200px;" src="/img/nic.png" alt="NICBR"></a>
 </div>
 
 <div style="width: 100%; text-align: center">
-	<a href="https://www.atmosphere-eubrazil.eu/" title="CNPq"><img style="margin-top: 32px;max-width: 200px;" src="/lemonade/img/cnpq.png" alt="CNPq"></a>
-	<a style="margin: 0 64px;" href="https://www.atmosphere-eubrazil.eu/" title="CAPES"><img style="margin-top: 32px; max-width: 200px;" src="/lemonade/img/capes.png" alt="CAPES"></a>
-	<a href="https://www.atmosphere-eubrazil.eu/" title="FAPEMIG"><img style="margin-top: 32px; max-width: 200px;" src="/lemonade/img/fapemig.png" alt="FAPEMIG"></a>
+	<a href="https://www.atmosphere-eubrazil.eu/" title="CNPq"><img style="margin-top: 32px;max-width: 200px;" src="/img/cnpq.png" alt="CNPq"></a>
+	<a style="margin: 0 64px;" href="https://www.atmosphere-eubrazil.eu/" title="CAPES"><img style="margin-top: 32px; max-width: 200px;" src="/img/capes.png" alt="CAPES"></a>
+	<a href="https://www.atmosphere-eubrazil.eu/" title="FAPEMIG"><img style="margin-top: 32px; max-width: 200px;" src="/img/fapemig.png" alt="FAPEMIG"></a>
 </div>

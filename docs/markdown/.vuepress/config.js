@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-	base: '/lemonade/',
+	base: '/',
 
 	//html header
 	head: [

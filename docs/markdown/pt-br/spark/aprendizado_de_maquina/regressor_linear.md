@@ -42,22 +42,22 @@ Nome da Tarefa
 **Objetivo:** Utilizar o modelo construído pela operação Regressão Linear para predizer a qualidade de um vinho.\
 **Base de Dados:** Qualidade da Variante Vermelha do Vinho Verde Português - [Wine Red Quality][3]
 
-![Fluxo - Ler dados](/lemonade/img/spark/aprendizado_de_maquina/regressor_linear/image3.png)
+![Fluxo - Ler dados](/img/spark/aprendizado_de_maquina/regressor_linear/image3.png)
 
 1. Leia a base de dados por meio da operação [Ler dados][4].
 
 2. Utilize a operação [Divisão percentual][5] para dividir a base de dados em treino e teste. No parâmetro **Percentual**, calibre-o utilizando 50% dos dados para treinar (1.ª parte) e 50% para testar (2.ª parte).
 
 3. Na Operação **Regressão Linear**, selecione *“alcohol”*, *“chlorides”*, *“citric_acid”*, *“density”*, *“fixed_acidity”*, *“free_sulfur_dioxide”*, *“pH”*, *“residual_sugar”*, *“sulphates”*, *“total_sulfur_dioxide”* e *“volatile_acidity”* no campo **Atributo(s) previsor(es)**. Selecione *“quality”* no campo  **Atributo com o rótulo** e preencha *“resultado”* no campo **Atributo com a predição (novo)**. Preencha 100 no campo **Iterações máximas**, 0.35 no campo **Regularização** e 0.8 no campo **Mix. para ElasticNet**. Deixe os demais parâmetros inalterados.\
-	![Tabela - Regressão linear 1](/lemonade/img/spark/aprendizado_de_maquina/regressor_linear/image4.png)
-	![Tabela - Regressão linear 2](/lemonade/img/spark/aprendizado_de_maquina/regressor_linear/image2.png)
+	![Tabela - Regressão linear 1](/img/spark/aprendizado_de_maquina/regressor_linear/image4.png)
+	![Tabela - Regressão linear 2](/img/spark/aprendizado_de_maquina/regressor_linear/image2.png)
 
 4. Na operação [Aplicar Modelo][6], selecione *“alcohol”*, *“chlorides”*, *“citric_acid”*, *“density”*, *“fixed_acidity”*, *“free_sulfur_dioxide”*, *“pH”*, *“residual_sugar”*, *“sulphates”*, *“total_sulfur_dioxide”* e *“volatile_acidity”* no campo **Atributo(s) previsor(es)** e preencha *“resultado”* no campo **Nome do novo atributo (herdado do modelo)**. 
 
 5. Na operação [Avaliar Modelo][7], selecione *“resultado”* no campo **Atributo usado para predição**. Selecione *“quality”* no campo **Atributo usado como label** e a métrica *“Raiz do erro quadrático médio”* como **Métrica para avaliação**.
 
 6. Execute o fluxo e visualize o resultado, que neste caso está de acordo com a raiz do erro quadrático médio **(Root Mean Square Error ou RMSE)**:
-	![Resultado](/lemonade/img/spark/aprendizado_de_maquina/regressor_linear/image1.png)
+	![Resultado](/img/spark/aprendizado_de_maquina/regressor_linear/image1.png)
 
 
 

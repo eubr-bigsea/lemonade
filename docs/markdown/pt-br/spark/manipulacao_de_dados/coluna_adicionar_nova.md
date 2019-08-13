@@ -29,24 +29,24 @@ Nome da Tarefa
 
 **Base de Dados:** [Titanic e US Baby Names][3]
 	
-![Ler dados](/lemonade/img/spark/manipulacao_de_dados/coluna_adicionar_nova/image2.png)
+![Ler dados](/img/spark/manipulacao_de_dados/coluna_adicionar_nova/image2.png)
 
 1. Adicione ao fluxo sendo criado a base de dados Titanic por meio da operação [Ler dados][4].\
-	![Ler dados - Titanic](/lemonade/img/spark/manipulacao_de_dados/coluna_adicionar_nova/image3.png)
+	![Ler dados - Titanic](/img/spark/manipulacao_de_dados/coluna_adicionar_nova/image3.png)
 	
 2. Adicione a base de dados US Baby Names por meio da operação [Ler dados][4]. \
-	![Ler dados - US Baby Names](/lemonade/img/spark/manipulacao_de_dados/coluna_adicionar_nova/image1.png)\
+	![Ler dados - US Baby Names](/img/spark/manipulacao_de_dados/coluna_adicionar_nova/image1.png)\
 	Antes de ser adicionada, a base foi reduzida para conter a mesma quantidade de instâncias (linhas) da base de dados Titanic.
 	
 	
 3. Como as duas bases possuem muitos atributos além dos escolhidos, adicione a operação [Selecionar Atributos][5] para separar uma única saída de dados com os atributos que serão utilizados.\
-	![Selecionar Atributos](/lemonade/img/spark/manipulacao_de_dados/coluna_adicionar_nova/image6.png)
+	![Selecionar Atributos](/img/spark/manipulacao_de_dados/coluna_adicionar_nova/image6.png)
 
 4. Para unir os atributos selecionados em cada uma das entradas de dados em uma única saída, adicione a operação **Adicionar Nova(s) Coluna(s)**. No campo **Prefixo para os atributos** preencha base01 e base02, isto auxilia a diferenciar a qual fonte aquele atributo pertence.\
-	![Operação Adicionar Coluna](/lemonade/img/spark/manipulacao_de_dados/coluna_adicionar_nova/image4.png)
+	![Operação Adicionar Coluna](/img/spark/manipulacao_de_dados/coluna_adicionar_nova/image4.png)
 	
 5. Execute o fluxo e visualize o resultado.\
-	![Resultado](/lemonade/img/spark/manipulacao_de_dados/coluna_adicionar_nova/image5.png)
+	![Resultado](/img/spark/manipulacao_de_dados/coluna_adicionar_nova/image5.png)
 
 -----
 

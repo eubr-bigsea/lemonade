@@ -47,28 +47,28 @@ Existem quatro ações que podem ser tomadas quando salvamos um arquivo com um n
 **Objetivo:**  modificar uma base de dados e gravar sua nova versão.\
 **Base de Dados:** [Titanic][4]
 	
-![Ler dados](/lemonade/img/spark/entrada_e_saida/salvar_dados/image6.png)
+![Ler dados](/img/spark/entrada_e_saida/salvar_dados/image6.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][5]. \
-	![Tabela - Ler dados](/lemonade/img/spark/entrada_e_saida/salvar_dados/image7.png)	
+	![Tabela - Ler dados](/img/spark/entrada_e_saida/salvar_dados/image7.png)	
 
 2. Use a operação [Selecionar atributos][6], selecione os atributos *“class”*, *“survived”*, *“name”*, *“sex”* e *“age”*, que denotam, respectivamente, a classe do passageiro, se sobreviveu ou não ao desastre, seu nome, seu gênero e sua idade.\
-	![Selecionar Atributos](/lemonade/img/spark/entrada_e_saida/salvar_dados/image7.png)
+	![Selecionar Atributos](/img/spark/entrada_e_saida/salvar_dados/image7.png)
 
 3. Use a operação **Salvar Dados**, salve a base de dados resultante na ferramenta, com os seguintes parâmetros:\
-	![Salvar Dados](/lemonade/img/spark/entrada_e_saida/salvar_dados/image4.png)
+	![Salvar Dados](/img/spark/entrada_e_saida/salvar_dados/image4.png)
 	
 
 4. Note que a base de dados que continha diversos atributos (10) foi transformada e salva como uma base de 5 atributos. Durante o processo de gravação, o arquivo salvo foi o CSV.\
 	A base lida originalmente foi:
-	![Base lida](/lemonade/img/spark/entrada_e_saida/salvar_dados/image3.png)
+	![Base lida](/img/spark/entrada_e_saida/salvar_dados/image3.png)
 
 	A base que foi escrita:\
-	![Base escrita](/lemonade/img/spark/entrada_e_saida/salvar_dados/image5.png)\
-	![Atributos da base escrita](/lemonade/img/spark/entrada_e_saida/salvar_dados/image1.png)
+	![Base escrita](/img/spark/entrada_e_saida/salvar_dados/image5.png)\
+	![Atributos da base escrita](/img/spark/entrada_e_saida/salvar_dados/image1.png)
 
 	- Para baixar a base salva, clique no ícone
-	![Ícone](/lemonade/img/spark/entrada_e_saida/salvar_dados/image2.png)
+	![Ícone](/img/spark/entrada_e_saida/salvar_dados/image2.png)
 	no menu  Bases de Dados.
 	- É importante inferir o esquema da nova base.
 

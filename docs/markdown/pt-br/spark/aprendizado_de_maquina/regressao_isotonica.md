@@ -40,7 +40,7 @@ Nome da Tarefa
 **Objetivo:** Utilizar o modelo construído pela operação Regressão Isotônica para predizer a qualidade de um vinho\
 **Base de Dados:** [Qualidade da Variante Vermelha do Vinho Verde Português][]
 
-![Ler dados](/lemonade/img/spark/aprendizado_de_maquina/regressao_isotonica/image4.png)
+![Ler dados](/img/spark/aprendizado_de_maquina/regressao_isotonica/image4.png)
 
 1. Leia a base de dados por meio da operação [Ler dados][4].
 
@@ -49,15 +49,15 @@ Nome da Tarefa
 3. Na operação **Regressão Isotônica**, selecione “alcohol”, “chlorides”, “citric_acid”, “density”, “fixed_acidity”, “free_sulfur_dioxide”, “pH”, “residual_sugar”, “sulphates”, “total_sulfur_dioxide” e “volatile_acidity” no campo **Atributo(s) previsor(es)**. Selecione *“quality”* no campo **Atributo com o rótulo** e preencha “resultado” no campo **Atributo com a predição (novo)**.\
 Preencha 100 no campo **Iterações máximas** e selecione no campo **Isotonic** a função Isotônica/crescente
 
-	![Forumlário regressão isotônica - parte 1](/lemonade/img/spark/aprendizado_de_maquina/regressao_isotonica/image2.png)
-	![Forumlário regressão isotônica - parte 2](/lemonade/img/spark/aprendizado_de_maquina/regressao_isotonica/image3.png)
+	![Forumlário regressão isotônica - parte 1](/img/spark/aprendizado_de_maquina/regressao_isotonica/image2.png)
+	![Forumlário regressão isotônica - parte 2](/img/spark/aprendizado_de_maquina/regressao_isotonica/image3.png)
 
 4. Na operação [Aplicar Modelo][6], selecione “alcohol”, “chlorides”, “citric_acid”, “density”, “fixed_acidity”, “free_sulfur_dioxide”, “pH”, “residual_sugar”, “sulphates”, “total_sulfur_dioxide” e “volatile_acidity” no campo **Atributo(s) previsor(es)** e preencha *“resultado”* no campo **Nome do novo atributo (herdado do modelo)**. 
 
 5. Na operação [Avaliar Modelo][7], selecione *“resultado”* no campo **Atributo usado para predição**. Selecione *“quality”* no campo **Atributo usado como label** e a métrica *“Raiz do erro quadrático médio”* como **Métrica para avaliação**. 
 
 6. Execute o fluxo e visualize o resultado, que neste caso está de acordo com a raiz do erro quadrático médio (**Root Mean Square Error** ou **RMSE**):\
-	![Resultado](/lemonade/img/spark/aprendizado_de_maquina/regressao_isotonica/image1.png)
+	![Resultado](/img/spark/aprendizado_de_maquina/regressao_isotonica/image1.png)
 
 
 

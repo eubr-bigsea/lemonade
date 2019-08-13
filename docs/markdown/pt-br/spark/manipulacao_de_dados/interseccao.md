@@ -23,17 +23,17 @@ Nome da Tarefa
 
 **Base de Dados:** [Wine][3]
 	
-![Ler dados](/lemonade/img/spark/manipulacao_de_dados/interseccao/image2.png)
+![Ler dados](/img/spark/manipulacao_de_dados/interseccao/image2.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].
 	
 2. Utilize a operação [Amostrar][5]. Selecione *“Extract top N records from data”* como **Tipo de amostragem ou partição**, as 5 primeiras linhas (registros) da base de dados original em número **Total de registros** e 99% - 1% como **Percentual**.\
-	![Amostrar exemplos](/lemonade/img/spark/manipulacao_de_dados/interseccao/image3.png)
+	![Amostrar exemplos](/img/spark/manipulacao_de_dados/interseccao/image3.png)
 	
 3. Dado que a operação **Intersecção** não possui parâmetros de execução, prossiga com a execução de seu respectivo fluxo.
 
 4. Observe abaixo o resultado após a execução do fluxo. Ele possui apenas 5 linhas como saída. Compare os registros da base de dados original com esse resultado. Note que as linhas que sofreram interseção foram as 5 primeiras da base de dados original.\
-	![Resultado](/lemonade/img/spark/manipulacao_de_dados/interseccao/image1.png)
+	![Resultado](/img/spark/manipulacao_de_dados/interseccao/image1.png)
 
 -----
 
