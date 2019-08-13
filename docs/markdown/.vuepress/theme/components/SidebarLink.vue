@@ -94,11 +94,12 @@ function renderExternal (h, to, text) {
 
 <style lang="stylus">
 .sidebar .sidebar-sub-headers
-  padding-left 1rem
+  margin-left 3.5em
   font-size 0.95em
+  border-left 1px dotted $accentColor
 
 a.sidebar-link
-  font-size 1em
+  font-size 1.1em
   font-weight 400
   display inline-block
   color $textColor
@@ -114,11 +115,13 @@ a.sidebar-link
     color $accentColor
     border-left-color $accentColor
   .sidebar-group &
-    padding-left 2rem
+    padding-left 1.5rem
   .sidebar-sub-headers &
     padding-top 0.25rem
     padding-bottom 0.25rem
     border-left none
+    padding-left 0.75rem
     &.active
       font-weight 500
+      border-left 0.25rem solid $accentColor
 </style>

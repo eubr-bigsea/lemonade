@@ -12,14 +12,14 @@ module.exports = {
 	//support languages
 	locales: {
 		'/': {
-			lang: 'en-US',
-			title: 'LEMONADE Documentation',
-			description: 'LEMONADE Documentation'
-		},
-		'/pt-br/': {
 			lang: 'pt-br',
 			title: 'Documentação LEMONADE',
 			description: 'Documentação LEMONADE'
+		},
+		'/en/': {
+			lang: 'en-US',
+			title: 'LEMONADE Documentation',
+			description: 'LEMONADE Documentation'
 		}
 	},
 
@@ -38,57 +38,12 @@ module.exports = {
 		//support languages
 		locales: {
 			'/' : {
-				selectText: 'Languages',
-				label: 'English',
-				nav: [
-					{
-						//text: '<label on navbar>', link: '<link to redirect>'
-						text: 'Home', link: '/'
-					},
-					{ 
-						text: 'Platforms',
-						items: [
-							{ text: 'COMPSs', link: 'https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/documentation'},
-							{ text: 'Keras', link: 'https://keras.io/'},
-							{ text: 'Scikit-Learn', link: 'https://scikit-learn.org/stable/documentation.html'},
-							{ text: 'Spark', link: '/spark'}
-						],
-					}
-				],
-				/*sidebar: [
-					{
-						type : 'group',
-						title: '1',
-						collapsable: true,
-						children: [
-							{
-								type: 'group',
-								title: '1.1',
-								collapsable: true,
-								children: [
-									['/', '1.1.1'],
-									// ['/teste2/', 'Two'],
-									// ['/teste2/1.md', 'Two dot one']
-								]
-							}
-						]
-					}
-				]*/
-				sidebar: {
-					'/': [
-						['', 'About'],
-						['/instalation.md', 'Instalation'],
-						['/architecture.md', 'Architecture']
-					]
-				}
-			},
-			'/pt-br/' : {
 				selectText: 'Idiomas',
 				label: 'Português',
 				nav: [
 					{
 						//text: '<label on navbar>', link: '<link to redirect>'
-						text: 'Início', link: '/pt-br/'
+						text: 'Início', link: '/'
 					},
 					{ 
 						text: 'Plataformas',
@@ -96,14 +51,14 @@ module.exports = {
 							{ text: 'COMPSs', link: 'https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/documentation'},
 							{ text: 'Keras', link: 'https://keras.io/'},
 							{ text: 'Scikit-Learn', link: 'https://scikit-learn.org/stable/documentation.html'},
-							{ text: 'Spark', link: '/pt-br/spark/visualizacao_de_dados/sumario_estatistico'}
+							{ text: 'Spark', link: '/spark/visualizacao_de_dados/tabela'}
 						],
 					}
 				],
 				sidebar: {
 					// '/pt-br/spark/' : [
 					// 'spark/' : [
-					'/pt-br/spark/': [
+					'/spark/': [
 						{
 							title: 'Visualização de Dados',
 							collapsable: true,
@@ -232,9 +187,54 @@ module.exports = {
 							]
 						}
 					],
-					'/pt-br/': [
+					'/': [
 						['', 'About'],
 						['data_science.md', 'Data Science'],
+						['instalation.md', 'Instalation'],
+						['architecture.md', 'Architecture']
+					]
+				}
+			},
+			'/en/' : {
+				selectText: 'Languages',
+				label: 'English',
+				nav: [
+					{
+						//text: '<label on navbar>', link: '<link to redirect>'
+						text: 'Home', link: '/en/'
+					},
+					{ 
+						text: 'Platforms',
+						items: [
+							{ text: 'COMPSs', link: 'https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/documentation'},
+							{ text: 'Keras', link: 'https://keras.io/'},
+							{ text: 'Scikit-Learn', link: 'https://scikit-learn.org/stable/documentation.html'},
+							{ text: 'Spark', link: '/spark/visualizacao_de_dados/tabela'}
+						],
+					}
+				],
+				/*sidebar: [
+					{
+						type : 'group',
+						title: '1',
+						collapsable: true,
+						children: [
+							{
+								type: 'group',
+								title: '1.1',
+								collapsable: true,
+								children: [
+									['/', '1.1.1'],
+									// ['/teste2/', 'Two'],
+									// ['/teste2/1.md', 'Two dot one']
+								]
+							}
+						]
+					}
+				]*/
+				sidebar: {
+					'/en/': [
+						['', 'About'],
 						['instalation.md', 'Instalation'],
 						['architecture.md', 'Architecture']
 					]

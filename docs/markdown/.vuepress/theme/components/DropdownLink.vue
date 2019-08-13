@@ -19,7 +19,7 @@
       <ul
         class="nav-dropdown"
         v-show="open"
-        style="margin-top: -4px"
+        style="margin-top: -4px;"
       >
         <li
           class="dropdown-item"
