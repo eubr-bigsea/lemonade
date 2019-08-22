@@ -19,6 +19,10 @@
         :class="{ 'can-hide': $site.themeConfig.logo }"
       >{{ $siteTitle }}</span>
       <span
+        ref="siteName"
+        class="site-name mobile"
+      >Docs</span>
+      <span
         ref="Beta"
         class="beta"
         v-if="$site.themeConfig.isDevelopment"
@@ -109,10 +113,11 @@ $navbar-horizontal-padding = 1.5rem
     font-weight 600
     color $textColor
     position relative
+  .mobile
+    display none
   .beta
     margin -4px 0 0 4px
     color #cfd4db
-
   .links
     padding-left 1.5rem
     box-sizing border-box
@@ -130,6 +135,9 @@ $navbar-horizontal-padding = 1.5rem
 @media (max-width: $MQMobile)
   .navbar
     padding-left 4rem
+    .mobile
+      margin-right 1rem
+      display flex
     .beta
       position relative
       margin-left -12px

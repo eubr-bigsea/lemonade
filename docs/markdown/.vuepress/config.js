@@ -11,7 +11,7 @@ module.exports = {
 	],
 	//support languages
 	locales: {
-		'/': {
+		'/pt-br/': {
 			lang: 'pt-br',
 			title: 'Documentação LEMONADE',
 			description: 'Documentação LEMONADE'
@@ -37,7 +37,7 @@ module.exports = {
 		
 		//support languages
 		locales: {
-			'/' : {
+			'/pt-br/' : {
 				selectText: 'Idiomas',
 				label: 'Português',
 				nav: [
@@ -51,14 +51,14 @@ module.exports = {
 							{ text: 'COMPSs', link: 'https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/documentation'},
 							{ text: 'Keras', link: 'https://keras.io/'},
 							{ text: 'Scikit-Learn', link: 'https://scikit-learn.org/stable/documentation.html'},
-							{ text: 'Spark', link: '/spark/visualizacao-de-dados/tabela'}
+							{ text: 'Spark', link: '/pt-br/spark/visualizacao-de-dados/tabela'}
 						],
 					}
 				],
 				sidebar: {
 					// '/pt-br/spark/' : [
 					// 'spark/' : [
-					'/spark/': [
+					'/pt-br/spark/': [
 						{
 							title: 'Visualização de Dados',
 							collapsable: true,
@@ -213,7 +213,7 @@ module.exports = {
 							]
 						}
 					],
-					'/': [
+					'/pt-br/': [
 						['', 'About'],
 						['data-science.md', 'Data Science'],
 						['instalation.md', 'Instalation'],
@@ -235,7 +235,7 @@ module.exports = {
 							{ text: 'COMPSs', link: 'https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/documentation'},
 							{ text: 'Keras', link: 'https://keras.io/'},
 							{ text: 'Scikit-Learn', link: 'https://scikit-learn.org/stable/documentation.html'},
-							{ text: 'Spark', link: '/spark/visualizacao-de-dados/tabela'}
+							{ text: 'Spark', link: '/pt-br/spark/visualizacao-de-dados/tabela'}
 						],
 					}
 				],

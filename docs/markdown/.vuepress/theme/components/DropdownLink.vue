@@ -82,12 +82,17 @@ export default {
   cursor pointer
   .dropdown-title
     display block
+    .title
+      display inline-block
     &:hover
       border-color transparent
     .arrow
       vertical-align middle
       margin-top -1px
       margin-left 0.4rem
+
+      float right
+      margin-top 0.5rem
   .nav-dropdown
     .dropdown-item
       color inherit
