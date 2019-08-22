@@ -1,4 +1,4 @@
-# Lemonade
+#
 <script>
 	export default {
 		mounted(){
