@@ -98,7 +98,7 @@ $navbar-horizontal-padding = 1.5rem
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
   a, span, img
-    display inline-block
+    display flex
   .logo
     height $navbarHeight - 1.4rem
     min-width $navbarHeight - 1.4rem
@@ -111,7 +111,6 @@ $navbar-horizontal-padding = 1.5rem
     position relative
   .beta
     margin -4px 0 0 4px
-    position absolute
     color #cfd4db
 
   .links

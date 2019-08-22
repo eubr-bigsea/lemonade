@@ -32,7 +32,7 @@ module.exports = {
 		logo: '/img/logo.png',
 		
 		//searchBox feature ?
-		searchMaxSuggestions: 6,
+		searchMaxSuggestions: 10,
 		search: true,
 		
 		//support languages
@@ -51,7 +51,7 @@ module.exports = {
 							{ text: 'COMPSs', link: 'https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/documentation'},
 							{ text: 'Keras', link: 'https://keras.io/'},
 							{ text: 'Scikit-Learn', link: 'https://scikit-learn.org/stable/documentation.html'},
-							{ text: 'Spark', link: '/spark/visualizacao_de_dados/tabela'}
+							{ text: 'Spark', link: '/spark/visualizacao-de-dados/tabela'}
 						],
 					}
 				],
@@ -65,18 +65,44 @@ module.exports = {
 							sidebarDepth: 1,
 							children: [
 								//['<route>', '<label to show on sidebar>']
-								['visualizacao_de_dados/tabela.md', 'Tabela'],
-								['visualizacao_de_dados/sumario_estatistico.md', 'Sumário Estatístico'],
-								['visualizacao_de_dados/publicar_como_dashboard.md', 'Publicar como Dashboard'],
-								['visualizacao_de_dados/mapa.md', 'Mapa'],
-								['visualizacao_de_dados/histograma.md', 'Histograma'],
-								['visualizacao_de_dados/grafico_de_rosca.md', 'Gráfico de Rosca'],
-								['visualizacao_de_dados/grafico_de_pizza.md', 'Gráfico de Pizza'],
-								['visualizacao_de_dados/grafico_de_linha.md', 'Gráfico de Linha'],
-								['visualizacao_de_dados/grafico_de_dispersao.md', 'Gráfico de Dispersão'],
-								['visualizacao_de_dados/grafico_de_barra.md', 'Gráfico de Barra'],
-								['visualizacao_de_dados/grafico_de_area.md', 'Gráfico de Área'],
-								['visualizacao_de_dados/box_plot.md', 'Box Plot'],
+								['visualizacao-de-dados/tabela.md', 'Tabela'],
+								['visualizacao-de-dados/sumario-estatistico.md', 'Sumário Estatístico'],
+								['visualizacao-de-dados/publicar-como-dashboard.md', 'Publicar como Dashboard'],
+								['visualizacao-de-dados/mapa.md', 'Mapa'],
+								['visualizacao-de-dados/histograma.md', 'Histograma'],
+								['visualizacao-de-dados/grafico-de-rosca.md', 'Gráfico de Rosca'],
+								['visualizacao-de-dados/grafico-de-pizza.md', 'Gráfico de Pizza'],
+								['visualizacao-de-dados/grafico-de-linha.md', 'Gráfico de Linha'],
+								['visualizacao-de-dados/grafico-de-dispersao.md', 'Gráfico de Dispersão'],
+								['visualizacao-de-dados/grafico-de-barra.md', 'Gráfico de Barra'],
+								['visualizacao-de-dados/grafico-de-area.md', 'Gráfico de Área'],
+								['visualizacao-de-dados/box-plot.md', 'Box Plot'],
+							]
+						},
+						{
+							title: 'Pré Processamento de Dados',
+							collapsable: true,
+							sidebarDepth: 1,
+							children: [
+								//['<route>', '<label to show on sidebar>']
+								['pre-processamento-de-dados/representacao-de-atributos-vetorizar-atributos.md', 'Representação de Atributos - Vetorizar Atributos'],
+								['pre-processamento-de-dados/representacao-de-atributos-converter-categorico-para-numerico.md', 'Representação de Atributos - Converter Categórico para Numérico'],
+								['pre-processamento-de-dados/representacao-de-atributos-codificacao-distribuida.md', 'Representação de Atributos - Codificação Distribuída'],
+								['pre-processamento-de-dados/reducao-de-dimensionalidade-hash-sensivel-a-localidade.md', 'Redução de Dimensionalidade - Hash Sensível a Localidade'],
+								['pre-processamento-de-dados/reducao-de-dimensionalidade-analise-de-componentes-principais.md', 'Redução de Dimensionalidade - Análise de Compononentes Principais'],
+								['pre-processamento-de-dados/redefinir-escala-minimo-maximo.md', 'Redefinir Escala - Mínimo Máximo'],
+								['pre-processamento-de-dados/redefinir-escala-maximo-absoluto.md', 'Redefinir Escala - Máximo Absoluto'],
+								['pre-processamento-de-dados/redefinir-escala-escalador-padrao.md', 'Redefinir Escala - Escalador Padrão'],
+								['pre-processamento-de-dados/operacoes-textuais-remover-palavras-comuns.md', 'Operações Textuais - Remover Palavras Comuns'],
+								['pre-processamento-de-dados/operacoes-textuais-processar-topicos.md', 'Operações Textuais - Processar Tópicos'],
+								['pre-processamento-de-dados/operacoes-textuais-gerar-n-gramas.md', 'Operações Textuais - Gerar N-Gramas'],
+								['pre-processamento-de-dados/operacoes-textuais-dividir-texto-por-delimitador.md', 'Operações Textuais - Dividir Texto por Delimitador'],
+								['pre-processamento-de-dados/operacoes-textuais-contar-frequencia-dos-termos.md', 'Operações Textuais - Contar Freqência dos Termos'],
+								['pre-processamento-de-dados/operacoes-textuais-agrupamento-lda.md', 'Operações Textuais - Latent Dirichlet Allocation'],
+								['pre-processamento-de-dados/discretizacao-por-quantis.md', 'Discretização - Por Quantis'],
+								['pre-processamento-de-dados/discretizacao-intervalar.md', 'Discretização Intervalar'],
+								['pre-processamento-de-dados/amostragem-divisao-percentual.md', 'Amostragem - Divisão Percentual'],
+								['pre-processamento-de-dados/amostragem-amostrar-exemplos.md', 'Amostragem - Amostrar Exemplos']
 							]
 						},
 						/*{
@@ -94,8 +120,8 @@ module.exports = {
 							sidebarDepth: 1,
 							children: [
 								//['<route>', '<label to show on sidebar>']
-								['modelo_e_avaliacao/avaliar_modelo.md', 'Avaliar Modelo'],
-								['modelo_e_avaliacao/aplicar_modelo.md', 'Aplicar Modelo'],
+								['modelo-e-avaliacao/avaliar-modelo.md', 'Avaliar Modelo'],
+								['modelo-e-avaliacao/aplicar-modelo.md', 'Aplicar Modelo'],
 							]
 						},
 						{
@@ -104,18 +130,18 @@ module.exports = {
 							sidebarDepth: 1,
 							children: [
 								//['<route>', '<label to show on sidebar>']
-								['manipulacao_de_dados/tratar_dados_ausentes.md', 'Tratar Dados Ausentes'],
-								['manipulacao_de_dados/selecionar_atributos.md', 'Selecionar Atributos'],
-								['manipulacao_de_dados/juncao.md', 'Junção'],
-								['manipulacao_de_dados/interseccao.md', 'Intersecção'],
-								['manipulacao_de_dados/filtrar_por_funcao.md', 'Filtrar por Função'],
-								['manipulacao_de_dados/coluna_substituir_valor.md', 'Coluna - Substituir Valor'],
-								['manipulacao_de_dados/coluna_ordenar.md', 'Coluna - Ordenar'],
-								['manipulacao_de_dados/coluna_adicionar_nova.md', 'Coluna - Adicionar Nova(s)'],
-								['manipulacao_de_dados/coluna_diferenca.md', 'Coluna - Diferença'],
-								['manipulacao_de_dados/linha_remover_duplicadas.md', 'Linha - Remover Duplicadas'],
-								['manipulacao_de_dados/linha_agrupar_por_funcao.md', 'Linha - Agrupar por Função'],
-								['manipulacao_de_dados/linha_adicionar_nova.md', 'Linha - Adicionar Nova(s)']
+								['manipulacao-de-dados/tratar-dados-ausentes.md', 'Tratar Dados Ausentes'],
+								['manipulacao-de-dados/selecionar-atributos.md', 'Selecionar Atributos'],
+								['manipulacao-de-dados/juncao.md', 'Junção'],
+								['manipulacao-de-dados/interseccao.md', 'Intersecção'],
+								['manipulacao-de-dados/filtrar-por-funcao.md', 'Filtrar por Função'],
+								['manipulacao-de-dados/coluna-substituir-valor.md', 'Coluna - Substituir Valor'],
+								['manipulacao-de-dados/coluna-ordenar.md', 'Coluna - Ordenar'],
+								['manipulacao-de-dados/coluna-adicionar-nova.md', 'Coluna - Adicionar Nova(s)'],
+								['manipulacao-de-dados/coluna-diferenca.md', 'Coluna - Diferença'],
+								['manipulacao-de-dados/linha-remover-duplicadas.md', 'Linha - Remover Duplicadas'],
+								['manipulacao-de-dados/linha-agrupar-por-funcao.md', 'Linha - Agrupar por Função'],
+								['manipulacao-de-dados/linha-adicionar-nova.md', 'Linha - Adicionar Nova(s)']
 							]
 						},
 						{
@@ -124,10 +150,10 @@ module.exports = {
 							sidebarDepth: 1,
 							children: [
 								//['<route>', '<label to show on sidebar>']
-								['entrada_e_saida/salvar_modelo.md', 'Salvar Modelo'],
-								['entrada_e_saida/salvar_dados.md', 'Salvar Dados'],
-								['entrada_e_saida/ler_dados.md', 'Ler Dados'],
-								['entrada_e_saida/carregar_modelo.md', 'Carregar Modelo']
+								['entrada-e-saida/salvar-modelo.md', 'Salvar Modelo'],
+								['entrada-e-saida/salvar-dados.md', 'Salvar Dados'],
+								['entrada-e-saida/ler-dados.md', 'Ler Dados'],
+								['entrada-e-saida/carregar-modelo.md', 'Carregar Modelo']
 							]
 						},
 						{
@@ -136,8 +162,8 @@ module.exports = {
 							sidebarDepth: 2,
 							children: [
 								//['<route>', '<label to show on sidebar>']
-								['documentacao_geral/documentacao_geral.md', 'Documentação Geral'],
-								['documentacao_geral/utilizacao_basica_da_plataforma_lemonade.md', 'Utilização Básica da Plataforma Lemonade']
+								['documentacao-geral/documentacao-geral.md', 'Documentação Geral'],
+								['documentacao-geral/utilizacao-basica-da-plataforma-lemonade.md', 'Utilização Básica da Plataforma Lemonade']
 							]
 						},
 						{
@@ -146,7 +172,7 @@ module.exports = {
 							sidebarDepth: 1,
 							children: [
 								//['<route>', '<label to show on sidebar>']
-								['base_de_dados/', 'Base de Dados']
+								['base-de-dados/', 'Base de Dados']
 							]
 						},
 						{
@@ -155,8 +181,8 @@ module.exports = {
 							sidebarDepth: 1,
 							children: [
 								//['<route>', '<label to show on sidebar>']
-								['avancado/executar_comandos_sql.md', 'Executar Commandos SQL'],
-								['avancado/executar_codigo_python.md', 'Executar Código Python']
+								['avancado/executar-comandos-sql.md', 'Executar Commandos SQL'],
+								['avancado/executar-codigo-python.md', 'Executar Código Python']
 							]
 						},
 						{
@@ -165,31 +191,31 @@ module.exports = {
 							sidebarDepth: 1,
 							children: [
 								//['<route>', '<label to show on sidebar>']
-								['aprendizado_de_maquina/regressor_linear_generalizado.md', 'Regressão - Regressor Linear Generalizado'],
-								['aprendizado_de_maquina/regressor_linear.md', 'Regressão - Regressor Linear'],
-								['aprendizado_de_maquina/regressao_isotonica.md', 'Regressão - Regressão Isotônica'],
-								['aprendizado_de_maquina/regressao_random_forest.md', 'Regressão - Random Forest'],
-								['aprendizado_de_maquina/regressao_gradient_boosted_tree.md', 'Regressão - Gradient Boosted Tree'],
-								['aprendizado_de_maquina/anomalias_local_outlier_factor.md', 'Anomalias - Local Outlier Factor'],
-								['aprendizado_de_maquina/classificacao_voto_por_maioria.md', 'Classificação - Voto por Maioria'],
-								['aprendizado_de_maquina/classificacao_support_vector_machines.md', 'Classificação - Support Vector Machines'],
-								['aprendizado_de_maquina/classificacao_regressao_logistica.md', 'Classificação - Regressão Logística'],
-								['aprendizado_de_maquina/classificacao_random_forest.md', 'Classificação - Random Forest'],
-								['aprendizado_de_maquina/classificacao_perceptron_multicamadas.md', 'Classificação - Perceptron Multicamadas'],
-								['aprendizado_de_maquina/classificacao_naive_bayes.md', 'Classificação - Perceptron Multicamadas'],
-								['aprendizado_de_maquina/classificacao_gradient_boosted_tree.md', 'Classificação - Gradient Boosted Tree'],
-								['aprendizado_de_maquina/classificacao_arvore_de_decisao.md', 'Classificação - Árvore de Decisão'],
-								['aprendizado_de_maquina/associacao_regras_de_associacao.md', 'Associação - Regras de Associação'],
-								['aprendizado_de_maquina/associacao_mineracao_de_sequencias.md', 'Associação - Mineração de Sequências'],
-								['aprendizado_de_maquina/associacao_mineracao_de_itemsets_frequentes.md', 'Associação - Mineração de Itemsets Frequentes'],
-								['aprendizado_de_maquina/agrupamento_mistura_de_gaussianas.md', 'Agrupamento - Mistura de Gaussianas'],
-								['aprendizado_de_maquina/agrupamento_k_means.md', 'Agrupamento - K-Means'],
+								['aprendizado-de-maquina/regressor-linear-generalizado.md', 'Regressão - Regressor Linear Generalizado'],
+								['aprendizado-de-maquina/regressor-linear.md', 'Regressão - Regressor Linear'],
+								['aprendizado-de-maquina/regressao-isotonica.md', 'Regressão - Regressão Isotônica'],
+								['aprendizado-de-maquina/regressao-random-forest.md', 'Regressão - Random Forest'],
+								['aprendizado-de-maquina/regressao-gradient-boosted-tree.md', 'Regressão - Gradient Boosted Tree'],
+								['aprendizado-de-maquina/anomalias-local-outlier-factor.md', 'Anomalias - Local Outlier Factor'],
+								['aprendizado-de-maquina/classificacao-voto-por-maioria.md', 'Classificação - Voto por Maioria'],
+								['aprendizado-de-maquina/classificacao-support-vector-machines.md', 'Classificação - Support Vector Machines'],
+								['aprendizado-de-maquina/classificacao-regressao-logistica.md', 'Classificação - Regressão Logística'],
+								['aprendizado-de-maquina/classificacao-random-forest.md', 'Classificação - Random Forest'],
+								['aprendizado-de-maquina/classificacao-perceptron-multicamadas.md', 'Classificação - Perceptron Multicamadas'],
+								['aprendizado-de-maquina/classificacao-naive-bayes.md', 'Classificação - Perceptron Multicamadas'],
+								['aprendizado-de-maquina/classificacao-gradient-boosted-tree.md', 'Classificação - Gradient Boosted Tree'],
+								['aprendizado-de-maquina/classificacao-arvore-de-decisao.md', 'Classificação - Árvore de Decisão'],
+								['aprendizado-de-maquina/associacao-regras-de-associacao.md', 'Associação - Regras de Associação'],
+								['aprendizado-de-maquina/associacao-mineracao-de-sequencias.md', 'Associação - Mineração de Sequências'],
+								['aprendizado-de-maquina/associacao-mineracao-de-itemsets-frequentes.md', 'Associação - Mineração de Itemsets Frequentes'],
+								['aprendizado-de-maquina/agrupamento-mistura-de-gaussianas.md', 'Agrupamento - Mistura de Gaussianas'],
+								['aprendizado-de-maquina/agrupamento-k-means.md', 'Agrupamento - K-Means'],
 							]
 						}
 					],
 					'/': [
 						['', 'About'],
-						['data_science.md', 'Data Science'],
+						['data-science.md', 'Data Science'],
 						['instalation.md', 'Instalation'],
 						['architecture.md', 'Architecture']
 					]
@@ -209,7 +235,7 @@ module.exports = {
 							{ text: 'COMPSs', link: 'https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/documentation'},
 							{ text: 'Keras', link: 'https://keras.io/'},
 							{ text: 'Scikit-Learn', link: 'https://scikit-learn.org/stable/documentation.html'},
-							{ text: 'Spark', link: '/spark/visualizacao_de_dados/tabela'}
+							{ text: 'Spark', link: '/spark/visualizacao-de-dados/tabela'}
 						],
 					}
 				],
@@ -235,6 +261,7 @@ module.exports = {
 				sidebar: {
 					'/en/': [
 						['', 'About'],
+						['data-science.md', 'Data Science'],
 						['instalation.md', 'Instalation'],
 						['architecture.md', 'Architecture']
 					]

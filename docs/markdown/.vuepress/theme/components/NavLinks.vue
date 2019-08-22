@@ -124,13 +124,11 @@ export default {
     &:hover, &.router-link-active
       color $accentColor
   .nav-item
-    /*position relative
-    display inline-block
-    margin-left 1.5rem
-    line-height 2rem*/
     position relative
     display inline-block
-    background-color: white;
+    margin-left 1.5rem
+    line-height 2rem
+    background-color white;
     border 0
     outline none
     border-radius 4px 4px 4px 4px

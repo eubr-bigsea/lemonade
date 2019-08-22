@@ -2,7 +2,6 @@
   <div
     class="dropdown-wrapper"
     :class="{ open }"
-    style="height: 1.4rem"
   >
     <a
       class="dropdown-title"
@@ -150,7 +149,7 @@ export default {
 
 @media (min-width: $MQMobile)
   .dropdown-wrapper
-    height 1.8rem
+    height 1.4rem
     &:hover .nav-dropdown
       // override the inline style.
       display block !important

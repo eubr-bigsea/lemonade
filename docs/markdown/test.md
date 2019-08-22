@@ -15,7 +15,7 @@ Nome da Tarefa
 
 [Aba Aparência][]
 
-[Aba Resultados][] 
+[Aba Resultados][]
 
 ## Definições
 ### Definição
@@ -26,7 +26,7 @@ Nome da Tarefa
 **Objetivo:** \
 **Base de Dados:** [][]
 
-![Imagem](/vuepress/img/..)
+![Imagem](/img/spark/pre-processamento-de-dados/)
 
 ### Link vem pra cá
 
@@ -34,4 +34,4 @@ Nome da Tarefa
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
 [Link na propria pagina]: #link-vem-pra-ca
-[1]: /pt-br/
+[1]: /spark/
