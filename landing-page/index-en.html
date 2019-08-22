@@ -155,6 +155,18 @@
 		text-align: center;
 		margin-bottom: 10px;
 	}
+
+	#dropdownMenu3 {
+		display: none;
+		position: absolute;
+		margin: -8px 0 0 64px;
+		background: inherit;
+		z-index: 1;
+	}
+
+	#platformsDropdown:hover #dropdownMenu3 {
+		display: block;
+	}
 </style>
 
 <body>
@@ -179,17 +191,15 @@
 					<button class="dropdown-item" type="button" href="https://docs.lemonade.org.br">Overview</button>
 					<button class="dropdown-item" type="button" href="https://docs.lemonade.org.br/instalation.html">Instalation</button>
 					<button class="dropdown-item" type="button" href="https://docs.lemonade.org.br/architecture.html">Architecture</button>
-					<div class="btn-group dropright">
-						<button class="doc dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown-menu" aria-haspopup="true" aria-expanded="true">
-							Platforms
-						</button>
-						<div class="dropdown-context">
-							<a class="dropdown-item" href="https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/documentation" target="_blank">COMPSs</a>
-							<a class="dropdown-item" href="https://keras.io/" target="_blank">Keras</a>
-							<a class="dropdown-item" href="https://scikit-learn.org/stable/documentation.html" target="_blank">Scikit-learn</a>
-							<a class="dropdown-item" href="https://docs.lemonade.org.br/pt-br/spark/visualizacao_de_dados/tabela.html" target="_blank">Spark</a>
+					<button class="dropdown-item doc dropdown-toggle" id="platformsDropdown" href="https://docs.lemonade.org.br/architecture.html">
+						Platforms
+						<div class="dropdown-menu" id="dropdownMenu3">
+							<a class="dropdown-item" type="button" href="https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/documentation" target="_blank">COMPSs</a>
+							<a class="dropdown-item" type="button" href="https://keras.io/" target="_blank">Keras</a>
+							<a class="dropdown-item" type="button" href="https://scikit-learn.org/stable/documentation.html" target="_blank">Scikit-learn</a>
+							<a class="dropdown-item" type="button" href="https://docs.lemonade.org.br/pt-br/spark/visualizacao_de_dados/tabela.html" target="_blank">Spark</a>
 						</div>
-					</div>
+					</button>
 				</div>
 			</div>
 		<div>
