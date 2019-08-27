@@ -66,10 +66,10 @@ Nome da Tarefa
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
 [resíduos]: #residuos
-[1]: /pt-br/
-[2]: /pt-br/
-[3]: /pt-br/
-[4]: /pt-br/
-[5]: /pt-br/
-[6]: /pt-br/
-[7]: /pt-br/
+[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[3]: /pt-br/spark/base-de-dados/#wine
+[4]: /pt-br/spark/entrada-e-saida/ler-dados.html
+[5]: /pt-br/spark/pre-processamento-de-dados/amostragem-divisao-percentual.html
+[6]: /pt-br/spark/modelo-e-avaliacao/aplicar-modelo.html
+[7]: /pt-br/spark/modelo-e-avaliacao/avaliar-modelo.html

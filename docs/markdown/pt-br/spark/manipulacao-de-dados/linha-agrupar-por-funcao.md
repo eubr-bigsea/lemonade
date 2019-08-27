@@ -66,11 +66,11 @@ Um pivô é um agrupamento em que uma ou mais colunas têm seus valores transpos
 ## Exemplo de Utilização
 ### Exemplo 1
 **Objetivo:** Descobrir qual é a média dos atributos *“sepallength”*, *“sepalwidth”*, *“petallength”* e “petalwidth” para as 3 classes de flores existentes.\
-**Base de Dados:** [Íris][1].
+**Base de Dados:** [Íris][3].
 
 ![Ler dados](/img/spark/manipulacao_de_dados/linha_agrupar_por_funcao/image7.png)
 
-1. Adicione uma base de dados por meio da operação [Ler dados][3]. 
+1. Adicione uma base de dados por meio da operação [Ler dados][4]. 
 
 2. Na operação **Agrupar linhas por função** preencha *“class”* no atributo **Selecione o(s) atributo(s) para agregação**. \
 	![Atributos para agregação](/img/spark/manipulacao_de_dados/linha_agrupar_por_funcao/image5.png)
@@ -89,11 +89,11 @@ Um pivô é um agrupamento em que uma ou mais colunas têm seus valores transpos
 
 ### Exemplo 2
 **Objetivo:** Descobrir o valor pago pelos tripulantes do sexo masculino e feminino.\
-**Base de Dados:** [Titanic][1].
+**Base de Dados:** [Titanic][5].
 
 ![Ler dados](/img/spark/manipulacao_de_dados/linha_agrupar_por_funcao/image7.png)
 
-1. Adicione uma base de dados por meio da operação [Ler dados][3]. 
+1. Adicione uma base de dados por meio da operação [Ler dados][4]. 
 
 2. Preencha na operação **Agrupar Linhas** por Função no campo **Atributos para Agregação** o atributo sex. No campo pivô utilize a classe do tripulante.\
 	![Atributos para agregação](/img/spark/manipulacao_de_dados/linha_agrupar_por_funcao/image3.png)
@@ -113,6 +113,8 @@ Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 [Exemplo 1]: #exemplo-1
 [Exemplo 2]: #exemplo-2
 [Função de Agregação]: #funcoes-de-agregacao
-[1]: /pt-br/
-[2]: /pt-br/
-[3]: /pt-br/
+[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[3]: /pt-br/spark/base-de-dados/#iris
+[4]: /pt-br/spark/entrada-e-saida/ler-dados.html
+[5]: /pt-br/spark/base-de-dados/#titanic

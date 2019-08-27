@@ -1,4 +1,3 @@
-
 # Tratar Dados Ausentes
 
 A operação **Tratar Dados Ausentes** é utilizada para remover ou substituir valores ausentes dos campos de dados.
@@ -59,14 +58,14 @@ O objetivo e a base de dados abaixo serão utilizados nos três exemplos a segui
 
 **Objetivo:** Encontrar as inconsistências e os valores ausentes desta base e utilizar a operação **Tratar Dados Ausentes** para corrigi-los.
 
-**Base de Dados:** [Titanic][1]
+**Base de Dados:** [Titanic][3]
 	
 ![Ler dados](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image2.png)
 
 ### Exemplo 1
 **Substituir pela média:**
 
-1. Adicione uma base de dados por meio da operação [Ler dados][2]. \
+1. Adicione uma base de dados por meio da operação [Ler dados][4]. \
 	![Tabela ler dados](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image1.png)
 
 2. Adicione a operação **Tratar dados Ausentes** adicione *“Age”* no campo atributos e selecione o tipo **substituir pela média** no campo **Tipo de Limpeza**. \
@@ -82,7 +81,7 @@ O objetivo e a base de dados abaixo serão utilizados nos três exemplos a segui
 ### Exemplo 2
 **Substituir por um valor:**
 
-1. Adicione uma base de dados por meio da operação [Ler dados][2], assim como o [Exemplo 1]. 
+1. Adicione uma base de dados por meio da operação [Ler dados][4], assim como o [Exemplo 1]. 
 
 2. Adicione a operação **Tratar dados Ausentes** adicione *“Age”* no campo atributos e selecione o tipo **substituir por valor** no campo **Tipo de Limpeza**, preencha *“99”* no campo **valor**.\
 	![Substituir por valor](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image11.png)
@@ -97,7 +96,7 @@ O objetivo e a base de dados abaixo serão utilizados nos três exemplos a segui
 Calcule a razão e utilize recursos da ferramenta para determinar se as linhas da base ou a coluna devem ser completamente removidas. Para calcular a razão entre os número de itens ausentes e válidos para a coluna Age, será utilizado o seguinte fluxo:
 ![Fluxo - Calcular a razão](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image9.png)
 
-1. Adicione uma base de dados por meio da operação [Ler dados][2], assim como o [Exemplo 1].
+1. Adicione uma base de dados por meio da operação [Ler dados][4], assim como o [Exemplo 1].
 
 2. Utilize a operação **Transformar valores por função**. Ela é responsável por informar se um determinado item é ausente ou válido. \
 	![Transformar valores por função](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image12.png)
@@ -105,7 +104,7 @@ Calcule a razão e utilize recursos da ferramenta para determinar se as linhas d
 3. Execute e observe na visualização da tabela que uma nova coluna *booleana* de nome *is_null* aparece determinando o valor *true* para valores ausentes e *false* para todo o contrário. 
 	![Resultado - Transformar valores por função](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/10.png)
 
-4. Agrupe e conte o número de itens da coluna *is_null*. Para isto adicione a operação [Agrupar linhas por função][3] com os seguintes parâmetros:
+4. Agrupe e conte o número de itens da coluna *is_null*. Para isto adicione a operação [Agrupar linhas por função][5] com os seguintes parâmetros:
 	![Agrupar por Linha](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image6.png)
 
 5. Execute e observe o resultado da tabela:
@@ -118,7 +117,7 @@ Calcule a razão e utilize recursos da ferramenta para determinar se as linhas d
 
 6. Agora crie um novo fluxo, ele será similar aos exemplos 1 e 2.
 
-7. Adicione uma base de dados por meio da operação [Ler dados][2].
+7. Adicione uma base de dados por meio da operação [Ler dados][4].
 
 8. Adicione a operação **Tratar dados Ausentes**. Preencha *“Age”* no campo **Atributos** e selecione o tipo **Remover toda a linha**. No campo **Razão mínima de valores ausentes**, preencha *“0.0”*  e no campo **Razão máxima de valores ausentes**, preencha *“0.2”*. \
 	Analise os seguintes parâmetros da ferramenta:
@@ -143,6 +142,8 @@ Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 [Exemplo 1]: #exemplo-1
 [Exemplo 2]: #exemplo-2
 [Exemplo 3]: #exemplo-3
-[1]: /pt-br/
-[2]: /pt-br/
-[3]: /pt-br/
+[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[3]: /pt-br/spark/base-de-dados/#titanic
+[4]: /pt-br/spark/entrada-e-saida/ler-dados.html
+[5]: /pt-br/spark/manipulacao-de-dados/linha-agrupar-por-funcao.html

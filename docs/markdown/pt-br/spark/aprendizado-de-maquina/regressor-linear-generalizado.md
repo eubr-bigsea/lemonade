@@ -38,7 +38,7 @@ Nome da Tarefa
 1. Adicione uma base de dados por meio da operação [Ler dados][4].\
 	![Tabela Ler Dados](/img/spark/aprendizado_de_maquina/regressor_linear_generalizado/image2.png)
 
-2. Usando a operação [Dividir][5] divida a base de dados em treino e teste utilizando uma distribuição de 70% para treino e 30% para teste.\
+2. Usando a operação [Divisão Percentual][5] divida a base de dados em treino e teste utilizando uma distribuição de 70% para treino e 30% para teste.\
 	![Dividir percentual](/img/spark/aprendizado_de_maquina/regressor_linear_generalizado/image1.png)
 
 3. Na operação **Regressão Linear Generalizado** coloque o número de *Iterações Máximas* como 100, preencha 10 no campo *Profundidade Máxima*, deixe o valor de *Solver* como *Auto* e o parâmetro de regularização como 0.35. Use a função Gaussiana no campo *Family* como probabilidade de distribuição e a função de identidade no campo *Link Prediction*.\
@@ -59,10 +59,10 @@ Nome da Tarefa
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[1]: /pt-br/
-[2]: /pt-br/
-[3]: /pt-br/
-[4]: /pt-br/
-[5]: /pt-br/
-[6]: /pt-br/
-[7]: /pt-br/
+[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[3]: /pt-br/spark/base-de-dados/#mtcars-com
+[4]: /pt-br/spark/entrada-e-saida/ler-dados.html
+[5]: /pt-br/spark/pre-processamento-de-dados/amostragem-divisao-percentual.html
+[6]: /pt-br/spark/modelo-e-avaliacao/aplicar-modelo.html
+[7]: /pt-br/spark/modelo-e-avaliacao/avaliar-modelo.html

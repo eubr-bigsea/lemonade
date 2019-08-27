@@ -52,7 +52,7 @@ Nome da Tarefa
 
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[1]: /pt-br/
-[2]: /pt-br/
-[3]: /pt-br/
-[4]: /pt-br/
+[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[3]: /pt-br/spark/base-de-dados/#aeroportos-do-brasil
+[4]: /pt-br/spark/entrada-e-saida/ler-dados.html

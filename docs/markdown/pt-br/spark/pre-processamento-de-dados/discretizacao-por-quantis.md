@@ -60,12 +60,12 @@ Cada barra equivale ao um quantil de idade, composto pelo intervalo de 10 em 10 
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[1]: /spark/
-[2]: /spark/
-[3]: /spark/
-[4]: /spark/
-[5]: /spark/
-[6]: /spark/
-[7]: /spark/
-[8]: /spark/
-[9]: /spark/
+[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[3]: /pt-br/spark/base-de-dados/#titanic
+[4]: /pt-br/spark/entrada-e-saida/ler-dados.html
+[5]: /pt-br/spark/manipulacao-de-dados/tratar-dados-ausentes.html
+[6]: /pt-br/spark/manipulacao-de-dados/filtrar-por-funcao.html
+[7]: /pt-br/spark/manipulacao-de-dados/linha-agrupar-por-funcao.html
+[8]: /pt-br/spark/manipulacao-de-dados/coluna-ordenar.html
+[9]: /pt-br/spark/visualizacao-de-dados/grafico-de-barra.html

@@ -56,10 +56,10 @@ Nome da Tarefa
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[1]: /spark/
-[2]: /spark/
-[3]: /spark/
-[4]: /spark/
-[5]: /spark/
-[6]: /spark/
-[7]: /spark/
+[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[3]: /pt-br/spark/base-de-dados/#sentiment-labelled-sentences
+[4]: /pt-br/spark/entrada-e-saida/ler-dados.html
+[5]: /pt-br/spark/pre-processamento-de-dados/operacoes-textuais-dividir-texto-por-delimitador.html
+[6]: /pt-br/spark/pre-processamento-de-dados/operacoes-textuais-contar-frequencia-dos-termos.html
+[7]: /pt-br/spark/pre-processamento-de-dados/operacoes-textuais-agrupamento-lda.html

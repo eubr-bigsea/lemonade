@@ -395,30 +395,30 @@ Com este painel terminamos a nossa documentação de introdução a utilização
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
 
-[1]
-[2]
-[3]
-[4]
-[5]
-[6]
-[7]
-[8]
-[9]
-[10]
-[11]
-[12]
-[13]
-[14]
-[15]
-[16]
-[17]
-[18]
-[19]
-[20]
-[21]
-[22]
-[23]
-[24]
-[25]
-[26]
-[27]
+[1]: https://www.lemonade.org.br/
+[2]: https://icd.ctweb.inweb.org.br/
+[3]: /pt-br/spark/base-de-dados/#iris
+[4]: https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
+[5]: https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
+[6]: http://archive.ics.uci.edu/ml/datasets/Iris?ref=datanews.io
+[7]: /pt-br/spark/entrada-e-saida/ler-dados.html
+[8]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[9]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[10]: /pt-br/spark/visualizacao-de-dados/sumario-estatistico.html
+[11]: https://spark.apache.org/
+[12]: /pt-br/spark/pre-processamento-de-dados/representacao-de-atributos-converter-categorico-para-numerico.html
+[13]: /pt-br/spark/aprendizado-de-maquina/classificacao-arvore-de-decisao.html
+[14]: /pt-br/spark/pre-processamento-de-dados/amostragem-divisao-percentual.html
+[15]: /pt-br/spark/modelo-e-avaliacao/aplicar-modelo.html
+[16]: /pt-br/spark/modelo-e-avaliacao/avaliar-modelo.html
+[17]: /pt-br/spark/visualizacao-de-dados/grafico-de-area.html
+[18]: /pt-br/spark/visualizacao-de-dados/grafico-de-barra.html
+[19]: /pt-br/spark/visualizacao-de-dados/grafico-de-dispersao.html
+[20]: /pt-br/spark/visualizacao-de-dados/grafico-de-linha.html
+[21]: /pt-br/spark/visualizacao-de-dados/grafico-de-pizza.html
+[22]: /pt-br/spark/visualizacao-de-dados/grafico-de-rosca.html
+[23]: /pt-br/spark/visualizacao-de-dados/publicar-como-dashboard.html
+[24]: /pt-br/spark/visualizacao-de-dados/sumario-estatistico.html
+[25]: /pt-br/spark/visualizacao-de-dados/mapa.html
+[26]: /pt-br/spark/visualizacao-de-dados/tabela.html
+[27]: https://www.kaggle.com/c/titanic

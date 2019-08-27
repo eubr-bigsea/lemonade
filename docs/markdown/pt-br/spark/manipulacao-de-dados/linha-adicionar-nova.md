@@ -21,13 +21,13 @@ Nome
 ## Exemplo de Utilização
 
 **Objetivo:** Objetivo: Concatenar duas bases de dados divididas em dois arquivos separados.\
-**Base de Dados:** [Íris][1].
+**Base de Dados:** [Íris][3].
 
 ![Ler dados](/img/spark/manipulacao_de_dados/linha_adicionar_nova/image1.png)
 
-1. Adicione uma base de dados por meio da operação [Ler dados][3].
+1. Adicione uma base de dados por meio da operação [Ler dados][4].
 
-2. Adicione a base de dados, novamente, por meio da operação [Ler dados][3].
+2. Adicione a base de dados, novamente, por meio da operação [Ler dados][4].
 
 
 3. Adicione a operação **Adicionar nova(s) linhas(s)**
@@ -39,6 +39,7 @@ Nome
 
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[1]: /pt-br/
-[2]: /pt-br/
-[3]: /pt-br/
+[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[3]: /pt-br/spark/base-de-dados/#iris
+[4]: /pt-br/spark/entrada-e-saida/ler-dados.html

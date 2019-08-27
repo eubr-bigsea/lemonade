@@ -42,7 +42,7 @@ Podem ser feitas três ações em caso de dados inválidos:
 
 ## Exemplo de Utilização
 **Objetivo:** Construir um fluxo de dados para ler uma base de dados.\
-**Base de Dados:** [Titanic][4]
+**Base de Dados:** [Titanic][3]
 	
 ![Ler dados](/img/spark/entrada_e_saida/ler_dados/image5.png)
 
@@ -81,9 +81,6 @@ Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
 [Inferir esquema da fonte de dados]: #inferir-esquema-da-fonte-de-dados
 [O que fazer em caso de dados inválidos]: #o-que-fazer-em-caso-de-dados-invalidos
-[1]: /pt-br/
-[2]: /pt-br/
-[3]: /pt-br/
-[4]: /pt-br/
-[5]: /pt-br/
-[6]: /pt-br/
+[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[3]: /pt-br/spark/base-de-dados/#titanic

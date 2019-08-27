@@ -58,7 +58,7 @@ Na projeção aleatória por buckets para distância Euclidiana, o código hash 
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
 [Tipo do LSH]: #tipo-do-lsh
-[1]: /spark/
-[2]: /spark/
-[3]: /spark/
-[4]: /spark/
+[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[3]: /pt-br/spark/base-de-dados/#pima-indians-diabetes
+[4]: /pt-br/spark/entrada-e-saida/ler-dados.html

@@ -86,12 +86,12 @@ Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
 [Impureza]: #impureza
 [Estratégia para subconjunto de features]: #estrategia-para-subconjunto-de-features
-[1]: /pt-br/
-[2]: /pt-br/
-[3]: /pt-br/
-[4]: /pt-br/
-[5]: /pt-br/
-[6]: /pt-br/
-[7]: /pt-br/
-[8]: /pt-br/
-[9]: /pt-br/
+[1]: /pt-br/spark/aprendizado-de-maquina/classificacao-arvore-de-decisao.html
+[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[3]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[4]: /pt-br/spark/base-de-dados/#iris
+[5]: /pt-br/spark/entrada-e-saida/ler-dados.html
+[6]: /pt-br/spark/pre-processamento-de-dados/representacao-de-atributos-converter-categorico-para-numerico.html
+[7]: /pt-br/spark/pre-processamento-de-dados/amostragem-divisao-percentual.html
+[8]: /pt-br/spark/modelo-e-avaliacao/aplicar-modelo.html
+[9]: /pt-br/spark/modelo-e-avaliacao/avaliar-modelo.html

@@ -35,7 +35,7 @@ Nome da Tarefa
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].
 	
-2.  Adicione a operação [Agrupar linhas por função][4] e selecione *“class”* no campo **Selecione o(s) atributos para agrupamento**. Na função de agrupamento, selecione o **Atributo** *"class”*, **Função** *“count”* e preencha *“count_class”* em **Nome Novo**. \
+2.  Adicione a operação [Agrupar linhas por função][5] e selecione *“class”* no campo **Selecione o(s) atributos para agrupamento**. Na função de agrupamento, selecione o **Atributo** *"class”*, **Função** *“count”* e preencha *“count_class”* em **Nome Novo**. \
 	![Formulario classes](/img/spark/visualizacao_de_dados/grafico_de_pizza/image3.png)
 	
 
@@ -50,7 +50,8 @@ Nome da Tarefa
 
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[1]: /pt-br/
-[2]: /pt-br/
-[3]: /pt-br/
-[4]: /pt-br/
+[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[3]: /pt-br/spark/base-de-dados/#iris
+[4]: /pt-br/spark/entrada-e-saida/ler-dados.html
+[5]: /pt-br/spark/manipulacao-de-dados/linha-agrupar-por-funcao.html

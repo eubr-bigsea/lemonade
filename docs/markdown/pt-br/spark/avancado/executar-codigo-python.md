@@ -103,10 +103,10 @@ Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 [Consulta (entradas estão disponíveis como tabelas chamadas ds1 e ds2)]: #consulta
 [Inferir esquema da fonte de dados]: #inferir-esquema-da-fonte-de-dados
 [O que fazer em caso de dados inválidos]: #o-que-fazer-em-caso-de-dados-invalidos
-[1]: /pt-br/
-[2]: /pt-br/
-[3]: /pt-br/
-[4]: /pt-br/
-[5]: /pt-br/
-[6]: /pt-br/
-[7]: /pt-br/
+[1]: https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.DataFrame
+[2]: https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.SparkSession.createDataFrame
+[3]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[4]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[5]: /pt-br/spark/base-de-dados/#iris
+[6]: /pt-br/spark/entrada-e-saida/ler-dados.html
+[7]: /pt-br/spark/visualizacao-de-dados/grafico-de-dispersao.html

@@ -44,9 +44,9 @@ Nome da Tarefa
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[1]: /spark/aprendizado-de-maquina/associacao-mineracao-de-itemsets-frequentes.html
-[2]: /spark/documentacao-geral/documentacao-geral.html#aba-aparencia
-[3]: /spark/documentacao-geral/documentacao-geral.html#aba-resultados
-[4]: /spark/base-de-dados/#belguim-retail
-[5]: /spark/entrada-e-saida/ler-dados.html
-[6]: /spark/visualizacao-de-dados/tabela.html
+[1]: /pt-br/spark/aprendizado-de-maquina/associacao-mineracao-de-itemsets-frequentes.html
+[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[3]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[4]: /pt-br/spark/base-de-dados/#belguim-retail
+[5]: /pt-br/spark/entrada-e-saida/ler-dados.html
+[6]: /pt-br/spark/visualizacao-de-dados/tabela.html

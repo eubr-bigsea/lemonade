@@ -77,9 +77,9 @@ Avaliando os resultados dessa vez é possível ver que as divisões foram realiz
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
 [Exemplo 1]: #exemplo-1
-[1]: /spark/
-[2]: /spark/
-[3]: /spark/
-[4]: /spark/
-[5]: /spark/
-[6]: /spark/
+[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[3]: /pt-br/spark/base-de-dados/#quotes
+[4]: /pt-br/spark/entrada-e-saida/ler-dados.html
+[5]: /pt-br/spark/pre-processamento-de-dados/operacoes-textuais-dividir-texto-por-delimitador.html
+[6]: /pt-br/spark/pre-processamento-de-dados/operacoes-textuais-remover-palavras-comuns.html
