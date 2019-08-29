@@ -45,9 +45,16 @@
       <SidebarLinks
         class="sidebar-group-items"
         :items="item.children"
-        v-if="open || !collapsable"
+        v-if="(open || !collapsable) && item.children"
         :sidebarDepth="item.sidebarDepth"
         :depth="depth + 1"
+      />
+
+      <SidebarLink
+        class="sidebar-group-items"
+        :item="item"
+        v-else-if="item.path && !item.children"
+        :sidebarDepth="item.sidebarDepth"
       />
     </DropdownTransition>
   </section>
@@ -56,14 +63,16 @@
 <script>
 import { isActive } from '../util'
 import DropdownTransition from '@theme/components/DropdownTransition.vue'
+import SidebarLink from '@theme/components/SidebarLink.vue'
 
 export default {
   name: 'SidebarGroup',
   props: ['item', 'open', 'collapsable', 'depth'],
-  components: { DropdownTransition },
+  components: { DropdownTransition, SidebarLink },
   // ref: https://vuejs.org/v2/guide/components-edge-cases.html#Circular-References-Between-Components
   beforeCreate () {
     this.$options.components.SidebarLinks = require('./SidebarLinks.vue').default
+    // this.$options.components.SidebarLink = require('./SidebarLink.vue').default
   },
   methods: { isActive }
 }

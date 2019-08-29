@@ -6,6 +6,18 @@ export default {
 
   props: ['item', 'sidebarDepth'],
 
+  beforeCreate () {
+    this.$options.components.SidebarLinks = require('./SidebarLinks.vue').default
+    // this.$options.components.SidebarLink = require('./SidebarLink.vue').default
+  },
+  // methods: { isActive refreshIndex toggleGroup }
+
+  watch: {
+    '$route' () {
+      this.$options.components.SidebarLinks.refreshIndex()
+    }
+  },
+  
   render (h,
     {
       parent: {
@@ -46,6 +58,7 @@ export default {
       return [link, renderChildren(h, item.children, item.basePath, $route, maxDepth)]
     } else if ((active || displayAllHeaders) && item.headers && !hashRE.test(item.path)) {
       const children = groupHeaders(item.headers)
+      if(item.type === 'group') return [renderChildren(h, children, item.path, $route, maxDepth, 'sidebar-links sidebar-group-items')]
       return [link, renderChildren(h, children, item.path, $route, maxDepth)]
     } else {
       return link
@@ -67,9 +80,9 @@ function renderLink (h, to, text, active) {
   }, text)
 }
 
-function renderChildren (h, children, path, route, maxDepth, depth = 1) {
+function renderChildren (h, children, path, route, maxDepth, depth = 1, newClasses = '') {
   if (!children || depth > maxDepth) return null
-  return h('ul', { class: 'sidebar-sub-headers' }, children.map(c => {
+  return h('ul', { class: 'sidebar-sub-headers'+newClasses }, children.map(c => {
     const active = isActive(route, path + '#' + c.slug)
     return h('li', { class: 'sidebar-sub-header' }, [
       renderLink(h, path + '#' + c.slug, c.title, active),

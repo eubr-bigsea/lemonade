@@ -65,6 +65,12 @@ export function resolvePage (pages, rawPath, base) {
   }
   const path = normalize(rawPath)
   for (let i = 0; i < pages.length; i++) {
+    // if(pages[i].path === path){
+    //   return Object.assign({}, pages[i], {
+    //     type: 'group',
+    //     path: ensureExt(pages[i].path)
+    //   })
+    // } else 
     if (normalize(pages[i].regularPath) === path) {
       return Object.assign({}, pages[i], {
         type: 'page',
@@ -227,19 +233,30 @@ function resolveItem (item, pages, base, groupDepth = 1) {
         '[vuepress] detected a too deep nested sidebar group.'
       )
     }
-    const children = item.children || []
-    if (children.length === 0 && item.path) {
+    // const children = item.children || []
+    const children = item.children
+    // if (children.length === 0 && item.path) {
+    if (children && item.path) {
       return Object.assign(resolvePage(pages, item.path, base), {
         title: item.title
       })
+    } else if(item.path){
+      return Object.assign(resolvePage(pages, item.path, base), {
+        title: item.title,
+        type: 'group',
+        collapsable: item.collapsable,
+        collapsible: item.collapsible
+      })
     }
-    return {
+    var children_group = children ? children.map(child => resolveItem(child, pages, base, groupDepth + 1)) : []
+    const group_item = {
       type: 'group',
       path: item.path,
       title: item.title,
       sidebarDepth: item.sidebarDepth,
-      children: children.map(child => resolveItem(child, pages, base, groupDepth + 1)),
+      children: children_group,
       collapsable: item.collapsable !== false
     }
+    return group_item
   }
 }

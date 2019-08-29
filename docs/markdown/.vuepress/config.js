@@ -56,9 +56,24 @@ module.exports = {
 					}
 				],
 				sidebar: {
-					// '/pt-br/spark/' : [
-					// 'spark/' : [
 					'/pt-br/spark/': [
+						{
+							title: 'Primeiros Passos',
+							type: 'group',
+							collapsable: true,
+							sidebarDepth: 2,
+							path: 'documentacao-geral/'
+						},
+						// {
+						// 	title: 'Primeiros Passos',
+						// 	collapsable: true,
+						// 	sidebarDepth: 2,
+						// 	children: [
+						// 		//['<route>', '<label to show on sidebar>']
+						// 		// ['documentacao-geral/documentacao-geral.md', 'Documentação Geral']
+						// 		['documentacao-geral/utilizacao-basica-da-plataforma-lemonade.md', 'Utilização Básica da Plataforma Lemonade']
+						// 	]
+						// },
 						{
 							title: 'Visualização de Dados',
 							collapsable: true,
@@ -154,16 +169,6 @@ module.exports = {
 								['entrada-e-saida/salvar-dados.md', 'Salvar Dados'],
 								['entrada-e-saida/ler-dados.md', 'Ler Dados'],
 								['entrada-e-saida/carregar-modelo.md', 'Carregar Modelo']
-							]
-						},
-						{
-							title: 'Documentação Geral',
-							collapsable: true,
-							sidebarDepth: 2,
-							children: [
-								//['<route>', '<label to show on sidebar>']
-								['documentacao-geral/documentacao-geral.md', 'Documentação Geral'],
-								['documentacao-geral/utilizacao-basica-da-plataforma-lemonade.md', 'Utilização Básica da Plataforma Lemonade']
 							]
 						},
 						{
