@@ -51,8 +51,8 @@ Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 [Inferir esquema da fonte de dados]: #inferir-esquema-da-fonte-de-dados
 [O que fazer em caso de dados inválidos]: #o-que-fazer-em-caso-de-dados-invalidos
 [1]: /pt-br/spark/entrada-e-saida/salvar-modelo.html
-[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
-[3]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[2]: /pt-br/spark/documentacao-geral/aba-aparencia.html
+[3]: /pt-br/spark/documentacao-geral/aba-resultados.html
 [4]: /pt-br/spark/base-de-dados/#iris
 [5]: /pt-br/spark/entrada-e-saida/ler-dados.html
 [6]: /pt-br/spark/pre-processamento-de-dados/representacao-de-atributos-converter-categorico-para-numerico.html

@@ -414,8 +414,8 @@ Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 [5]: https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 [6]: http://archive.ics.uci.edu/ml/datasets/Iris?ref=datanews.io
 [7]: /pt-br/spark/entrada-e-saida/ler-dados.html
-[8]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
-[9]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[8]: /pt-br/spark/documentacao-geral/aba-aparencia.html
+[9]: /pt-br/spark/documentacao-geral/aba-resultados.html
 [10]: /pt-br/spark/visualizacao-de-dados/sumario-estatistico.html
 [11]: https://spark.apache.org/
 [12]: /pt-br/spark/pre-processamento-de-dados/representacao-de-atributos-converter-categorico-para-numerico.html

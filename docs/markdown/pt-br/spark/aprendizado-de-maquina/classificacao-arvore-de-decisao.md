@@ -69,8 +69,8 @@ Tipos de impureza:
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
 [Impureza]: #impureza
-[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
-[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[1]: /pt-br/spark/documentacao-geral/aba-aparencia.html
+[2]: /pt-br/spark/documentacao-geral/aba-resultados.html
 [3]: /pt-br/spark/base-de-dados/#iris
 [4]: /pt-br/spark/entrada-e-saida/ler-dados.html
 [5]: /pt-br/spark/pre-processamento-de-dados/representacao-de-atributos-converter-categorico-para-numerico.html

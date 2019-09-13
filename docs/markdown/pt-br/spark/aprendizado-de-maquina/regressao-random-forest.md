@@ -56,8 +56,8 @@ Nome da Tarefa
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
 [1]: /pt-br/spark/aprendizado-de-maquina/classificacao-arvore-de-decisao.html
-[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
-[3]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[2]: /pt-br/spark/documentacao-geral/aba-aparencia.html
+[3]: /pt-br/spark/documentacao-geral/aba-resultados.html
 [4]: /pt-br/spark/base-de-dados/#msnbc-com
 [5]: /pt-br/spark/entrada-e-saida/ler-dados.html
 [6]: /pt-br/spark/pre-processamento-de-dados/amostragem-divisao-percentual.html

@@ -78,7 +78,7 @@ Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
 [Formato de Saída]: #formato-de-saida
 [Modo para sobrescrita]: #modo-para-sobrescrita
-[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
+[1]: /pt-br/spark/documentacao-geral/aba-aparencia.html
 [2]: https://pt.wikipedia.org/wiki/Comma-separated_values
 [3]: https://pt.wikipedia.org/wiki/JSON
 [4]: /pt-br/spark/base-de-dados/#titanic

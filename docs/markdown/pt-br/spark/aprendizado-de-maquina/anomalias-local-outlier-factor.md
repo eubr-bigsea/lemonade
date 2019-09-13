@@ -46,8 +46,8 @@ Os resultados indicam que a primeira instância retornada diverge amplamente do 
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
-[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[1]: /pt-br/spark/documentacao-geral/aba-aparencia.html
+[2]: /pt-br/spark/documentacao-geral/aba-resultados.html
 [3]: /pt-br/spark/base-de-dados/#iris
 [4]: /pt-br/spark/entrada-e-saida/ler-dados.html
 [5]: /pt-br/spark/manipulacao-de-dados/coluna-ordenar.html

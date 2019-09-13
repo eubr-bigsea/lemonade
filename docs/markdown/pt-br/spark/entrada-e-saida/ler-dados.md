@@ -81,6 +81,6 @@ Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
 [Inferir esquema da fonte de dados]: #inferir-esquema-da-fonte-de-dados
 [O que fazer em caso de dados inválidos]: #o-que-fazer-em-caso-de-dados-invalidos
-[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
-[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[1]: /pt-br/spark/documentacao-geral/aba-aparencia.html
+[2]: /pt-br/spark/documentacao-geral/aba-resultados.html
 [3]: /pt-br/spark/base-de-dados/#titanic

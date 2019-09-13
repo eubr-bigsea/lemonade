@@ -1,7 +1,7 @@
 <template>
   <ul
     class="sidebar-links"
-    v-if="items.length && items !== undefined"
+    v-if="items.length"
   >
     <li v-for="(item, i) in items" :key="i">
       <SidebarGroup
@@ -77,13 +77,7 @@ export default {
 function resolveOpenGroupIndex (route, items) {
   for (let i = 0; i < items.length; i++) {
     const item = items[i]
-    if (item.type === 'group' 
-      && (
-        (item.children && item.children.some(c => c.type === 'page' && isActive(route, c.path)))
-        ||
-        (isActive(route, item.path))
-      )
-    ){
+    if (item.type === 'group' && item.children.some(c => c.type === 'page' && isActive(route, c.path))) {
       return i
     }
   }

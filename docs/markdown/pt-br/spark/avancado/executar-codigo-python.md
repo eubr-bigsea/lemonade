@@ -105,8 +105,8 @@ Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 [O que fazer em caso de dados inválidos]: #o-que-fazer-em-caso-de-dados-invalidos
 [1]: https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.DataFrame
 [2]: https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.SparkSession.createDataFrame
-[3]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
-[4]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[3]: /pt-br/spark/documentacao-geral/aba-aparencia.html
+[4]: /pt-br/spark/documentacao-geral/aba-resultados.html
 [5]: /pt-br/spark/base-de-dados/#iris
 [6]: /pt-br/spark/entrada-e-saida/ler-dados.html
 [7]: /pt-br/spark/visualizacao-de-dados/grafico-de-dispersao.html

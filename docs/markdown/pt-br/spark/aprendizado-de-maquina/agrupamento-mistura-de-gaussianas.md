@@ -48,7 +48,7 @@ Com a execução do modelo a probabilidade de cada amostra pertencer a cada comp
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
 [Link na propria pagina]: #link-vem-pra-ca
-[1]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-aparencia
-[2]: /pt-br/spark/documentacao-geral/documentacao-geral.html#aba-resultados
+[1]: /pt-br/spark/documentacao-geral/aba-aparencia.html
+[2]: /pt-br/spark/documentacao-geral/aba-resultados.html
 [3]: /pt-br/spark/base-de-dados#iris
 [4]: /pt-br/spark/entrada-e-saida/ler-dados.html
