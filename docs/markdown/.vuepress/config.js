@@ -51,7 +51,7 @@ module.exports = {
 							{ text: 'COMPSs', link: 'https://www.bsc.es/research-and-development/software-and-apps/software-list/comp-superscalar/documentation'},
 							{ text: 'Keras', link: 'https://keras.io/'},
 							{ text: 'Scikit-Learn', link: 'https://scikit-learn.org/stable/documentation.html'},
-							{ text: 'Spark', link: '/pt-br/spark/visualizacao-de-dados/tabela'}
+							{ text: 'Spark', link: '/pt-br/spark/documentacao-geral/utilizacao-basica'}
 						],
 					}
 				],
@@ -218,10 +218,10 @@ module.exports = {
 						
 					],
 					'/pt-br/': [
-						['', 'About'],
-						['data-science.md', 'Data Science'],
-						['installation.md', 'Installation'],
-						['architecture.md', 'Architecture']
+						['', 'Sobre'],
+						['data-science.md', 'Ciência de Dados'],
+						['installation.md', 'Instalação'],
+						['architecture.md', 'Arquitetura']
 					]
 				}
 			},

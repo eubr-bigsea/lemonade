@@ -48,7 +48,7 @@ O principal objetivo dessa etapa é fazer com que o usuário conheça os atribut
 A partir da análise dos *atributos* de cada registro (linha) podemos predizer a qual espécie aquele exemplar pertence. Logo, podemos concluir que o comprimento e a largura da pétala e sépala são os atributos, enquanto a classe da espécie é o *rótulo*. 
 
 No **Lemonade**, todas as operações relacionadas ao aprendizado de máquinas estão baseadas no [Apache Spark Framework][11], logo precisamos formatar as operações do fluxo de forma que os parâmetros se adequem a seguinte estrutura de dados.\
-![Diagrama de funcionamento](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image6.png)\
+![Diagrama de funcionamento](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image9.png)\
 Portanto a próxima etapa do nosso experimento consiste no treinamento e avaliação de um modelo de classificação. Cada modelo é formado pela estrutura de dados e um algoritmo de aprendizado de máquina. Ao final, o nosso modelo será avaliado utilizando um processo de validação cruzada ou *Cross-validation ML process*.
 
 ### Extração de atributos (Extract features)
@@ -162,7 +162,7 @@ Inicialmente precisamos carregar a base que importamos. Para manter o dinamismo 
 Vamos dar um *preview* dos atributos da base para analisar a formatação dos dados (marcando a primeira caixa na aba **Resultados** nos **Parâmetros da Tarefa**).\
 ![Tabela - Carregamento da base de dados](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image104.png)
 
-Como o objetivo dessa documentação é apenas ensinar ao usuário como criar visualizações, escolhemos por remover todas as linhas as quais os valores são nulos ou ausentes.\ 
+Como o objetivo dessa documentação é apenas ensinar ao usuário como criar visualizações, escolhemos por remover todas as linhas as quais os valores são nulos ou ausentes.\
 ![Tratar dados ausentes](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image23.png)
 
 Vamos começar com gráficos mais simples e que exigirão menor esforço na criação do fluxo. Vamos criar um gráfico de pizza e um gráfico de rosca (*donut* ) que nos responda o número de sobreviventes e mortos respectivamente, para este fragmento de base.\

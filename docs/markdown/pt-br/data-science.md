@@ -1,79 +1,75 @@
-# Data science
-Data Science arises as a new area that aims to materialize processes and practices to explore, analyze and generate models that enable the description and prediction from a wide range of data types. Ultimately, these processes and practices will support better performance and efficacy of the organizations and quality of life of the citizens.
+# Ciência de Dados
+A Ciência de Dados surge como uma nova área que visa materializar processos e práticas para explorar, analisar e gerar modelos que permitem a descrição e previsão de uma ampla variedade de tipos de dados. Por fim, esses processos e práticas melhoram o desempenho e eficácia das organizações e qualidade de vida dos cidadãos.
 
-Data Science models and transforms data to subsidize the decision process through computational thinking, towards data-driven decision making.
+A Ciência de Dados modela e transforma os dados para subsidiar o processo de decisão por meio do pensamento computacional, em direção a tomada de decisão baseada em dados.
+decision making.
 
-## Data Scientist
+## Cientista de Dados
 
-Professional of the decade
+Profissional da década
 
 Profile:
 
-* Analytical ability
-* Investigative capacity
-* Entrepreneurship
-* Business understanding
-* Programming skills
+* Habilidade analítica
+* Capacidade de investigação
+* Empreendedorismo
+* Conhecimento do negócio
+* Habilidades de programação
 
 
 ## Data Science in Practice
 
 <a href="http://www.azquotes.com/quote/593283" title="Ronald Coase quote"><img src="http://www.azquotes.com/picture-quotes/quote-if-you-torture-the-data-long-enough-it-will-confess-ronald-coase-59-32-83.jpg" alt="If you torture the data long enough, it will confess. - Ronald Coase"></a>
+*"Se você torturar os dados por tempo suficiente, eles confessarão." Ronald Coase*
 
-Data management: several general or specialized platforms for all kinds of data
+Gerenciamento de dados: várias plataformas gerais ou especializadas para todos os tipos de dados.
 
-Data mining: several implementations of each technique
+Mineração de dados: várias implementações de cada técnica
 
-User expertise: does the data scientist need to program?
+Experiência do usuário: o cientista de dados precisa programar?
 
-NO! (S)he needs just to think algorithmically.
+NÃO! Ele (a) precisa apenas pensar algoritmicamente.
 
-## Lemonade in the context of data science
+## LEMONADE no contexto da ciência de dados
 
-Enablers:
+Viabilizadores:
 
-* Wide availability of algorithm implementations
-* Broad spectrum of databases and storage technologies
-* Massively parallel processing commercial solutions
-* Mature virtualization technology
-* Real time transpiling technology is a reality
-* Awareness of the data potential
+* Ampla disponibilidade de implementações de algoritmos
+* Amplo espectro de bancos de dados e tecnologias de armazenamento
+* Soluções comerciais de processamento massivamente paralelo
+* Tecnologia de virtualização madura
+* Tecnologia de transpilação em tempo real é uma realidade
+* Consciência do potencial dos dados
 
 Motivations
 
-* Data scientists do not need to program, literally
-* Data scientists need to abstract algorithmically tasks
-* Cloud-fashion web-based platforms provide good interactive support
-* Visual programming is a need
+* Os cientistas de dados não precisam programar, literalmente
+* Os cientistas de dados precisam abstrair tarefas algorítmicas
+* As plataformas baseadas na Web (Cloud-fashion) oferecem um bom suporte interativo
+* A programação visual é uma necessidade
 
-## Data mining
-## Machine learning
+## Mineração de Dados
+A mineração de dados é o processo de descobrir padrões perspicazes, interessantes e novos, bem como modelos descritivos, compreensíveis e preditivos a partir de dados em larga escala (Fonte: ). É um campo que envolve várias áreas do conhecimento, como sistemas de banco de dados, estatísticas, aprendizado de máquina e reconhecimento de padrões. Além disso, a mineração de dados faz parte de um processo maior de descoberta de conhecimento que inclui tarefas de pré-processamento como, por exemplo, extração e limpeza de dados. E também etapas de pós-processamento, como interpretação de modelos e padrões. 
+
+## Aprendizado de Máquina
+O aprendizado de máquina é um campo da Inteligência Artificial (IA). É o campo de estudo que fornece aos computadores a habilidade de aprender sem ser explicitamente programado (Arthur Samuel, 1959). Ou seja, um programa de computador que é capaz de aprender automaticamente e melhorar através da experiência, agindo de forma semelhante aos seres humanos. O processo de aprendizagem é feito através de dados que são utilizados como entrada para esses algoritmos. Os algoritmos buscam encontrar padrões nesses dados que serão utilizados para melhorar o processo de tomada de decisão. 
 
 ## Data science 101
-### Techniques, algorithms and models
+### Técnicas, algorítmos e modelos
 
 ![](http://scikit-learn.org/stable/_static/ml_map.png)
 
-### How to choose between the different available techniques?
-### Is my data set ready for what I want to do?
-### How to formulate the correct question about data?
-### Predict and evaluate an answer
-### Standing over the shoulders of giants (or Ctrl+C, Ctrl+V)
-#### Copy workflows
-#### Use external Tutorials
-#### Repositories of machine learning experiments
-
-## Resources
+## Recursos
 ### Kaggle
 ### Cortana Intelligence Gallery
 
 "[Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/) enables our growing community of developers and data scientists to share their analytics solutions".
 
-## Graph analysis
+### Análise de grafos
 <https://blog.cloudera.com/blog/2016/10/how-to-do-scalable-graph-analytics-with-apache-spark/>
 
-# Regression
+### Regressão
 <https://hortonworks.com/tutorial/predicting-airline-delays-using-sparkr/>
 
-# Sentiment analysis
+### Análise de sentimentos
 <https://hortonworks.com/tutorial/sentiment-analysis-with-apache-spark/>

@@ -1,106 +1,61 @@
 # Architecture
 
-## Micro-services organization
+## Organização em micro-services
 
 ![Micro-services architecture](/img/image2.jpg "Micro-services")
 
-### Citron
+### Citrus
 
-Citron is a web based user interface used in Lemonade to create workflows. Users may choose among a set of predefined operations which will compose the workflow by dragging and dropping them into the design area. Among the operations, there are operations for reading and writing data in different storages, such as file systems (including distributed, such as HDFS) and databases.
+O Citrus é uma interface de usuário baseada na web que é usada no LEMONADE para criar fluxos de trabalho. Os usuários podem escolher entre um conjunto de operações predefinidas que integrarão o fluxo de trabalho, arrastando-as e soltando-as na área indicada. Entre as operações, há tarefas para ler e gravar dados em diferentes formas de armazenamento, como sistemas de arquivos (inclusive distribuídos, como HDFS) e banco de dados.
 
-Each operation is grouped by category and configured by forms, including parameters for execution, appearance, quality of service (QoS) and security & privacy settings. Citron interacts with Tahiti component in order to retrieve operations metadata and persist workflows and with Limonero component to retrieve and save data source metadata. 
+Cada operação é agrupada por categoria e configurada por meio de formulários, incluindo parâmetros para execução, aparência, qualidade de serviço (QoS) e configurações de segurança e privacidade. O Citrus interage com o componente Tahiti para recuperar metadados de operações e persistir fluxos de trabalho, e também com o componente Limonero para recuperar e salvar metadados de fontes de dados.
 
-Workflow execution status is provided by Lemonade Stand and it is integrated with Citron by using web sockets 
+O status de execução do fluxo de trabalho é fornecido pelo LEMONADE Stand e é integrado com o Citrus usando *web sockets*.
 
 
 ### Tahiti
 
-Tahiti manages metadata associated with operations. Operations are the smallest unit of processing and represent a coarse granularity task executed on one of the supported backends. 
-Currently, Lemonade supports ETL and some machine learning operations. 
-New operations can be implemented if the underlying processing framework supports them.
-Metadata include operation name, description, parameters and ports. 
-Ports are communication points that have direction (input and output), multiplicity (how many supported connections) and should “implement” interfaces in order to guarantee compatibility between operations. 
-Each operation has a set of parameters grouped as forms. Forms are organized into different classes, e.g. execution, security & privacy, quality of service, appearance, reports and logging.
+O Tahiti gerencia os metadados associados às operações. As operações são a menor unidade de processamento e representam uma tarefa de granularidade alta executada em um dos *backends* suportados. Atualmente, a LEMONADE suporta  extração, transformação, carregamento (ETL) e algumas operações de aprendizagem de máquina. Novas operações podem ser implementadas se o *framework* de processamento subjacente às suportar. Metadados incluem nome da operação, descrição, parâmetros e portas. Portas são pontos de comunicação que possuem direção (entrada e saída), multiplicidade (quantas conexões suportadas) e devem “implementar” interfaces para garantir a compatibilidade entre as operações. Cada operação tem um conjunto de parâmetros agrupados como formulários. Os formulários são organizados em classes diferentes, por exemplo, execução, segurança e privacidade, qualidade de serviço, aparência, relatório e registro.
 
-In order to provide extensibility, all operations in Lemonade are defined in two components: Tahiti and Juicer. Tahiti keeps all operation metadata, including their names, ports and related forms and makes such information available by an API, consumed by Citron when it starts rendering the user interface.  
-Although by using Tahiti with Citron we eliminated the dependency between the interface and the available abstractions, still there is a strong dependency between Tahiti managed metadata and the execution component, Juicer. In order to create or modify a new operation, a developer must insert or update  information in Tahiti and implement changes directly in Juicer source code. 
+Para fornecer extensibilidade, todas as operações do LEMONADE são definidas em dois componentes: Tahiti e Juicer. O Tahiti mantém todos os metadados da operação, incluindo os seus nomes, portas e formulários relacionados, e também disponibiliza essas informações por meio de uma API, que é utilizada pelo Citrus quando se inicia o processo de renderização da interface do usuário. Embora o Tahiti seja utilizado com o Citrus, eliminamos a dependência entre a interface e as abstrações disponíveis. Ainda há uma forte dependência entre os metadados gerenciados pelo Tahiti e o componente de execução, o Juicer. Para criar ou modificar uma nova operação, o desenvolvedor deve inserir ou atualizar as informações no Tahiti e implementar as mudanças diretamente no código-fonte do Juicer.
 
-There is another class of metadata related to the data sources themselves. In a design decision, we choose to keep, for each data source available in Lemonade, metadata about user access permissions, attributes (including the name, datatype, precision, length, nullability, if they are labels or features and their statistical data, distribution, how many missings, mean, max, min values, etc.) and the format of the data (CSV, JSON, Parquet, etc). Such information is used when reading data in order to avoid misinterpretation of formats, validation of input and of the workflow, optimize reading and finally, integrate more easily with the visualization component, Caipirinha (more details ahead). 
+
+Existe outra classe de metadados relacionada com as fontes de dados. Em uma decisão de *design*, escolhemos manter, para cada fonte de dados disponível no LEMONADE, metadados sobre permissões de acesso do usuário, atributos (incluindo nome, tipo de dados, precisão, tamanho, capacidade de anulação, se eles são rótulos (labels) ou *features* e seus dados estatísticos, distribuição, quantos erros, média, valores máximos e mínimos, etc.) e o formato dos dados (CSV, JSON, Parquet, etc). Essas informações são utilizadas na leitura de dados para evitar interpretações errôneas de formatos, validar a entrada e o fluxo de trabalho, otimizar a leitura e, finalmente, integrar mais facilmente com o componente de visualização, Caipirinha (mais detalhes adiante).
 
 
 ### Limonero
 
-Limonero is similar to Tahiti, but instead of keeping metadata about operations, it keeps metadata information about data sources. 
-Data sources may be input to workflows and also created by them as output. Data source metadata includes: 
-Location: where data are located and in which storage technology (for instance, HDFS).
-Data format and structure: If the data are in JSON format, what the columns and their data types are, and if any given column is optional, if it is a feature or a label. 
-Access restrictions: ownership of data sets, authorization and privacy concerns. 
-Statistics about the data: number of records, size in MB, column-specific information such as number of missing records, min/max/average/median values, deciles distribution, etc. 
-Metadata are used by web interface to enable or disable data visualizations and operations, according to data/visualisation and data/operation compatibility. 
-Currently: data source upload, soon data source download.
+O Limonero é semelhante ao Tahiti, mas em vez de manter metadados sobre as operações, ele mantém informações de metadados sobre as fontes de dados. As fontes de dados podem ser entradas para os fluxos de trabalho e também criadas por eles como saída. Os metadados de uma fonte de dados incluem: Localidade: onde os dados estão localizados e em qual tecnologia de armazenamento (por exemplo, HDFS). Formato e estrutura de dados: se os dados estiverem no formato JSON, quais são as colunas e seus tipos de dados, e se qualquer coluna é opcional, se for uma *feature* ou um rótulo (label). Restrições de acesso: propriedade de conjuntos de dados, autorização e privacidade. Estatísticas sobre os dados: número de registros, tamanho em MB, informações específicas da coluna como número de registros perdidos, valores de mín/máx/média/mediana, decil da distribuição, etc. Metadados são usados pela interface web para habilitar ou desabilitar visualizações de dados e operações, de acordo com dados/visualização e compatibilidade de dados/operação. Atualmente: *upload* de fonte de dados, em breve download da fonte de dados.
 
 ### Juicer
 
-uicer has four main responsibilities: 
-Receive a workflow specification (JSON) from Stand and convert it into executable code (transpile operations into respective underlying technology code). 
-Execute the generated code, controlling the execution flow. 
-Report execution status to Stand.
-Interact with Limonero API in order to create new data sets and record their metadata. 
-Under the hood, Juicer will generate code targeting a distributed processing platform, such as Spark and BSC COMPSs 
-Code is executed in batch mode. 
-Future versions may implement support to interactive execution. 
-Being a higher level abstraction, Lemonade does not map all possible operations existing in the underlying technology.
-But “black-box” operations that execute low-level code may be registered and used in a workflow.
+O Juicer tem quatro responsabilidades principais: Receber uma especificação de fluxo de trabalho (JSON) do Stand e convertê-la em código executável (transpilar operações para o respectivo código de tecnologia subjacente). Executar o código gerado, controlando o fluxo de execução. Reportar status de execução para o Stand. Interagir com a API do Limonero para criar novos conjuntos de dados e registrar os seus metadados. O Juicer irá gerar o código direcionado a uma plataforma de processamento distribuída, tal como o Spark e o BSC COMPSssão executados no modo batch. Versões futuras podem implementar suporte para execução interativa. Sendo uma abstração de nível superior, o LEMONADE não mapeia todas as operações existentes na tecnologia subjacente. Mas as operações de “caixa preta” que executam código de baixo nível podem ser registradas e usadas em um fluxo de trabalho.
 
 ### Thorn
 
-Thorn controls authentication and authorization.
-Current version uses a custom database schema.
-Future versions may be integrated with existing technologies, such as OpenStack Keystone.
-Evolution depends on work in EUBra-BigSea project (WP6).
-Integration with LDAP (authentication).
-Thorn is not used when components are communicating:
-Authentication is based on static tokens defined in configuration files.
 
-Thorn is the module responsible for provide security and privacy constraints in Lemonade. Current version only works with basic authentication and authorization but working groups from WP5 and WP6 are working together in order to create a common solution. The interaction between all components, except Caipirinha, is shown in Figure L3 below.
+O Thorn controla a autenticação e a autorização. A versão atual usa um esquema de banco de dados personalizado. Versões futuras podem ser integradas com as tecnologias existentes, como o *OpenStack Keystone*. e integração com o LDAP (autenticação). O Thorn não é usado quando os componentes estão se comunicando: a autenticação é baseada em tokens estáticos que estão definidos nos arquivos de configuração.
+
+Este é o módulo responsável por fornecer restrições de segurança e privacidade no LEMONADE.
+
 ![Micro-services interaction](/img/image3.jpg "Micro-services interaction")
 
 
 ### Stand
 
-Stand is a facade between user interface (Citron) and backend execution (Juicer).
-It receives workflow execution requests and places them in a queue (we are using a queue implemented in Redis storage).
-Juicer consumes the execution queue and for each workflow and task in execution, reports their statuses in a persistent database (MySQL) and in a publisher-subscriber topic in Redis.
-Stand subscribes to each topic and reports execution status to Citron by using web sockets.
+O Stand é um façade (facade) entre a interface do usuário (Citrus) e o *back-end* de execução (Juicer). Ele recebe solicitações de execução do fluxo de trabalho e as coloca em uma fila (esta*mos usando uma fila implementada no Redis). O Juicer consome a fila de execução e, para cada fluxo de trabalho e tarefa em execução, relata os seus status em um banco de dados persistente (MySQL) e em um tópico *publisher-subscriber* no Redis. O Stand subscreve cada tópico e relata o status de execução para o Citrus usando *web sockets*.
 
-Citron allows users to start the workflow execution and Juicer is responsible for retrieving information about the execution from the underlying execution platform. To keep both components decoupled, a third component, Stand is needed. 
+O Citrus permite que os usuários iniciem uma execução do fluxo de trabalho e o Juicer é responsável por recuperar as informações sobre a execução a partir da plataforma de execução subjacente. Para manter os dois componentes desacoplados, é necessário um terceiro, o Stand.
 
-Stand a facade between user interface (Citron) and backend execution (Juicer). User interface should be responsiveness, while the backend is batch processing the workflow. Stand decouples the other two components by using async communication, implemented as a producer-consumer queue in Redis. Interactions between components are shown in Figure L2. When a user triggers the execution of a workflow, Citron invokes Stand in order to run the job (1a) and also connects to a websocket which provides feedback to the user interface (1b). Stand receives the request and pushes it into a queue (2a) and starts consuming status queue (2b) that feeds the websocket. Juicer consumes the execution queue (3a) and for again, reports execution status by pushing it to a publisher-subscriber topic in Redis (volatile) and updating rows in MySQL (persistent) (5). Citron then receives notifications about tasks execution status (6) and updates the interface. 
-
+A interface do usuário deve ser responsiva, enquanto o *back-end* é o processamento em lote do fluxo de trabalho. O Stand separa os dois componentes usando a comunicação assíncrona, implementada como uma fila produtor-consumidor no Redis. Quando um usuário aciona a execução de um fluxo de trabalho, o Citrus invoca o Stand para executar o trabalho (1a) e também se conecta a um websocket que fornece feedback para a interface do usuário (1b). O Stand recebe a solicitação e a coloca em uma fila (2a) e começa a consumir o status da fila (2b) que alimenta o *websocket*. O Juicer consome a fila de execução (3a) e, novamente, relata o status de execução, enviando-a para um tópico publisher-subscriber no Redis (volátil) e atualizando as linhas no MySQL (persistente) (5). Em seguida, o Citrus recebe as notificações sobre o *status* da execução das tarefas (6) e atualiza a interface.
 
 ![Micro-services interaction](/img/image4.jpg "Micro-services interaction")
 
 ### Caipirinha
 
-Caipirinha is the Lemonade service responsible for providing configuration for  data visualization.
-It uses metadata information about data sets provided by Limonero.
-Still being designed:
-Requirements identification
-Domain modeling
-Challenges in usability and user experience in web applications
-Final version will be “data exploration centric”: 
-Instead of start from a workflow and then generate a visualization, final version will allow users to start from data, create visualizations, set parameters and then a workflow is generated (and processed).
+O Caipirinha é o serviço de LEMONADE responsável por fornecer as configurações para a visualização de dados. Ele usa as informações de metadados sobre os conjuntos de dados fornecidas pelo Limonero. Ainda está sendo projetado: Identificação de requisitos,  Modelagem de domínio, Desafios em usabilidade e experiência do usuário em aplicações web. A versão final será “centrada em exploração de dados”: em vez de iniciar a partir de um fluxo de trabalho e gerar uma visualização, a versão final permitirá que os usuários iniciem a partir dos dados, criem visualizações, definam parâmetros e, em seguida, o fluxo de trabalho é gerado (e processado).
+Um requisito importante do LEMONADE é fornecer *feedback* aos usuários sobre a execução das tarefas e os resultados. Quando uma tarefa modifica um dado de entrada, o usuário deve poder analisar os dados resultantes inspecionando-os diretamente (por exemplo, usando uma tabela) ou visualizando-os por meio de uma metáfora visual (mapas, gráficos, visualizações personalizadas, etc.). O Caipirinha é um *framework* que se integra com dados e metadados do LEMONADE para fornecer às visualização de dados. A ideia é fornecer ao usuário um conjunto de visualizações comuns, como tabelas, gráficos de pizza, linha e barras, com pouco esforço na customização. Para visualizações mais sofisticadas, o usuário pode configurar uma operação de geração de visualização com o tipo de visualização e seus parâmetros, algo como o assistente de geração de gráficos presentes nos *softwares* de planilhas. As visualizações serão ativadas/desativadas de acordo com os requisitos predefinidos. Tais requisitos fazem parte dos metadados de visualização e serão armazenados no Caipirinha.
 
-An important requirement of Lemonade is to provide feedback to users about tasks execution and results. When a task modifies an input data, user must be able to analyze the resulting data by inspecting it directly (e.g. using a table) or by visualizing it by a visual metaphor (charts, graphs, custom visualizations, etc.). Caipirinha is a framework that integrates with Lemonade data and metadata in order to provide data visualization. The idea is to provide to the user a set of common visualizations, like tables, pie, line and bar charts with little effort in customization. For more sophisticated visualizations, user can configure a generate visualization operation with the type of the visualization and its parameters, something like the chart generation wizard present in common spreadsheet software. Visualizations will be enable/disabled according to predefined requirements. Such requirements are part of the visualization metadata and will be stored in Caipirinha. 
+## Geração de código fonte
 
-
-## Services communication
-
-
-## Source code generation
-
-Workflow is represented internally in JSON format. When a new job is created in order to execute a workflow, Juicer will convert code to code (transpile), parsing JSON format into a Python language script compatible with the underlying processing platform. The utilization of Python language restricts targeting platforms, but now, COMPSs, Ophidia and Spark supports it. We do not foresee the need of using a real compiler, but maybe in future we could extend Juicer to support it. 
-
-## Code execution and platforms
-
-
+O fluxo de trabalho é representado internamente pelo formato JSON. Quando uma nova tarefa é criada para executar um fluxo de trabalho, o Juicer converte código em código (transpilado), transformando o formato JSON em um script Python que é compatível com a plataforma de processamento subjacente. A utilização da linguagem Python restringe as plataformas de direcionamento, mas agora o COMPSs, o Ophidia,o Spark e o Keras/Tensorflow o suportam. Nós não prevemos a necessidade de usar um compilador real, mas talvez no futuro possamos estender o Juicer para suportá-lo.

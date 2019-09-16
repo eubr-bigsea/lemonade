@@ -2,7 +2,7 @@
 Após a criação do usuário e reconhecimento do layout básico da plataforma, você poderá prosseguir para a importação de bases de dados, que podem ser utilizadas como entrada em processos de fluxos de trabalhos. Para iniciar a importação de uma base, clique na primeira aba na parte superior da página, chamada **Base de dados**:
 ![Bases de Dados](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image51.png)\
 A tela de importação de bases de dados aparecerá, e é nela que será feito o gerenciamento das bases de dados que você escolher utilizar. Para carregar uma base de dados clique no botão **Adicionar**:\
-![Tabela - Bases de Dados](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image42.png)\
+![Tabela - Bases de Dados](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image41.png)\
 A seguir, clique em **Escolha** na seção chamada “Sistema de arquivos distribuído (HDFS)”:\
 ![Sistema de arquivos distribuídos](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image37.png)\
 Você poderá arrastar o arquivo do seu gerenciador de arquivos ou selecioná-lo manualmente:\

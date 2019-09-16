@@ -1,13 +1,13 @@
-# Installation
+# Instalação
 
-## Installing the latest version
+## Instalando a última versão
 
-## Using a Docker container
+## Usando Docker container
 
-In the following Figure, Lemonade microservices are deployed as containers managed by Docker and by the underlying virtualization technology. Workflows in Lemonade are converted into PySpark code and runs on Apache Spark or COMPSs (under development), consuming resources in HDFS or in Ophidia (under development). In general, Lemonade's microservices do not require elasticity, because they are small applications and do not really execute any CPU or memory intensive code, this is responsibility of the underlying processing platform (COMPSs or Spark). As described in previous section, COMPSs PMES was modified in order to support Mesos and elasticity provided by QoS infrastructure. Spark itself is already integrated with Mesos.
+Na figura a seguir, os microsserviços do Lemonade são implantados como containers gerenciados pelo Docker e pela tecnologia de virtualização subjacente. Os fluxos de trabalho no LEMONADE são convertidos em código do PySpark e executados no Apache Spark ou no COMPSs (em desenvolvimento), consumindo recursos no HDFS ou no Ophidia (em desenvolvimento). Em geral, os microsserviços não requerem elasticidade porque são pequenas aplicações e não executam qualquer código intensivo de memória ou CPU, isso é responsabilidade da plataforma de processamento subjacente (COMPSs ou Spark). Conforme descrito na seção anterior, o COMPSs PMES foi modificado para oferecer suporte ao Mesos e a elasticidade fornecidos pela infraestrutura de QoS. A própria Spark já está integrada com o Mesos.
 
 ![Docker installation](/img/image1.jpg "Docker installation")
-### Preparing to build
+### Preparando para construir
 
 ```bash
 
@@ -18,14 +18,14 @@ git submodule update --remote
 
 ```
 
-### Building and running
+### Construindo e executando
 
 
 ```
 docker-compose up
 ```
 
-Running on detached mode:
+Executando em modo independente:
 
 ```
 docker-compose up -d
