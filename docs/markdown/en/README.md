@@ -1,7 +1,7 @@
+## Overview
 # ![Logo](/img/logo.png) LEMONADE
 **L**ive **E**xploration and **M**ining **O**f **N**on-trivial **A**mount of **D**ata from **E**verywhere
 
-## Overview
 LEMONADE is a visual platform for distributed computing, aimed to enable implementation, experimentation, test and deploying of data processing and machine learning applications. It provides a higher level of abstractions, called operations, to users build processing workflows using a graphical web interface. By using high performance and scalable technologies, such as COMPSs, Ophidia and Spark, Lemonade can process very large amount of data, hiding all backend complexity from the users and allowing them to focus mainly in the construction of the solution.
 
 Lemonade is implemented as an open-source tool and is under development as a product of [EUBra-BIGSEA](http://www.eubra-bigsea.eu/) project

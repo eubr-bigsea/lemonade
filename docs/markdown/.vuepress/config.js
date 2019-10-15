@@ -88,7 +88,7 @@ module.exports = {
 								['aprendizado-de-maquina/classificacao-regressao-logistica.md', 'Classificação - Regressão Logística'],
 								['aprendizado-de-maquina/classificacao-random-forest.md', 'Classificação - Random Forest'],
 								['aprendizado-de-maquina/classificacao-perceptron-multicamadas.md', 'Classificação - Perceptron Multicamadas'],
-								['aprendizado-de-maquina/classificacao-naive-bayes.md', 'Classificação - Perceptron Multicamadas'],
+								['aprendizado-de-maquina/classificacao-naive-bayes.md', 'Classificação - Naïve-Bayes'],
 								['aprendizado-de-maquina/classificacao-gradient-boosted-tree.md', 'Classificação - Gradient Boosted Tree'],
 								['aprendizado-de-maquina/classificacao-arvore-de-decisao.md', 'Classificação - Árvore de Decisão'],
 								['aprendizado-de-maquina/associacao-regras-de-associacao.md', 'Associação - Regras de Associação'],
