@@ -102,7 +102,7 @@ Calcule a razão e utilize recursos da ferramenta para determinar se as linhas d
 	![Transformar valores por função](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image12.png)
 
 3. Execute e observe na visualização da tabela que uma nova coluna *booleana* de nome *is_null* aparece determinando o valor *true* para valores ausentes e *false* para todo o contrário. 
-	![Resultado - Transformar valores por função](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/10.png)
+	![Resultado - Transformar valores por função](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image10.png)
 
 4. Agrupe e conte o número de itens da coluna *is_null*. Para isto adicione a operação [Agrupar linhas por função][5] com os seguintes parâmetros:
 	![Agrupar por Linha](/img/spark/manipulacao_de_dados/tratar_dados_ausentes/image6.png)

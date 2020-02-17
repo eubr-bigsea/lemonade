@@ -38,7 +38,7 @@ Nome da Tarefa
 
 ## Exemplo de Utilização
 **Objetivo:** Utilizar o modelo construído pela operação Regressão Isotônica para predizer a qualidade de um vinho\
-**Base de Dados:** [Qualidade da Variante Vermelha do Vinho Verde Português][]
+**Base de Dados:** [Qualidade da Variante Vermelha do Vinho Verde Português][8]
 
 ![Ler dados](/img/spark/aprendizado_de_maquina/regressao_isotonica/image4.png)
 
@@ -73,3 +73,4 @@ Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 [5]: /pt-br/spark/pre-processamento-de-dados/amostragem-divisao-percentual.html
 [6]: /pt-br/spark/modelo-e-avaliacao/aplicar-modelo.html
 [7]: /pt-br/spark/modelo-e-avaliacao/avaliar-modelo.html
+[8]:/pt-br/spark/base-de-dados/#wine

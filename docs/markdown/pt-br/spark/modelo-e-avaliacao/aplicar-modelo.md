@@ -30,7 +30,7 @@ Nome da Tarefa
 
 1. Adicione uma base de dados por meio da operação [Ler dados][5].
 	
-2. Utilize a operação [Converter categórico para numérico][6] para converter os valores do atributo classe em valores numéricos. Para isso, utilize *“class”* no campo **Atributos**, *String* como **Tipo de indexador** e *“class_index”* como **Nome para novo(s) atributos indexados**. \
+2. Utilize a operação [Converter categórico para numérico][6] para converter os valores do atributo classe em valores numéricos. Para isso, utilize *“class”* no campo **Atributos**, *String* como **Tipo de indexador** e *“class_index”* como **Nome para novo(s) atributos indexados**.
 
 3. Utilize a operação [Divisão percentual][7] para dividir a base de dados em treino e teste. No parâmetro **Pesos**, calibre-o utilizando 50% dos dados para treinar e 50% para testar.
 

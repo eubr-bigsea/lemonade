@@ -8,3 +8,5 @@ Este tutorial visa apresentar ao usuário iniciante diversos exemplos da utiliza
 3. Edição de fluxos de trabalhos (workflows);
 4. Criação de um experimento preditivo;
 5. Criação de um painel de visualizações.
+
+[1]: https://www.lemonade.org.br/

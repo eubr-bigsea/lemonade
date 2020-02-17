@@ -36,7 +36,7 @@ Nome da Tarefa
 
 **Base de Dados:** [Íris][3]
 	
-![Ler dados](/img/spark/visualizacao_de_dados/grafico_de_dispersao/image5.png)
+![Ler dados](/img/spark/visualizacao_de_dados/grafico_de_dispersao/image3.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].
 	
