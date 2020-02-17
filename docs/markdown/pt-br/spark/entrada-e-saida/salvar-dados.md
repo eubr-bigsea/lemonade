@@ -53,7 +53,7 @@ Existem quatro ações que podem ser tomadas quando salvamos um arquivo com um n
 	![Tabela - Ler dados](/img/spark/entrada_e_saida/salvar_dados/image7.png)	
 
 2. Use a operação [Selecionar atributos][6], selecione os atributos *“class”*, *“survived”*, *“name”*, *“sex”* e *“age”*, que denotam, respectivamente, a classe do passageiro, se sobreviveu ou não ao desastre, seu nome, seu gênero e sua idade.\
-	![Selecionar Atributos](/img/spark/entrada_e_saida/salvar_dados/image7.png)
+	![Selecionar Atributos](/img/spark/entrada_e_saida/salvar_dados/image8.png)
 
 3. Use a operação **Salvar Dados**, salve a base de dados resultante na ferramenta, com os seguintes parâmetros:\
 	![Salvar Dados](/img/spark/entrada_e_saida/salvar_dados/image4.png)

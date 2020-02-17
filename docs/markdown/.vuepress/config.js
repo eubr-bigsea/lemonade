@@ -104,7 +104,7 @@ module.exports = {
 							sidebarDepth: 1,
 							children: [
 								//['<route>', '<label to show on sidebar>']
-								['avancado/executar-comandos-sql.md', 'Executar Commandos SQL'],
+								['avancado/executar-comandos-sql.md', 'Executar Comandos SQL'],
 								['avancado/executar-codigo-python.md', 'Executar Código Python']
 							]
 						},
