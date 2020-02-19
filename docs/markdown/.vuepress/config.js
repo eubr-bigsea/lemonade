@@ -56,6 +56,17 @@ module.exports = {
 					}
 				],
 				sidebar: {
+					'/pt-br/sklearn/': [
+						{
+							title: 'Primeiros Passos', // Titulo do menu lateral
+							collapsable: true,
+							sidebarDepth: 1,
+							children:[ //arquivos markdown 
+								// [<route at file>, <sidebar label of the page>]
+								// ['documentacao-geral/utilizacao-basica.md', 'Utilização Básica']
+							]
+						}
+					],
 					'/pt-br/spark/': [
 						{
 							title: 'Primeiros Passos',
