@@ -2,5 +2,8 @@
   "scripts": {
     "docs:dev": "vuepress dev markdown",
     "docs:build": "vuepress build markdown"
+  },
+  "devDependencies": {
+    "vuepress": "^1.3.0"
   }
 }
