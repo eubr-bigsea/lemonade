@@ -34,10 +34,10 @@ Os outliers são dados que se diferem drasticamente de todos os outros. Em outra
  um outlier é um valor que foge da normalidade.
 
 ## Exemplo de Utilização
-**Objetivo:** Utilizar o modelo construído pela operação Regressor Huber para .\
+**Objetivo:** Utilizar o modelo construído pela operação Regressor Huber para predizer a qualidade de um vinho.\
 **Base de Dados:** Qualidade da Variante Vermelha do Vinho Verde Português - [Wine Red Quality][3]
 
-![Fluxo - Ler dados](/img/sklearn/aprendizado_de_maquina/regressor_linear/image3.png)
+![Fluxo - Ler dados](/img/sklearn/aprendizado_de_maquina/regressor_huber/image3.png)
 
 1. Leia a base de dados por meio da operação [Ler dados][4].
 
@@ -60,7 +60,7 @@ Os outliers são dados que se diferem drasticamente de todos os outros. Em outra
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[resíduos]: #residuos
+[outliers]: #outliers
 [1]: /pt-br/sklearn/documentacao-geral/aba-aparencia.html
 [2]: /pt-br/sklearn/documentacao-geral/aba-resultados.html
 [3]: /pt-br/sklearn/base-de-dados/#wine
