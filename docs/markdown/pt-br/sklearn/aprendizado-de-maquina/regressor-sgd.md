@@ -1,5 +1,5 @@
 # Regressor SGD
-
+O regressor SGD (Stochastic Gradient Descent) é uma abordagem simples, mas muito eficiente, para ajustar modelos lineares. É particularmente útil quando o número de amostras (e o número de recursos) é muito grande.
 
 ### Conectores
 | Entrada | Saída |
@@ -15,12 +15,29 @@ Nome da Tarefa
 | **Atributo(s) previsor(es)** | Atributo que será usado para treinamento |
 | **Atributo com o rótulo** | Atributo a ser predito |
 | **Atributos com a predição** | Atributo contendo a predição do modelo |
+| **Alpha** | Constante que multiplica o termo de regularização. |
+| **Taxa L1** | O parâmetro de mistura Elastic Net, com 0<=l1_ratio<=1. l1_ratio=0 corresponde a penalidade L2, l1_ratio=1 a L1. |
+| **Número máximo de iterações** | Número máximo de iterações. |
+| **Tolerancia** | Tolerância para critérios de parada. |
+| **Semente** | A semente do gerador de números pseudo-aleatórios a ser usada ao embaralhar os dados. |
+| **Taxa de aprendizado** | The learning rate schedule. |
+| **Expoente** | O expoente da taxa de aprendizado de escala inversa. |
+| **Embaralhar** | Se os dados de treinamento devem ou não ser embaralhados após cada época. |
+| **Parada antecipada** | Se a parada precoce deve ser usada para encerrar o treinamento quando a pontuação de validação não está melhorando. |
+| **Fração de validação** | A proporção de dados de treinamento a serem retirados como validação definida para parada antecipada. |
+| **Epsilon** | Epsilon nas funções de perda insensível ao epsilon. |
+| **N iter no change** | Número de iterações sem melhoria a aguardar antes da parada precoce. |
+| **Perda** | A função de perda a ser usada. |
+| **Penalidade** | A penalidade (termo de regularização) a ser usada. |
+| **Interceptação** | Se a interceptação deve ser estimada ou não. |
+| **Verbosidade** | O nível de verbosidade. |
+| **Eta** | A taxa de aprendizado inicial. |
+| **Média** | Se definido como um int maior que 1, a média começará assim que o número total de amostras vistas atingir a média. Então a média = 10 começará a média depois de ver 10 amostras. |
 
 [Aba Aparência][1]
 
 [Aba Resultados][2] 
 
-## Definições
 ## Exemplo de Utilização
 **Objetivo:** Utilizar o modelo construído pela operação Regressão Linear para predizer a qualidade de um vinho.\
 **Base de Dados:** Qualidade da Variante Vermelha do Vinho Verde Português - [Wine Red Quality][3]

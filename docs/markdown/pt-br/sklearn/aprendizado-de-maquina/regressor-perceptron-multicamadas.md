@@ -1,5 +1,7 @@
 # Regressor Perceptron Multicamadas
-O Perceptron Multicamadas (Multi-Layer perceptron) é um algoritmo de aprendizado supervisionado que aprende uma função treinando em um conjunto de dados.
+O Perceptron Multicamadas (Multi-Layer perceptron) é um algoritmo de aprendizado supervisionado que  baseia-se em 
+abstrações de redes neurais encontradas no cérebro. Esse classificador cria um modelo com camadas de neurônios conectadas, 
+considerando que cada camada possui diversos neurônios conectores.
 
 ### Conectores
 | Entrada | Saída |
@@ -15,7 +17,7 @@ Nome da Tarefa
 | **Atributo(s) previsor(es)** | Atributo que será usado para treinamento |
 | **Atributo com o rótulo** | Atributo a ser predito |
 | **Atributos com a predição** | Atributo contendo a predição do modelo |
-| **Tamanhos das Camadas** | O elemento de ordem i representa o número de neurônios. |
+| **Tamanhos das [Camadas]** | O elemento de ordem i representa o número de neurônios. |
 | **Ativação** | Função de ativação para a camada oculta. |
 | **Solver** | O solucionador para otimização de peso. |
 | **Alpha** | Parâmetro de penalidade L2 (termo de regularização). |
@@ -41,6 +43,9 @@ Nome da Tarefa
 [Aba Resultados][2] 
 
 ## Definições
+### Camadas
+Esse regressor utiliza a função (de ativação) logística nos neurônios em camadas comuns (intermediárias) e a função softmax nos neurônios na camada de saída.
+
 ## Exemplo de Utilização
 **Objetivo:** Utilizar o modelo construído pela operação Regressão Perceptron Multicamadas para predizer a qualidade de um vinho.\
 **Base de Dados:** Qualidade da Variante Vermelha do Vinho Verde Português - [Wine Red Quality][3]

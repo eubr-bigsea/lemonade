@@ -15,12 +15,14 @@ Nome da Tarefa
 | Parâmetro | Detalhe |
 | --- | --- |
 | **Atributo(s) previsor(es)** | Atributo que será usado para treinamento |
-| **Atributo com a Predição (novo)** |  |
+| **Atributo com a Predição (novo)** | Atributo com a predição (novo). |
 | **Número de agrupamentos (k)** | Quantidade de componentes da mistura |
+| **Tipo de covariância** | String descrevendo o tipo de parâmetros de covariância a serem usados. |
 | **Tolerância** | Tolerância relativa para declarar convergência do algoritmo |
+| **Regularização da covariância** | Regularização não negativa adicionada à diagonal da covariância. |
 | **Número máximo de iterações** | Quantidade máxima de iterações do algoritmo |
-| **Métrica para validação cruzada** |  |
-| **Atributo com o número da partição (fold)** |  |
+| **Número de inicializações** | O número de inicializações a serem executadas. |
+| **Semente** | A semente usada pelo gerador de números aleatórios. |
 
 [Aba Aparência][1]
 
