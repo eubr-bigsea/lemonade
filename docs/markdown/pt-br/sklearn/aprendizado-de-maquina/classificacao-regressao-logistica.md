@@ -16,30 +16,29 @@ Nome da Tarefa
 | **Atributo(s) previsor(es)** | Atributo(s) que será(ão) usado(s) para treinamento |
 | **Atributo com o rótulo** | Atributo a ser classificado |
 | **Atributos com a predição** | Atributo contendo a predição do modelo |
-| **Pesos** | Pesos do algoritmo em um *ensemble* |
-| **Profundidade de agregação** | Define o valor de profundidade para a agregação por árvore do algoritmo. Deve ser maior ou igual a 2. O valor padrão deste parâmetro é igual a 2 |
-| **Parâmetro para Elastic Net** | Parâmetro de ajuste usado para a minimização da função objetivo usando uma combinação de L1 e L2. O valor padrão deste parâmetro é 0 |
-| **Interseção ajustada** | Define se o modelo deve incluir o *intercept* |
-| **Limiar para classificação binária** | Limiar usado na definição da classe que será escolhida |
-| **Limiar para classificação multiclasse** | Limiares usados no ajuste da probabilidade de cada uma das classes |
-| **Atributo com os pesos** | Atributos passados ao modelo que terão um peso diferenciado |
-| **Interações máximas** | Define o número máximo de iterações para a convergência do algoritmo. O valor padrão deste parâmetro é 100 |
-| **Tolerância** | Tolerância de convergência para algoritmos iterativos (>=0.0) |
-| [Família] | Família do algoritmo que será usado na criação do modelo. Pode assumir os seguintes valores: “Binomial”, “Multinomial” ou “Automática” |
-| **Parâmetro para regularização** | Valor para regularizar o fitting da função de perda do algoritmo, esse parâmetro é usado para evitar overfitting. O valor deste parâmetro é 0.0 |
-| **Métrica para validação cruzada** | Define a métrica utilizada dentro da validação cruzada (se aplicável) para avaliar o modelo de classificação dentro das k partições |
-| **Atributo com o número da partição (fold)** | Define o atributo a ter o número da partição para realizar uma validação cruzada (se aplicável) |
-| **Usar classificação um-contra-todos (one-vs-rest)** | Se selecionado, o algoritmo realizará classificação um-contra-todos ao invés de classificação tradicional (neste caso, binária ou multi-classe) |
+| **Tolerância** | Tolerância para critérios de parada. |
+| **C** | Força de regularização inversa. Como no SVM, valores menores especificam uma regularização mais forte. |
+| **Semente** | A semente do gerador de números pseudo-aleatórios a ser usada ao embaralhar os dados. |
+| **Solver** | A convergência rápida de sag e saga é garantida apenas em atributos com aproximadamente a mesma escala. |
+| **Número máximo de iterações** | Apenas para solvers: newton-cg, sag e lbfgs. |
+| **Penalidade** | Usado para especificar a norma da penalização. |
+| **Dual** | Formulação dual ou primal. |
+| **Considerar intercepto** | Especificar se uma constante (intecerpto ou viés) deve ser adicionada na função de decisão. |
+| **Escala do intercepto** | Usado apenas se o Solver "liblinear" for utilizado com o atributo "Considerar intercepto" habilitado. |
+| **[Mutiplas classes]** | Se a opção selecionada é "ovr", então um problema binário é moldado para cada label. Para o atributo "multinomial" a minização de perda é o ajuste de perda multinomial das funções de probabilidade, mesmo com atributos binários. |
+| **L1 Ratio** | Parâmetro do Elastic-Net, o valor deve estar entre 0 e 1. |
+| **Bootstrap** | Utilizar amostras de um bootstrap para gerar as árvores. |
+| **Out of bag** | Usar amostras "out-of-bag" para estimar a acurácia do generalizador |
 
 [Aba Aparência][2]
 
 [Aba Resultados][3] 
 
 ## Definições
-### Família
-Existem as seguintes famílias de algoritmos:
+### Mutiplas classes
+Existem as seguintes classes de algoritmos:
 
-1. Binomial: Usa uma regressão logística binomial para realizar previsões binárias. É válida somente para problemas de classificação binária (i.e., com apenas duas classes).
+1. Ovr: Usa uma regressão logística binomial para realizar previsões binárias. É válida somente para problemas de classificação binária (i.e., com apenas duas classes).
 2. Multinomial: Usa uma regressão logística multinomial para realizar predições em problemas de classificação multi-classe (i.e., com mais de duas classes).
 3. Automático: A plataforma vai inferir qual das variantes acima será utilizada.
 
@@ -47,7 +46,7 @@ Existem as seguintes famílias de algoritmos:
 **Objetivo:** Utilizar o modelo de Regressão Logística para classificar a espécie da planta Íris\
 **Base de Dados:** [Íris][4]
 
-![Formulário - Ler dados](/img/spark/aprendizado_de_maquina/classificacao_regressao_logistica/image2.png)
+![Formulário - Ler dados](/img/sklearn/aprendizado_de_maquina/classificacao_regressao_logistica/image2.png)
 
 1. Leia a base de dados Irís por meio da operação [Ler dados][5].
 
@@ -56,28 +55,28 @@ Existem as seguintes famílias de algoritmos:
 3. Utilize a operação [Divisão percentual][7] para dividir a base de dados em treino e teste. No parâmetro **Percentual**, calibre-o utilizando 50% dos dados para treinar (1ª parte) e 50% para testar (2ª parte).
 
 4. Na operação **Regressão Logística**, selecione *“petal_length”*, *“petal_width”*, *“sepal_length”* e *“sepal_width”* no campo **Atributo(s) previsor(es)**. Selecione *“class_index”* no campo **Atributo com o rótulo** e preencha *“resultado”* no campo **Atributo com a predição (novo)**. Além disso, escolha a **Família** *“Automático”*, para selecionar o tipo de família (binomial ou multinomial) automaticamente. Deixe os demais parâmetros inalterados.\
-![Formulário Regressão logística - parte 1](/img/spark/aprendizado_de_maquina/classificacao_regressao_logistica/image4.png)
-![Formulário Regressão logística - parte 2](/img/spark/aprendizado_de_maquina/classificacao_regressao_logistica/image1.png)
+![Formulário Regressão logística - parte 1](/img/sklearn/aprendizado_de_maquina/classificacao_regressao_logistica/image4.png)
+![Formulário Regressão logística - parte 2](/img/sklearn/aprendizado_de_maquina/classificacao_regressao_logistica/image1.png)
 
 5. Na operação [Aplicar Modelo][8], selecione *“petal_length”*, *“petal_width”*, *“sepal_length”* e *“sepal_width”* no campo **Atributo(s) previsor(es)** e preencha *“resultado”* no campo **Nome do novo atributo (herdado do modelo)**. 
 
 6. Na operação [Avaliar Modelo][9], selecione *“resultado”* no campo **Atributo usado para predição**. Selecione *“class_index”* no campo **Atributo usado como label** e a métrica *“F1”* como **Métrica para avaliação**. 
 
 7. Execute o fluxo e visualize o resultado, i.e., a matriz de confusão gerada para as predições do modelo de árvore de decisão e, consequentemente, a tabela representando as métricas de classificação (derivadas da matriz de confusão).\
-![Gráfico - resultado](/img/spark/aprendizado_de_maquina/classificacao_regressao_logistica/image3.png)\
-![Tabela - resultado](/img/spark/aprendizado_de_maquina/classificacao_regressao_logistica/image5.png)
+![Gráfico - resultado](/img/sklearn/aprendizado_de_maquina/classificacao_regressao_logistica/image3.png)\
+![Tabela - resultado](/img/sklearn/aprendizado_de_maquina/classificacao_regressao_logistica/image5.png)
 
 
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[Família]: #familia
-[1]: /pt-br/spark/aprendizado-de-maquina/regressor-linear.html
-[2]: /pt-br/spark/documentacao-geral/aba-aparencia.html
-[3]: /pt-br/spark/documentacao-geral/aba-resultados.html
-[4]: /pt-br/spark/base-de-dados/#iris
-[5]: /pt-br/spark/entrada-e-saida/ler-dados.html
-[6]: /pt-br/spark/pre-processamento-de-dados/representacao-de-atributos-converter-categorico-para-numerico.html
-[7]: /pt-br/spark/pre-processamento-de-dados/amostragem-divisao-percentual.html
-[8]: /pt-br/spark/modelo-e-avaliacao/aplicar-modelo.html
-[9]: /pt-br/spark/modelo-e-avaliacao/avaliar-modelo.html
+[Mutiplas classes]: #Mutiplasclasses
+[1]: /pt-br/sklearn/aprendizado-de-maquina/regressor-linear.html
+[2]: /pt-br/sklearn/documentacao-geral/aba-aparencia.html
+[3]: /pt-br/sklearn/documentacao-geral/aba-resultados.html
+[4]: /pt-br/sklearn/base-de-dados/#iris
+[5]: /pt-br/sklearn/entrada-e-saida/ler-dados.html
+[6]: /pt-br/sklearn/pre-processamento-de-dados/representacao-de-atributos-converter-categorico-para-numerico.html
+[7]: /pt-br/sklearn/pre-processamento-de-dados/amostragem-divisao-percentual.html
+[8]: /pt-br/sklearn/modelo-e-avaliacao/aplicar-modelo.html
+[9]: /pt-br/sklearn/modelo-e-avaliacao/avaliar-modelo.html
