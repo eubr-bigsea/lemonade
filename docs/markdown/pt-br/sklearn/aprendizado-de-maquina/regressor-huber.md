@@ -60,7 +60,7 @@ Os outliers são dados que se diferem drasticamente de todos os outros. Em outra
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[outliers]: #outliers
+[Outliers]: #outliers
 [1]: /pt-br/sklearn/documentacao-geral/aba-aparencia.html
 [2]: /pt-br/sklearn/documentacao-geral/aba-resultados.html
 [3]: /pt-br/sklearn/base-de-dados/#wine

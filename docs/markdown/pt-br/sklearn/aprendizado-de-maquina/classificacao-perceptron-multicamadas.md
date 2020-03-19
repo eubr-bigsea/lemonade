@@ -74,7 +74,7 @@ Esse classificador utiliza a função (de ativação) logística nos neurônios 
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[Camada]: #camada
+[Camadas]: #camadas
 [1]: /pt-br/sklearn/documentacao-geral/aba-aparencia.html
 [2]: /pt-br/sklearn/documentacao-geral/aba-resultados.html
 [3]: /pt-br/sklearn/base-de-dados/#iris

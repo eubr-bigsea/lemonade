@@ -25,7 +25,7 @@ Nome da Tarefa
 | **Dual** | Formulação dual ou primal. |
 | **Considerar intercepto** | Especificar se uma constante (intecerpto ou viés) deve ser adicionada na função de decisão. |
 | **Escala do intercepto** | Usado apenas se o Solver "liblinear" for utilizado com o atributo "Considerar intercepto" habilitado. |
-| **[Mutiplas classes]** | Se a opção selecionada é "ovr", então um problema binário é moldado para cada label. Para o atributo "multinomial" a minização de perda é o ajuste de perda multinomial das funções de probabilidade, mesmo com atributos binários. |
+| **[Múltiplas classes]** | Se a opção selecionada é "ovr", então um problema binário é moldado para cada label. Para o atributo "multinomial" a minização de perda é o ajuste de perda multinomial das funções de probabilidade, mesmo com atributos binários. |
 | **L1 Ratio** | Parâmetro do Elastic-Net, o valor deve estar entre 0 e 1. |
 | **Bootstrap** | Utilizar amostras de um bootstrap para gerar as árvores. |
 | **Out of bag** | Usar amostras "out-of-bag" para estimar a acurácia do generalizador |
@@ -70,7 +70,7 @@ Existem as seguintes classes de algoritmos:
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[Mutiplas classes]: #Mutiplasclasses
+[Mútiplas classes]: #Mutiplasclasses
 [1]: /pt-br/sklearn/aprendizado-de-maquina/regressor-linear.html
 [2]: /pt-br/sklearn/documentacao-geral/aba-aparencia.html
 [3]: /pt-br/sklearn/documentacao-geral/aba-resultados.html

@@ -5,7 +5,7 @@ Random Forest (floresta aleatória) é uma generalização da operação [Árvor
 ### Conectores
 | Entrada | Saída |
 | --- | --- |
-| Dados utilizados para treinar o modelo | Dados de saída e modelo do algoritmo de classificação |
+| Dados utilizados para treinar o modelo | Dados de saída e modelo do algoritmo de classificação ções
 
 ### Tarefa
 Nome da Tarefa
@@ -70,7 +70,7 @@ Tipos de critérios:
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[Impureza]: #impureza
+[Critério]: #critério
 [Estratégia para subconjunto de features]: #estrategia-para-subconjunto-de-features
 [1]: /pt-br/sklearn/aprendizado-de-maquina/classificacao-arvore-de-decisao.html
 [2]: /pt-br/sklearn/documentacao-geral/aba-aparencia.html

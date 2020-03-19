@@ -36,32 +36,32 @@ Nome da Tarefa
 **Objetivo:** Utilizar o modelo do Support Vector Machines (*SVM*) para classificar se uma pessoa possui ou não a doença diabetes\
 **Base de Dados:** [Pima Indians Diabetes][3]
 
-![Fluxo de trabalho - Ler dados](/img/spark/aprendizado_de_maquina/classificacao_support_vector_machines/image4.png)
+![Fluxo de trabalho - Ler dados](/img/sklearn/aprendizado_de_maquina/classificacao_support_vector_machines/image4.png)
 
 1. Leia a base de dados por meio da operação [Ler dados][4].
 
 2. Utilize a operação [Divisão percentual][5] para dividir a base de dados em treino e teste. No parâmetro **Percentual**, calibre-o utilizando 50% dos dados para treinar (1.ª parte) e 50% para testar (2.ª parte).
 
 3. Na operação **Support Vector Machines (SVM)**, selecione *“Age”*, *“BMI”*, *“BloodPressure”*, *“DiabetesPedigreeFunction”*, *“Glucose”*, *“Insulin”*, *“Pregnancies”* e *“SkinThickness”* no campo **Atributos com features**. Selecione *“class”* no campo **Atributo com o rótulo** e preencha *“resultado”* no campo Atributo com a predição (novo). Deixe os demais parâmetros inalterados.\
-![Formulario Support Vector Machines - parte 1](/img/spark/aprendizado_de_maquina/classificacao_support_vector_machines/image3.png)
-![Formulario Support Vector Machines - parte 2](/img/spark/aprendizado_de_maquina/classificacao_support_vector_machines/image1.png)
+![Formulario Support Vector Machines - parte 1](/img/sklearn/aprendizado_de_maquina/classificacao_support_vector_machines/image3.png)
+![Formulario Support Vector Machines - parte 2](/img/sklearn/aprendizado_de_maquina/classificacao_support_vector_machines/image1.png)
 
 4. Na operação [Aplicar Modelo][6], selecione *“Age”*, *“BMI”*, *“BloodPressure”*, *“DiabetesPedigreeFunction”*, *“Glucose”*, *“Insulin”*, *“Pregnancies”* e *“SkinThickness”* no campo **Atributos com features** e preencha *“resultado”* no campo **Nome do novo atributo (herdado do modelo)**. 
 
 5. Na operação [Avaliar Modelo][7], selecione *“resultado”* no campo **Atributo usado para predição**. Selecione *“class”* no campo **Atributo usado como label** e a métrica *“F1”* como **Métrica para avaliação**. 
 
 6. Execute o fluxo e visualize o resultado, i.e., a matriz de confusão gerada para as predições do modelo de árvore de decisão e, consequentemente, a tabela representando as métricas de classificação (derivadas da matriz de confusão).\
-![Gráfico - resultado](/img/spark/aprendizado_de_maquina/classificacao_support_vector_machines/image2.png)\
-![Tabela - resultado](/img/spark/aprendizado_de_maquina/classificacao_support_vector_machines/image5.png)
+![Gráfico - resultado](/img/sklearn/aprendizado_de_maquina/classificacao_support_vector_machines/image2.png)\
+![Tabela - resultado](/img/sklearn/aprendizado_de_maquina/classificacao_support_vector_machines/image5.png)
 
 
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
-[1]: /pt-br/spark/documentacao-geral/aba-aparencia.html
-[2]: /pt-br/spark/documentacao-geral/aba-resultados.html
-[3]: /pt-br/spark/base-de-dados/#pima-indians-diabetes
-[4]: /pt-br/spark/entrada-e-saida/ler-dados.html
-[5]: /pt-br/spark/pre-processamento-de-dados/amostragem-divisao-percentual.html
-[6]: /pt-br/spark/modelo-e-avaliacao/aplicar-modelo.html
-[7]: /pt-br/spark/modelo-e-avaliacao/avaliar-modelo.html
+[1]: /pt-br/sklearn/documentacao-geral/aba-aparencia.html
+[2]: /pt-br/sklearn/documentacao-geral/aba-resultados.html
+[3]: /pt-br/sklearn/base-de-dados/#pima-indians-diabetes
+[4]: /pt-br/sklearn/entrada-e-saida/ler-dados.html
+[5]: /pt-br/sklearn/pre-processamento-de-dados/amostragem-divisao-percentual.html
+[6]: /pt-br/sklearn/modelo-e-avaliacao/aplicar-modelo.html
+[7]: /pt-br/sklearn/modelo-e-avaliacao/avaliar-modelo.html
