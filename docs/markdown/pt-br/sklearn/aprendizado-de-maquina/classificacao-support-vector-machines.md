@@ -18,15 +18,18 @@ Nome da Tarefa
 | **Atributo com Features** | Atributo(s) que será(ão) usado(s) para treinamento |
 | **Atributo com o rótulo** | Atributo a ser classificado |
 | **Atributos com a predição (novo)** | Atributo contendo a predição do modelo |
-| **Pesos** | Peso do algoritmo em um Ensemble |
-| **Iterações máximas** | Número máximo de iterações (>=0) |
-| **Aplicar padronização** | Indica se é para padronizar os atributos antes de treinar o modelo |
-| **Limiar para a classificação binária** | Ajustar a probabilidade de previsão de cada classe |
-| **Tolerância para a convergência** | Tolerância de convergência para algoritmos iterativos (>=0.0) |
-| **Atributo com pesos** | Atributos passados ao modelo que terão um peso diferenciado |
-| **Métrica para validação cruzada** | Define a métrica utilizada dentro da validação cruzada (se aplicável) para avaliar o modelo de classificação dentro das k partições |
-| **Atributo com o número da partição (fold)** | Define o atributo a ter o número da partição para realizar uma validação cruzada (se aplicável) |
-| **Usar classificação um-contra-todos (one-vs-rest)** | Se selecionado, o algoritmo realizará classificação um-contra-todos ao invés de classificação tradicional (neste caso, binária) |
+| **C** | Parâmetro de penalidade C do termo de erro. |
+| **Kernel** | Especifica o tipo de kernel a ser usado no algoritmo. |
+| **Grau do Polinômio** | Grau da função do kernel polinomial. Ignorado por todos os outros kernels. |
+| **Tolerância** | Tolerância para critérios de parada. |
+| **Número máximo de iterações** | Número máximo de iterações. |
+| **Coeficiente do kernel** | Coeficiente do kernel para as métricas "rbf", "poly" e "sigmoid. |
+| **Termo independente da função do kernel.** | Termp independente da função do kernel. É significativo apenas nas métricas "poly" e "sigmoid". |
+| **Usar a heurística shrinking.** | Necessidade de usar a heurística shrinking |
+| **Habilitar estimativas probailísticas.** | Habilitar estimativas probailísticas. |
+| **Decisão de retorno.** | Decisão de retorno "ovr" (one-vs-rest : um por todos) ou "ovo" (one-vs-one: um por um). |
+| **Semente** | A semente do gerador de números pseudo-aleatórios a ser usada ao embaralhar os dados. |
+
 
 [Aba Aparência][1]
 
