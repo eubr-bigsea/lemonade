@@ -83,7 +83,7 @@ module.exports = {
                                 ['aprendizado-de-maquina/regressao-random-forest.md', 'Regressão - Random Forest'],
                                 ['aprendizado-de-maquina/regressao-gradient-boosted-tree.md', 'Regressão - Gradient Boosted Tree'],
                                 ['aprendizado-de-maquina/anomalias-local-outlier-factor.md', 'Anomalias - Local Outlier Factor'],
-                                ['aprendizado-de-maquina/classificacao-knn.md', 'Classificação - Voto por Maioria'],
+                                ['aprendizado-de-maquina/classificacao-knn.md', 'Classificação - KNN'],
                                 ['aprendizado-de-maquina/classificacao-support-vector-machines.md', 'Classificação - Support Vector Machines'],
                                 ['aprendizado-de-maquina/classificacao-regressao-logistica.md', 'Classificação - Regressão Logística'],
                                 ['aprendizado-de-maquina/classificacao-random-forest.md', 'Classificação - Random Forest'],
