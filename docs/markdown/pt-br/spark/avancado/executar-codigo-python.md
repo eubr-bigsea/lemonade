@@ -27,10 +27,10 @@ Nome da Tarefa
 **Objetivo:** criar uma base para que o seu número de colunas seja comparado com a entrada 1, e ao final retornar a que tiver a maior quantidade de colunas. Caso as duas tenham a mesma quantidade, a entrada 1 deve ser retornada. Por fim, gerar um gráfico de dispersão para ilustrar qual foi a base retornada.\
 **Base de Dados:** [Íris][5]
 	
-![Ler dados](/img/spark/avancado/executar_codigo_python/image7.png)
+![Ler dados](/img/spark/avancado/executar-codigo-python/image7.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][6]. \
-	![Tabela Ler dados](/img/spark/avancado/executar_codigo_python/image1.png)
+	![Tabela Ler dados](/img/spark/avancado/executar-codigo-python/image1.png)
 
 2. Adicione a operação **Executar código Python**. A base criada no código Python será a mesma da entrada, porém com apenas as 5 primeiras linhas, sendo fácil de identificar qual foi retornada pelo número de pontos no gráfico gerado. Portanto, adicione o código abaixo no campo **Código**:
 
@@ -57,13 +57,13 @@ Nome da Tarefa
 	####
 	```
 
-	![Ler código python](/img/spark/avancado/executar_codigo_python/image3.png)
+	![Ler código python](/img/spark/avancado/executar-codigo-python/image3.png)
 
 3. Adicione a operação [Gráfico de dispersão][7]. Utilizando *“class”* como **Atributo para o eixo X** e *“Petallength”* como **Atributo para o eixo Y**. Preencha *“Comprimento da pétala por espécie”* no campo **Título**, *“Espécie”* no campo **Título para o eixo X** e *“Comprimento da pétala”* no campo **Título para o eixo Y**.\
-	![Selecionando gráfico de dispersão](/img/spark/avancado/executar_codigo_python/image4.png)
+	![Selecionando gráfico de dispersão](/img/spark/avancado/executar-codigo-python/image4.png)
 
 4. Execute o fluxo e visualize o resultado
-	![Resultado do fluxo](/img/spark/avancado/executar_codigo_python/image5.png)\
+	![Resultado do fluxo](/img/spark/avancado/executar-codigo-python/image5.png)\
 	O gráfico mostra que a base retornada foi a de entrada por ter mais de 5 pontos. Esse era o resultado esperado, uma vez que ao ter o mesmo número de colunas a entrada é retornada.
 
 5. Para validar que a base criada pelo código é retornada se ela tiver mais colunas, é preciso alterar o que foi escrito no **passo 2** e adicionar uma coluna de numeração de linhas como mostrado abaixo:
@@ -90,10 +90,10 @@ Nome da Tarefa
 	####
 	```
 	
-	![Ler código python](/img/spark/avancado/executar_codigo_python/image2.png)
+	![Ler código python](/img/spark/avancado/executar-codigo-python/image2.png)
 
 6. Execute o fluxo novamente e visualize o resultado.\
-	![Ler código python](/img/spark/avancado/executar_codigo_python/image6.png)\
+	![Ler código python](/img/spark/avancado/executar-codigo-python/image6.png)\
 	O gráfico mostra que a base retornada foi realmente a gerada pelo código por ter menos de 5 pontos.
 
 -----

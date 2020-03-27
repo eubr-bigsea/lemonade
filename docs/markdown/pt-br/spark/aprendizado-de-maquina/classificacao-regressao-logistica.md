@@ -47,7 +47,7 @@ Existem as seguintes famílias de algoritmos:
 **Objetivo:** Utilizar o modelo de Regressão Logística para classificar a espécie da planta Íris\
 **Base de Dados:** [Íris][4]
 
-![Formulário - Ler dados](/img/spark/aprendizado_de_maquina/classificacao_regressao_logistica/image2.png)
+![Formulário - Ler dados](/img/spark/aprendizado-de-maquina/classificacao-regressao-logistica/image2.png)
 
 1. Leia a base de dados Irís por meio da operação [Ler dados][5].
 
@@ -56,16 +56,16 @@ Existem as seguintes famílias de algoritmos:
 3. Utilize a operação [Divisão percentual][7] para dividir a base de dados em treino e teste. No parâmetro **Percentual**, calibre-o utilizando 50% dos dados para treinar (1ª parte) e 50% para testar (2ª parte).
 
 4. Na operação **Regressão Logística**, selecione *“petal_length”*, *“petal_width”*, *“sepal_length”* e *“sepal_width”* no campo **Atributo(s) previsor(es)**. Selecione *“class_index”* no campo **Atributo com o rótulo** e preencha *“resultado”* no campo **Atributo com a predição (novo)**. Além disso, escolha a **Família** *“Automático”*, para selecionar o tipo de família (binomial ou multinomial) automaticamente. Deixe os demais parâmetros inalterados.\
-![Formulário Regressão logística - parte 1](/img/spark/aprendizado_de_maquina/classificacao_regressao_logistica/image4.png)
-![Formulário Regressão logística - parte 2](/img/spark/aprendizado_de_maquina/classificacao_regressao_logistica/image1.png)
+![Formulário Regressão logística - parte 1](/img/spark/aprendizado-de-maquina/classificacao-regressao-logistica/image4.png)
+![Formulário Regressão logística - parte 2](/img/spark/aprendizado-de-maquina/classificacao-regressao-logistica/image1.png)
 
 5. Na operação [Aplicar Modelo][8], selecione *“petal_length”*, *“petal_width”*, *“sepal_length”* e *“sepal_width”* no campo **Atributo(s) previsor(es)** e preencha *“resultado”* no campo **Nome do novo atributo (herdado do modelo)**. 
 
 6. Na operação [Avaliar Modelo][9], selecione *“resultado”* no campo **Atributo usado para predição**. Selecione *“class_index”* no campo **Atributo usado como label** e a métrica *“F1”* como **Métrica para avaliação**. 
 
 7. Execute o fluxo e visualize o resultado, i.e., a matriz de confusão gerada para as predições do modelo de árvore de decisão e, consequentemente, a tabela representando as métricas de classificação (derivadas da matriz de confusão).\
-![Gráfico - resultado](/img/spark/aprendizado_de_maquina/classificacao_regressao_logistica/image3.png)\
-![Tabela - resultado](/img/spark/aprendizado_de_maquina/classificacao_regressao_logistica/image5.png)
+![Gráfico - resultado](/img/spark/aprendizado-de-maquina/classificacao-regressao-logistica/image3.png)\
+![Tabela - resultado](/img/spark/aprendizado-de-maquina/classificacao-regressao-logistica/image5.png)
 
 
 ---

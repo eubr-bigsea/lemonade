@@ -25,7 +25,7 @@ Nome da Tarefa
 **Objetivo:**  Extrair regras (com sua respectiva confiança) de compras de itens frequentes de uma cesta de produtos de uma loja varejo Belga.\
 **Base de Dados:** [Belgium retail][4]
 
-![Fluxo de trabalho - Ler dados](/img/spark/aprendizado_de_maquina/associacao_regras_de_associacao/image2.png)
+![Fluxo de trabalho - Ler dados](/img/spark/aprendizado-de-maquina/associacao-regras-de-associacao/image2.png)
 
 1. Adicione a base de dados por meio da operação [Ler dados][5].
 
@@ -34,12 +34,12 @@ Nome da Tarefa
 3. Na operação **Mineração de itemsets** frequentes, preencha *0,2* no campo **Suporte mínimo**, selecione *“trata_transacoes”* no campo **Atributo com transações (vazio = primeiro atributo)**, e preencha *0,6* no campo **Confiança mínima (para a geração das regras)**. 
 
 4. Na operação **Regras de associação**, preencha *0,6* no campo **Confiança mínima** e *200* no campo **Quantidade de regras a serem geradas**. Por fim, selecione *“items”* no campo **Atributo com transações (vazio = primeiro atributo)**.\
-![Fluxo de trabalho - Ler dados](/img/spark/aprendizado_de_maquina/associacao_regras_de_associacao/image1.png)
+![Fluxo de trabalho - Ler dados](/img/spark/aprendizado-de-maquina/associacao-regras-de-associacao/image1.png)
 
 5. Para visualizar os resultados, adicione a operação [Tabela][6].
 
 6. Execute o fluxo e visualize o resultado na aba **Visualizações**. A única regra encontrada para os parâmetros especificados foi aquela com o antecedente 48 e o consequente 39, que possui um confiança de aproximadamente 0,692:\
-![Resultado](/img/spark/aprendizado_de_maquina/associacao_regras_de_associacao/image3.png)
+![Resultado](/img/spark/aprendizado-de-maquina/associacao-regras-de-associacao/image3.png)
 
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br

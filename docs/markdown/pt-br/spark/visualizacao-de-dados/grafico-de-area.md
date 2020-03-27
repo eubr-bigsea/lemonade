@@ -35,18 +35,18 @@ Nome da Tarefa
 
 **Base de Dados:** [Temperatura Global por País][3]
 	
-![Ler dados](/img/spark/visualizacao_de_dados/grafico_de_area/image3.png)
+![Ler dados](/img/spark/visualizacao-de-dados/grafico-de-area/image3.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].
 	
 2.   Adicione a operação [Agrupar linhas por função][5]. Na opção filtro, selecione o atributo *“Country”*, função *“Equals to =”* e preencha o Valor do atributo como *“Brazil”*. \
-	![Formulário filtrar por função](/img/spark/visualizacao_de_dados/grafico_de_area/image4.png)
+	![Formulário filtrar por função](/img/spark/visualizacao-de-dados/grafico-de-area/image4.png)
 	
 3. Na operação **Gráfico de área** selecione *“dt”* no **Atributo para eixo X** e *“AverageTemperature”* no **Atributos para eixo Y**. \
-	![Formulario gáfico de área](/img/spark/visualizacao_de_dados/grafico_de_area/image2.png)
+	![Formulario gáfico de área](/img/spark/visualizacao-de-dados/grafico-de-area/image2.png)
 
 4. Execute o fluxo e visualize o resultado. 
-	![Gráfico de área](/img/spark/visualizacao_de_dados/grafico_de_area/image1.png)\
+	![Gráfico de área](/img/spark/visualizacao-de-dados/grafico-de-area/image1.png)\
 		Observe que todas as classes possuem 50 instâncias.
 
 ----- 

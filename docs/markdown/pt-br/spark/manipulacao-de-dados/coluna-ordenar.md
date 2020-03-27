@@ -30,20 +30,20 @@ Ao clicar em “Abrir Editor” é apresentado:
 **Objetivo:** Ordenar de Forma Decrescente.\
 **Base de Dados:** [Íris][3]
 
-![Ler dados](/img/spark/manipulacao_de_dados/coluna_ordenar/image4.png)
+![Ler dados](/img/spark/manipulacao-de-dados/coluna-ordenar/image4.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].
 
 2.  Selecione a operação **Ordenar** e clique em **Abrir o Editor**, em seguida em **Adicionar**.\
-	![Tabela - Ler dados](/img/spark/manipulacao_de_dados/coluna_ordenar/image3.png)
+	![Tabela - Ler dados](/img/spark/manipulacao-de-dados/coluna-ordenar/image3.png)
 
 3. Escolha *“Sepal_width”* como **Atributo** e *“decrescente”* como **Função** para realizar a ordenação.\
-	![Ler dados - Escolha de atrributos](/img/spark/manipulacao_de_dados/coluna_ordenar/image2.png)\
+	![Ler dados - Escolha de atrributos](/img/spark/manipulacao-de-dados/coluna-ordenar/image2.png)\
 	**Importante:** Mais de uma ordenação podem ser feitas, a ordem será sempre dos atributos colocados na parte inferior para os colocados superiormente. 
 
 
 4. Visualize a base para verifique que os atributos foram ordenados.\
-	![Resultado](/img/spark/manipulacao_de_dados/coluna_ordenar/image1.png)
+	![Resultado](/img/spark/manipulacao-de-dados/coluna-ordenar/image1.png)
 	
 -----
 

@@ -32,16 +32,16 @@ Nome da Tarefa
 
 **Base de Dados:** [Íris][3]
 	
-![Ler dados](/img/spark/visualizacao_de_dados/box_plot/image4.png)
+![Ler dados](/img/spark/visualizacao-de-dados/box-plot/image4.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4]. \
-	![Ler dados](/img/spark/visualizacao_de_dados/box_plot/image3.png)
+	![Ler dados](/img/spark/visualizacao-de-dados/box-plot/image3.png)
 
 2. Adicione a operação **Box plot** e preencha o campo **Título**. Selecione *“petallength”* no campo **Atributos de entrada** e *“class”* no campo **Atributo usado para agrupar**. \
-	![Formulário filtrar por função](/img/spark/visualizacao_de_dados/box_plot/image1.png)
+	![Formulário filtrar por função](/img/spark/visualizacao-de-dados/box-plot/image1.png)
 
 3. Execute o fluxo e visualize o resultado. 
-	![Gráfico de área](/img/spark/visualizacao_de_dados/box_plot/image2.png)
+	![Gráfico de área](/img/spark/visualizacao-de-dados/box-plot/image2.png)
 
 ----- 
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br

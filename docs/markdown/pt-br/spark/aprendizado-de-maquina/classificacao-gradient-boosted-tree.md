@@ -39,23 +39,23 @@ Nome da Tarefa
 **Objetivo:** Utilizar o modelo do Gradient Boosted Tree (GBT) para classificar se uma pessoa possui ou não a doença diabetes.\
 **Base de Dados:** [Pima Indians Diabetes][4]
 
-![Fluxo de trabalho - Ler dados](/img/spark/aprendizado_de_maquina/classificacao_gradient_boosted_tree/image5.png)
+![Fluxo de trabalho - Ler dados](/img/spark/aprendizado-de-maquina/classificacao-gradient-boosted-tree/image5.png)
 
 1. Leia a base de dados por meio da operação [Ler dados][5].
 
 2. Utilize a operação [Divisão percentual][6] para dividir a base de dados em treino e teste. No parâmetro **Percentual**, calibre-o utilizando 50% dos dados para treinar (1.ª parte) e 50% para testar (2.ª parte).
 
 3. Na operação **Gradient Boosted Tree**, selecione *“Age”*, *“BMI*”, *“BloodPressure”*, *“DiabetesPedigreeFunction”*, *“Glucose”*, *“Insulin”*, *“Pregnancies”* e *“SkinThickness”* no campo **Atributo(s) previsor(es)**. Selecione *“class”* no campo **Atributo com o rótulo** e preencha *“resultado”* no campo **Atributo com a predição (novo)**. Deixe os demais parâmetros inalterados.\
-![Formulário Gradient Boosted Tree - parte 1](/img/spark/aprendizado_de_maquina/classificacao_gradient_boosted_tree/image4.png)
-![Formulário Gradient Boosted Tree - parte 2](/img/spark/aprendizado_de_maquina/classificacao_gradient_boosted_tree/image2.png)
+![Formulário Gradient Boosted Tree - parte 1](/img/spark/aprendizado-de-maquina/classificacao-gradient-boosted-tree/image4.png)
+![Formulário Gradient Boosted Tree - parte 2](/img/spark/aprendizado-de-maquina/classificacao-gradient-boosted-tree/image2.png)
 
 4. Na operação [Aplicar Modelo][7], selecione *“Age”*, *“BMI*”, *“BloodPressure”*, *“DiabetesPedigreeFunction”*, *“Glucose”*, *“Insulin”*, *“Pregnancies”* e *“SkinThickness”* no campo **Atributo(s) previsor(es)** e preencha *“resultado”* no campo **Nome do novo atributo (herdado do modelo)**. 
 
 5. Na operação [Avaliar Modelo][8], selecione *“resultado”* no campo **Atributo usado para predição**. Selecione *“class”* no campo **Atributo usado como label** e a métrica *“F1”* como **Métrica para avaliação**. 
 
 6. Execute o fluxo e visualize o resultado, i.e., a matriz de confusão gerada para as predições do modelo de árvore de decisão e, consequentemente, a tabela representando as métricas de classificação (derivadas da matriz de confusão).\
-![Resultado - Gŕafico](/img/spark/aprendizado_de_maquina/classificacao_gradient_boosted_tree/image3.png)\
-![Resultado - Tabela](/img/spark/aprendizado_de_maquina/classificacao_gradient_boosted_tree/image1.png)
+![Resultado - Gŕafico](/img/spark/aprendizado-de-maquina/classificacao-gradient-boosted-tree/image3.png)\
+![Resultado - Tabela](/img/spark/aprendizado-de-maquina/classificacao-gradient-boosted-tree/image1.png)
 
 
 ---

@@ -1,20 +1,20 @@
 # Importação de bases de dados
 Após a criação do usuário e reconhecimento do layout básico da plataforma, você poderá prosseguir para a importação de bases de dados, que podem ser utilizadas como entrada em processos de fluxos de trabalhos. Para iniciar a importação de uma base, clique na primeira aba na parte superior da página, chamada **Base de dados**:
-![Bases de Dados](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image51.png)\
+![Bases de Dados](/img/spark/documentacao-geral/utilizacao-basica-da-plataforma-lemonade/image51.png)\
 A tela de importação de bases de dados aparecerá, e é nela que será feito o gerenciamento das bases de dados que você escolher utilizar. Para carregar uma base de dados clique no botão **Adicionar**:\
-![Tabela - Bases de Dados](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image41.png)\
+![Tabela - Bases de Dados](/img/spark/documentacao-geral/utilizacao-basica-da-plataforma-lemonade/image41.png)\
 A seguir, clique em **Escolha** na seção chamada “Sistema de arquivos distribuído (HDFS)”:\
-![Sistema de arquivos distribuídos](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image37.png)\
+![Sistema de arquivos distribuídos](/img/spark/documentacao-geral/utilizacao-basica-da-plataforma-lemonade/image37.png)\
 Você poderá arrastar o arquivo do seu gerenciador de arquivos ou selecioná-lo manualmente:\
-![Importar - Sistema de arquivos distribuídos](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image72.png)\
+![Importar - Sistema de arquivos distribuídos](/img/spark/documentacao-geral/utilizacao-basica-da-plataforma-lemonade/image72.png)\
 Para este tutorial, utilizaremos a [base de dados Iris][3], uma das mais reconhecidas na literatura de reconhecimento de padrões.  Faça o [download dessa base de dados][4] para seu computador para um arquivo chamado “iris.csv”. Uma outra opção é criar um arquivo no seu computador chamado “iris.csv” e copiar manualmente os dados presentes no [link indicado][5] para o esse arquivo. A seguir, selecione ou arraste esse arquivo para a plataforma Lemonade e, a sua base de dados estará disponível quando você clicar novamente na aba **Base de dados** na parte superior da página.\
-![Tabela - Bases de Dados](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image67.png)\
+![Tabela - Bases de Dados](/img/spark/documentacao-geral/utilizacao-basica-da-plataforma-lemonade/image67.png)\
 Com o arquivo carregado, a base de dados aparece na tela com algumas opções de gerenciamento e informações básicas, como seu ID de identificação na plataforma, nome, descrição, formato, data de criação, o nome do usuário responsável pelo carregamento e suas tags. Além disso, outras opções de gerenciamento são:\
-![Lixeira - Excluir](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image29.png): Exclui a base de dados da plataforma.\
-![Seta - Baixar](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image31.png): Efetua o download da base de dados que foi carregada para a plataforma.
+![Lixeira - Excluir](/img/spark/documentacao-geral/utilizacao-basica-da-plataforma-lemonade/image29.png): Exclui a base de dados da plataforma.\
+![Seta - Baixar](/img/spark/documentacao-geral/utilizacao-basica-da-plataforma-lemonade/image31.png): Efetua o download da base de dados que foi carregada para a plataforma.
 
 Ao clicar no nome nome da base de dados, prosseguimos para a aba de **Informações básicas**. Informações como nome da base de dados e descrição da mesma podem ser alteradas nessa aba.\
-![Informações da Base de Dados](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image61.png)
+![Informações da Base de Dados](/img/spark/documentacao-geral/utilizacao-basica-da-plataforma-lemonade/image61.png)
 
 - Na tela de edição, alguns campos de destaque são:
 Formato: Explicita o formato em que o arquivo da base de dados está. No exemplo, a base está no formato CSV.
@@ -34,13 +34,13 @@ Formato: Explicita o formato em que o arquivo da base de dados está. No exemplo
 	- **Inferir** esquema: Infere o esquema de atributos da base de dados, sem necessitar da adição manual. Para isso, é obrigatoriamente necessário especificar o delimitador de texto no caso do CSV. Caso a base tenha cabeçalho, o usuário deverá a marcar a opção Usar a primeira linha como cabeçalho. No caso da base Iris, o delimitador de texto é a o caractere de vírgula (“ , “)  e a mesma não possui cabeçalho predefinido.
 	- **Pré-visualização**: Pré-visualiza a base de dados no formato atualmente definido, seja ele o formato padrão da plataforma ou no formato alterado pelo usuário.
 
-	![Pré Visualização](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image83.png)
+	![Pré Visualização](/img/spark/documentacao-geral/utilizacao-basica-da-plataforma-lemonade/image83.png)
 
 Para editar os atributos da base de dados, clique na aba **Atributos** dentro da seção **Base de dados**. É possível editar os nomes dos atributos (mesmo quando existe cabeçalho predefinido), alterar o tipo desses atributos (decimal, data, caractere, texto, etc), alterar o seu formato e sua representação em relação a dados ausentes ou nulos (por exemplo,  “n/a”, “none”, “NA” ou “?”) . Neste tutorial, apenas iremos renomear os nomes dos atributos inferidos da base Iris para os seus [verdadeiros nomes][6] (*sepal length*, *sepal width*, *petal length*, *petal width* e *class*),  Portanto, o esquema da base de dados Iris ficará da seguinte forma:\
-![Editar atributos](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image110.png)
+![Editar atributos](/img/spark/documentacao-geral/utilizacao-basica-da-plataforma-lemonade/image110.png)
 
 Para salvar as mudanças feitas nos atributos, clique em **Salvar**, e para pré-visualizar a base formatada, clique em **Pré-visualização**. A imagem a seguir será mostrada para o usuário, como pré-visualização da base editada.\
-![Pré Visualização](/img/spark/documentacao_geral/utilizacao_basica_da_plataforma_lemonade/image78.png)
+![Pré Visualização](/img/spark/documentacao-geral/utilizacao-basica-da-plataforma-lemonade/image78.png)
 
 -----
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br

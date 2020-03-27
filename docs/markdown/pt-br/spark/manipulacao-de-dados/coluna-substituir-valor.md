@@ -27,19 +27,19 @@ Nome da Tarefa
 **Objetivo:** Supondo que houve um engano durante a coleta do conjunto de dados, os autores precisam corrigir os dados inconsistentes. Todos os atributos que possuem valores 4.4 estão errados, sendo necessário substituí-los por um valor específico, o valor 4.3.\
 **Base de Dados:** [Íris][3]
 	
-![Ler dados](/img/spark/manipulacao_de_dados/coluna_substituir_valor/image2.png)
+![Ler dados](/img/spark/manipulacao-de-dados/coluna-substituir-valor/image2.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4]. É importante marcar na aba de [Resultados][2] a opção **Exibir amostra(s) da(s) saída(s) (máx. 50 registros)** para poder comparar os dados antes e depois da transformação.
-	![Tabela Ler Dados](/img/spark/manipulacao_de_dados/coluna_substituir_valor/image3.png)
+	![Tabela Ler Dados](/img/spark/manipulacao-de-dados/coluna-substituir-valor/image3.png)
 	
 2. Adicione a operação **Substituir valor**. Selecione *“sepallength”*, *“sepalwidth”*, *“petallength”* e *"petalwidth”* como **Atributos**. No **valor** a ser substituído coloque 4.4 e no de **substituir por** use 4.3.\
 	É importante prestar atenção aos tipos de dados da base usada, no nosso exemplo não seleciona a coluna **class** pois, ela é do tipo texto enquanto as outras são do tipo inteiro. Ao substituir um parâmetro na forma de texto deve-se colocar aspas. Além disso, marque a mesma opção na aba de **Resultados**, **Exibir amostra(s) da(s) saída(s) (máx. 50 registros)**.
-	![Tabela Substituir Valor](/img/spark/manipulacao_de_dados/coluna_substituir_valor/image4.png)
+	![Tabela Substituir Valor](/img/spark/manipulacao-de-dados/coluna-substituir-valor/image4.png)
 
 3.  Execute o fluxo e visualize o resultado.\
 	Observe o resultado da tabela da função **Ler dados** e repare na linha 9 do primeiro parâmetro e na linha 16 do segundo. Ambos estão como 4.4. Em seguida, faça o mesmo para a função de **Substituir valor**, as imagens abaixo mostram que os valores que estavam previamente em 4.4 foram substituídos por 4.3.\
-	![Resultado - Ler Dados](/img/spark/manipulacao_de_dados/coluna_substituir_valor/image1.png)\
-	![Resultado - Substituir Valor](/img/spark/manipulacao_de_dados/coluna_substituir_valor/image5.png)
+	![Resultado - Ler Dados](/img/spark/manipulacao-de-dados/coluna-substituir-valor/image1.png)\
+	![Resultado - Substituir Valor](/img/spark/manipulacao-de-dados/coluna-substituir-valor/image5.png)
 	
 -----
 

@@ -32,19 +32,19 @@ Nome da Tarefa
 
 **Base de Dados:** [Íris][3]
 	
-![Ler dados](/img/spark/visualizacao_de_dados/grafico_de_rosca/image1.png)
+![Ler dados](/img/spark/visualizacao-de-dados/grafico-de-rosca/image1.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].
 	
 2.  Adicione a operação [Agrupar linhas por função][5] e selecione *“class”* no campo **Selecione o(s) atributos para agrupamento**. Na função de agrupamento, selecione o **Atributo** *"class”*, **Função** *“count”* e preencha *“count_class”* em **Nome Novo**. \
-	![Formulario classes](/img/spark/visualizacao_de_dados/grafico_de_rosca/image3.png)
+	![Formulario classes](/img/spark/visualizacao-de-dados/grafico-de-rosca/image3.png)
 	
 
 3. Na operação **Gŕafico de rosca** preencha “*Classes”* no campo **Título**, selecione *“count_class”* **Atributos com valor e “class”** em **Atributo usado como rótulo**. \
-	![Formulario agrupar](/img/spark/visualizacao_de_dados/grafico_de_rosca/image2.png)
+	![Formulario agrupar](/img/spark/visualizacao-de-dados/grafico-de-rosca/image2.png)
 
 4. Execute o fluxo e visualize o resultado. \
-	![Execução](/img/spark/visualizacao_de_dados/grafico_de_rosca/image4.png) \
+	![Execução](/img/spark/visualizacao-de-dados/grafico-de-rosca/image4.png) \
 	Observe que todas as classes possuem 50 instâncias.
 
 -----

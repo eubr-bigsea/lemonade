@@ -36,17 +36,17 @@ Nome da Tarefa
 
 **Base de Dados:** [Íris][3]
 	
-![Ler dados](/img/spark/visualizacao_de_dados/grafico_de_dispersao/image3.png)
+![Ler dados](/img/spark/visualizacao-de-dados/grafico-de-dispersao/image3.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].
 	
 2.  Ordene de forma crescente o atributo que será utilizado no **eixo X**, neste caso, o *“sepallength”* por meio da operação [Ordenar][5].
 	
 3. Selecione *“sepallength”* no campo **Atributos para o eixo X**. Selecione *“sepalwidth”* no campo **Atributos para o eixo Y**. Como **atributo de série**, escolha o *“class”*. \
-	![Formulario agrupar](/img/spark/visualizacao_de_dados/grafico_de_dispersao/image1.png)
+	![Formulario agrupar](/img/spark/visualizacao-de-dados/grafico-de-dispersao/image1.png)
 
 4. Execute o fluxo e visualize o resultado. 
-	![Gráfico de linhas gerado](/img/spark/visualizacao_de_dados/grafico_de_dispersao/image2.png)\
+	![Gráfico de linhas gerado](/img/spark/visualizacao-de-dados/grafico-de-dispersao/image2.png)\
 		Gráfico de dispersão gerado pelo fluxo acima.
 
 ----- 

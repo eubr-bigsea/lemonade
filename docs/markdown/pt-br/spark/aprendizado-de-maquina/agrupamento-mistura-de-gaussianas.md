@@ -30,18 +30,18 @@ Nome da Tarefa
 **Objetivo:** utilizar o modelo mistura de gaussianas para agrupar as espécies da Íris.\
 **Base de Dados:** [Íris][3]
 
-![Fluxo de trabalho - Ler Dados](/img/spark/aprendizado_de_maquina/agrupamento_mistura_de_gaussianas/image1.png)
+![Fluxo de trabalho - Ler Dados](/img/spark/aprendizado-de-maquina/agrupamento-mistura-de-gaussianas/image1.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].\
-![Formulário - Ler Dados](/img/spark/aprendizado_de_maquina/agrupamento_mistura_de_gaussianas/image4.png)
+![Formulário - Ler Dados](/img/spark/aprendizado-de-maquina/agrupamento-mistura-de-gaussianas/image4.png)
 
 2. Na operação **Mistura de Gaussianas**, selecione *“petallength”*, *“petalwidth”*, *“sepallength”* e *“sepalwidth”* no campo **Atributo(s) previsor(es)**. Selecione *“cluster”* no campo **Atributo com a predição (novo)**. Preencha 3 no campo **Número de agrupamentos (k)**, 0.01 no campo **Tolerância**, 20 no campo **Número max. de interações** e *“Não executar a validação cruzada"* no campo **Métrica para validação cruzada**.\
-![Formulário - Mistura de Gaussianas](/img/spark/aprendizado_de_maquina/agrupamento_mistura_de_gaussianas/image2.png)
+![Formulário - Mistura de Gaussianas](/img/spark/aprendizado-de-maquina/agrupamento-mistura-de-gaussianas/image2.png)
 
 3. Na operação Visualizar em tabela, não preencha nada. 
 
 4. Execute o fluxo e visualize o resultado.\
-![Resultado](/img/spark/aprendizado_de_maquina/agrupamento_mistura_de_gaussianas/image3.png)\
+![Resultado](/img/spark/aprendizado-de-maquina/agrupamento-mistura-de-gaussianas/image3.png)\
 Com a execução do modelo a probabilidade de cada amostra pertencer a cada componente pode ser visualizada pela tabela de visualização. 
 
 ---

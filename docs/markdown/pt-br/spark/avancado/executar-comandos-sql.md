@@ -33,7 +33,7 @@ Nome da Tarefa
 **Objetivo:** criar uma base de dados com os atributos dos dois conjunto de dados.\
 **Base de Dados:** [Artificial 1][3]
 	
-![Ler dados](/img/spark/avancado/executar_comandos_sql/image3.png)\
+![Ler dados](/img/spark/avancado/executar-comandos-sql/image3.png)\
 As duas entradas **(Ler Dados)** serão referenciadas como “ds1” e “ds2”. 
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4]. 
@@ -42,13 +42,13 @@ As duas entradas **(Ler Dados)** serão referenciadas como “ds1” e “ds2”
 
     **Consulta: Selecionar os atributos A, B e key**.\
 	Os atributos A e B são selecionados, quando o “key” é o mesmo. É feito uma união dos dois conjuntos de dados, através do único atributo em comum (atributo “key”). Isto é realizado com a operação de banco de dados relacional denominada união ou join.\
-	![Consultar](/img/spark/avancado/executar_comandos_sql/image1.png)
+	![Consultar](/img/spark/avancado/executar-comandos-sql/image1.png)
 
 	Obs.: O segundo parâmetro dessa operação deve ser utilizado de forma cuidadosa, pois, nesse exemplo sabe-se que no resultado existirá 3 atributos, então é possível renomeá-lo. Mas quando utilizar esse parâmetro em uma seleção de todos os atributos, ou seja, uma consulta assim “SELECT * from ds1”. Se não conhecer os atributos presentes no conjunto de dados, não é possível renomear as colunas.
 
 3. Execute e visualize o resultado obtido.\\
 	Observe que os atributos foram renomeados e que existe um novo conjunto de dados com os atributos desejados. \
-	![Resultado](/img/spark/avancado/executar_comandos_sql/image2.png)
+	![Resultado](/img/spark/avancado/executar-comandos-sql/image2.png)
 
 -----
 

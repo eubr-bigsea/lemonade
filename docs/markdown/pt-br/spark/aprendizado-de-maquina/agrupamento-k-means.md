@@ -41,18 +41,18 @@ Tipos:
 **Objetivo:** Utilizar o k-means para agrupar as espécies da Íris.\
 **Base de Dados:** [Íris][3]
 
-![Fluxo de trabalho - Ler dados](/img/spark/aprendizado_de_maquina/agrupamento_k_means/image2.png)
+![Fluxo de trabalho - Ler dados](/img/spark/aprendizado-de-maquina/agrupamento-k-means/image2.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].\
-![Formulário Ler dados](/img/spark/aprendizado_de_maquina/agrupamento_k_means/image4.png)
+![Formulário Ler dados](/img/spark/aprendizado-de-maquina/agrupamento-k-means/image4.png)
 
 2. Na operação **K-means**, preencha *3* no campo **Quantidade de agrupamentos(k)**, *0.0001* no campo **Tolerância**, *“k-Means tradicional”* no campo **Tipo**, *“K-Means || K-Means ++ variant”* no campo **Geração de centróides iniciais** e *50* no campo **Número max. de interações**. Selecione *“petal_length”*, *“petal_width”*, *“sepal_length”* e *“sepal_width”* como **Atributo(s) previsor(es)** e *“prediction”* como **Atributo com a predição (novo)**.\
-![Formulário K-Means](/img/spark/aprendizado_de_maquina/agrupamento_k_means/image1.png)
+![Formulário K-Means](/img/spark/aprendizado-de-maquina/agrupamento-k-means/image1.png)
 
 3. Na operação [Tabela][5], não preencha nada. 
 
 4. Execute o fluxo e visualize o resultado.
-![Resultado](/img/spark/aprendizado_de_maquina/agrupamento_k_means/image3.png)\
+![Resultado](/img/spark/aprendizado-de-maquina/agrupamento-k-means/image3.png)\
 Com a execução do modelo a predição de cada um dos três clusteres pode ser obtido visualizando o resultado apresentado pela tabela de visualização.
 
 ---

@@ -26,15 +26,15 @@ Nome da Tarefa
 
 **Base de Dados:** [Titanic][3]
 	
-![Ler dados](/img/spark/manipulacao_de_dados/selecionar_atributos/image3.png)
+![Ler dados](/img/spark/manipulacao-de-dados/selecionar-atributos/image3.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].
 	
 2. Adicione a operação **Selecionar Atributos**, selecione *“age”* e *“sex”* no campo **Atributo(s)**.
-	![Selecionar atributo(s)](/img/spark/manipulacao_de_dados/selecionar_atributos/image2.png)
+	![Selecionar atributo(s)](/img/spark/manipulacao-de-dados/selecionar-atributos/image2.png)
 	
 3. Execute o fluxo e visualize o resultado.
-	![Resultado](/img/spark/manipulacao_de_dados/selecionar_atributos/image1.png)
+	![Resultado](/img/spark/manipulacao-de-dados/selecionar-atributos/image1.png)
 
 -----
 

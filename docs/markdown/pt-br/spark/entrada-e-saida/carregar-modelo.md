@@ -23,26 +23,26 @@ Nome da Tarefa
 **Objetivo:** Carregar um modelo salvo. No exemplo apresentado, será utilizada a base de dados íris. O modelo será carregado, aplicado a base íris e avaliado.\
 **Base de Dados:** [Íris][4]
 	
-![Ler dados](/img/spark/entrada_e_saida/carregar_modelo/image6.png)
+![Ler dados](/img/spark/entrada-e-saida/carregar-modelo/image6.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][5].\
-	![Tabela - Ler dados](/img/spark/entrada_e_saida/carregar_modelo/image5.png)
+	![Tabela - Ler dados](/img/spark/entrada-e-saida/carregar-modelo/image5.png)
 
 2. Na operação [Converter categórico][6] para numérico, selecione *“class”* no campo **Atributos**. Preencha *“class_label”* no campo **Nome para novos atributos indexados**.\
-	![Converter categórico para numérico](/img/spark/entrada_e_saida/carregar_modelo/image4.png)
+	![Converter categórico para numérico](/img/spark/entrada-e-saida/carregar-modelo/image4.png)
 
 3. Adicione a operação [Aplicar modelo][7], selecione *“petal_length”*, *“petal_width”*, *“sepal_length”* e *“sepal_width”* no campo **Atributos previsores** e preencha *“prediction”* no campo **Nome do novo atributo**.\
-	![Aplicar modelo](/img/spark/entrada_e_saida/carregar_modelo/image3.png)
+	![Aplicar modelo](/img/spark/entrada-e-saida/carregar-modelo/image3.png)
 
 4. Adicione a operação **Carregar modelo** e selecione o modelo que será utilizado no fluxo.\
-	![Tabela - Carregar modelo](/img/spark/entrada_e_saida/carregar_modelo/image7.png)
+	![Tabela - Carregar modelo](/img/spark/entrada-e-saida/carregar-modelo/image7.png)
 
 5. Adicione a operação [Avaliar Modelo] selecione *“prediction”* no campo **Atributo usado para predição**, *“class_label”* no **Atributo usado como label**, *“Acurácia”* em **Métrica usada para avaliação**.
-	![Tabela - Avaliar modelo](/img/spark/entrada_e_saida/carregar_modelo/image2.png)
+	![Tabela - Avaliar modelo](/img/spark/entrada-e-saida/carregar-modelo/image2.png)
 
 6. Execute o fluxo e visualize o resultado.\
-	![Gráfico - Resultado](/img/spark/entrada_e_saida/carregar_modelo/image1.png)\
-	![Tabela - Resultado](/img/spark/entrada_e_saida/carregar_modelo/image8.png)
+	![Gráfico - Resultado](/img/spark/entrada-e-saida/carregar-modelo/image1.png)\
+	![Tabela - Resultado](/img/spark/entrada-e-saida/carregar-modelo/image8.png)
 
 -----
 

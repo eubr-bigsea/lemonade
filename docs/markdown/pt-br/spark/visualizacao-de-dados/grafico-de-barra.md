@@ -35,18 +35,18 @@ Nome da Tarefa
 
 **Base de Dados:** [Íris][3]
 	
-![Ler dados](/img/spark/visualizacao_de_dados/grafico_de_barra/image4.png)
+![Ler dados](/img/spark/visualizacao-de-dados/grafico-de-barra/image4.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4].
 	
 2.   Adicione a operação [Agrupar linhas por função][5] e selecione *“class”* no campo **Selecione o(s) atributos para agrupamento**. Na função de agrupamento, selecione o **Atributo** *“class”*, **Função** *"count”* e preencha *“count_class”* em **Nome Novo**. \
-	![Formulário agrupar linhas por função](/img/spark/visualizacao_de_dados/grafico_de_barra/image3.png)
+	![Formulário agrupar linhas por função](/img/spark/visualizacao-de-dados/grafico-de-barra/image3.png)
 	
 3. Na operação **Gŕafico de barra(s)** preencha *“Classes”* no campo **Título**, selecione *“class”* em **Atributos para eixo x**, preencha *“count_class”* **Atributos para eixo y**. \
-	![Formulario gáfico de barras](/img/spark/visualizacao_de_dados/grafico_de_barra/image2.png)
+	![Formulario gáfico de barras](/img/spark/visualizacao-de-dados/grafico-de-barra/image2.png)
 
 4. Execute o fluxo e visualize o resultado. 
-	![Gráfico de linhas gerado](/img/spark/visualizacao_de_dados/grafico_de_barra/image1.png)\
+	![Gráfico de linhas gerado](/img/spark/visualizacao-de-dados/grafico-de-barra/image1.png)\
 		Observe que todas as classes possuem 50 instâncias.
 
 ----- 

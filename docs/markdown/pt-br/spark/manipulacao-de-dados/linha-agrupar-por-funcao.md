@@ -68,42 +68,42 @@ Um pivô é um agrupamento em que uma ou mais colunas têm seus valores transpos
 **Objetivo:** Descobrir qual é a média dos atributos *“sepallength”*, *“sepalwidth”*, *“petallength”* e “petalwidth” para as 3 classes de flores existentes.\
 **Base de Dados:** [Íris][3].
 
-![Ler dados](/img/spark/manipulacao_de_dados/linha_agrupar_por_funcao/image7.png)
+![Ler dados](/img/spark/manipulacao-de-dados/linha-agrupar-por-funcao/image7.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4]. 
 
 2. Na operação **Agrupar linhas por função** preencha *“class”* no atributo **Selecione o(s) atributo(s) para agregação**. \
-	![Atributos para agregação](/img/spark/manipulacao_de_dados/linha_agrupar_por_funcao/image5.png)
+	![Atributos para agregação](/img/spark/manipulacao-de-dados/linha-agrupar-por-funcao/image5.png)
 
 3. Ainda na operação **Agrupar linhas por função**, no campo **Função de Agrupamento**, clique em *“Escolha uma opção”*.\
-	![Atributos para agregação](/img/spark/manipulacao_de_dados/linha_agrupar_por_funcao/image2.png)
+	![Atributos para agregação](/img/spark/manipulacao-de-dados/linha-agrupar-por-funcao/image2.png)
 
 	### Teste com Função Average:
 4. Defina a **função de agregação** a ser usada como a Average e para os atributos selecione *“sepallength”*, *“sepalwidth”*, *“petallength”* e *“petalwidth”*.\
-	![Atributos para agregação](/img/spark/manipulacao_de_dados/linha_agrupar_por_funcao/image8.png)
+	![Atributos para agregação](/img/spark/manipulacao-de-dados/linha-agrupar-por-funcao/image8.png)
 
 
 5. Execute e visualize o fluxo.
-	![Resultado](/img/spark/manipulacao_de_dados/linha_agrupar_por_funcao/image4.png)\
+	![Resultado](/img/spark/manipulacao-de-dados/linha-agrupar-por-funcao/image4.png)\
 	Observe que ao utilizar essa função de agregação de acordo com o atributo “class”, temos 3 grupos diferentes Iris-virginica, Iris-setosa e Iris-versicolor, pois, no atributo “class” existiam apenas 3 classes diferentes. O restante mostra a média para cada uma dessas classes nos demais atributos *“sepallength”*, *“sepalwidth”*, *“petallength”*, *“petalwidth”*.
 
 ### Exemplo 2
 **Objetivo:** Descobrir o valor pago pelos tripulantes do sexo masculino e feminino.\
 **Base de Dados:** [Titanic][5].
 
-![Ler dados](/img/spark/manipulacao_de_dados/linha_agrupar_por_funcao/image7.png)
+![Ler dados](/img/spark/manipulacao-de-dados/linha-agrupar-por-funcao/image7.png)
 
 1. Adicione uma base de dados por meio da operação [Ler dados][4]. 
 
 2. Preencha na operação **Agrupar Linhas** por Função no campo **Atributos para Agregação** o atributo sex. No campo pivô utilize a classe do tripulante.\
-	![Atributos para agregação](/img/spark/manipulacao_de_dados/linha_agrupar_por_funcao/image3.png)
+	![Atributos para agregação](/img/spark/manipulacao-de-dados/linha-agrupar-por-funcao/image3.png)
 
 
 3. Ainda na operação **Agrupar linhas por função**, no campo **Função de Agrupamento** clique em *“Escolha uma opção”*. Preencha o campo **Atributos** com o atributo *fare*. No campo **Função** selecione *Maximum* e no campo **Nome novo** preencha com *sex*.\
-	![Agrupamento](/img/spark/manipulacao_de_dados/linha_agrupar_por_funcao/image6.png)
+	![Agrupamento](/img/spark/manipulacao-de-dados/linha-agrupar-por-funcao/image6.png)
 
 4. Execute e visualize o fluxo.\
-	![Resultado](/img/spark/manipulacao_de_dados/linha_agrupar_por_funcao/image1.png)\
+	![Resultado](/img/spark/manipulacao-de-dados/linha-agrupar-por-funcao/image1.png)\
 	O resultado da operação de agregação nos mostra o valor máximo pago pela tarifa de embarque em cada uma das classes do navio Titanic. Observe que a segunda classe (2nd), mulheres pagam menos que os homens.
 
 -----

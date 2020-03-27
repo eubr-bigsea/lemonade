@@ -36,23 +36,23 @@ Nome da Tarefa
 **Objetivo:** Utilizar o modelo do Support Vector Machines (*SVM*) para classificar se uma pessoa possui ou não a doença diabetes\
 **Base de Dados:** [Pima Indians Diabetes][3]
 
-![Fluxo de trabalho - Ler dados](/img/spark/aprendizado_de_maquina/classificacao_support_vector_machines/image4.png)
+![Fluxo de trabalho - Ler dados](/img/spark/aprendizado-de-maquina/classificacao-support-vector-machines/image4.png)
 
 1. Leia a base de dados por meio da operação [Ler dados][4].
 
 2. Utilize a operação [Divisão percentual][5] para dividir a base de dados em treino e teste. No parâmetro **Percentual**, calibre-o utilizando 50% dos dados para treinar (1.ª parte) e 50% para testar (2.ª parte).
 
 3. Na operação **Support Vector Machines (SVM)**, selecione *“Age”*, *“BMI”*, *“BloodPressure”*, *“DiabetesPedigreeFunction”*, *“Glucose”*, *“Insulin”*, *“Pregnancies”* e *“SkinThickness”* no campo **Atributos com features**. Selecione *“class”* no campo **Atributo com o rótulo** e preencha *“resultado”* no campo Atributo com a predição (novo). Deixe os demais parâmetros inalterados.\
-![Formulario Support Vector Machines - parte 1](/img/spark/aprendizado_de_maquina/classificacao_support_vector_machines/image3.png)
-![Formulario Support Vector Machines - parte 2](/img/spark/aprendizado_de_maquina/classificacao_support_vector_machines/image1.png)
+![Formulario Support Vector Machines - parte 1](/img/spark/aprendizado-de-maquina/classificacao-support-vector-machines/image3.png)
+![Formulario Support Vector Machines - parte 2](/img/spark/aprendizado-de-maquina/classificacao-support-vector-machines/image1.png)
 
 4. Na operação [Aplicar Modelo][6], selecione *“Age”*, *“BMI”*, *“BloodPressure”*, *“DiabetesPedigreeFunction”*, *“Glucose”*, *“Insulin”*, *“Pregnancies”* e *“SkinThickness”* no campo **Atributos com features** e preencha *“resultado”* no campo **Nome do novo atributo (herdado do modelo)**. 
 
 5. Na operação [Avaliar Modelo][7], selecione *“resultado”* no campo **Atributo usado para predição**. Selecione *“class”* no campo **Atributo usado como label** e a métrica *“F1”* como **Métrica para avaliação**. 
 
 6. Execute o fluxo e visualize o resultado, i.e., a matriz de confusão gerada para as predições do modelo de árvore de decisão e, consequentemente, a tabela representando as métricas de classificação (derivadas da matriz de confusão).\
-![Gráfico - resultado](/img/spark/aprendizado_de_maquina/classificacao_support_vector_machines/image2.png)\
-![Tabela - resultado](/img/spark/aprendizado_de_maquina/classificacao_support_vector_machines/image5.png)
+![Gráfico - resultado](/img/spark/aprendizado-de-maquina/classificacao-support-vector-machines/image2.png)\
+![Tabela - resultado](/img/spark/aprendizado-de-maquina/classificacao-support-vector-machines/image5.png)
 
 
 ---
