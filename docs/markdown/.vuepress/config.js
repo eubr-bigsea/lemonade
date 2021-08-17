@@ -190,7 +190,19 @@ module.exports = {
 								['pre-processamento-de-dados/amostragem-amostrar-exemplos.md', 'Amostragem - Amostrar Exemplos']
 							]
 						},
-{
+						{
+                            title: 'Resolução de Entidades',
+                            collapsable: true,
+                            sidebarDepth: 1,
+                            children: [
+                            	//['<route>', '<label to show on sidebar>']
+                            	['resolucao-de-entidades/blocagem.md', 'Blocagem'],
+                            	['resolucao-de-entidades/comparacao.md', 'Comparação'],
+                            	['resolucao-de-entidades/classificacao.md', 'Classificação'],
+                            	['resolucao-de-entidades/avaliacao.md', 'Avaliação'],
+                                ]
+                        },
+                        {
 							title: 'Visualização de Dados',
 							collapsable: true,
 							sidebarDepth: 0,

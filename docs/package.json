@@ -4,6 +4,6 @@
     "docs:build": "vuepress build markdown"
   },
   "devDependencies": {
-    "vuepress": "^1.3.0"
+    "vuepress": "^1.8.2"
   }
 }
