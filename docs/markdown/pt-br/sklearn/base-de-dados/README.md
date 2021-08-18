@@ -196,3 +196,7 @@ Descrição: possui nomes de bebês americanos.
 ## Airplane Crashes Since 1908
 **Link download**: <https://www.kaggle.com/saurograndi/airplane-crashes-since-1908> \
 **Descrição**: Acidentes de avião.
+
+## dataset3
+**Link download**: <https://github.com/J535D165/recordlinkage/tree/master/recordlinkage/datasets/febrl/dataset3.csv> \
+**Descrição**: Base de dados fictícia do Febrl.
