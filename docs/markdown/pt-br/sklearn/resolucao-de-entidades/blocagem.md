@@ -1,7 +1,7 @@
 # Blocagem
 A operação Blocagem tem como objetivo formar pares de registros em fontes de dados.
 
-Para mais informações, visite o site [Pyhton Record Linkage Toolkit Documentation](https://recordlinkage.readthedocs.io/en/latest/index.html).
+Para mais informações, visite o site [Python Record Linkage Toolkit Documentation](https://recordlinkage.readthedocs.io/en/latest/index.html).
 ### Conectores
 | Entrada | Saída |
 | --- | --- |

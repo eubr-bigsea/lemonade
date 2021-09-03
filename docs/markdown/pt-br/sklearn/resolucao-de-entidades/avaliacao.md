@@ -1,7 +1,7 @@
 # Avaliação
 A operação Avaliação tem como objetivo avaliar os resultados obtidos pelo fluxo de resolução de entidades.
 
-Para mais informações, visite o site [Pyhton Record Linkage Toolkit Documentation](https://recordlinkage.readthedocs.io/en/latest/index.html).
+Para mais informações, visite o site [Python Record Linkage Toolkit Documentation](https://recordlinkage.readthedocs.io/en/latest/index.html).
 ### Conectores
 | Entrada | Saída |
 | --- | --- |

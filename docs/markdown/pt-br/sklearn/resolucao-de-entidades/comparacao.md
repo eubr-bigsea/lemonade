@@ -1,7 +1,7 @@
 # Comparação
 A operação Comparação tem como objetivo comparar pares de registros.
 
-Para mais informações, visite o site [Pyhton Record Linkage Toolkit Documentation](https://recordlinkage.readthedocs.io/en/latest/index.html).
+Para mais informações, visite o site [Python Record Linkage Toolkit Documentation](https://recordlinkage.readthedocs.io/en/latest/index.html).
 ### Conectores
 | Entrada | Saída |
 | --- | --- |

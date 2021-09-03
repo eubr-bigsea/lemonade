@@ -1,7 +1,7 @@
 # Classificação
 A operação Classificação tem como objetivo classificar conjuntos de registros como pares ou não.
 
-Para mais informações, visite o site [Pyhton Record Linkage Toolkit Documentation](https://recordlinkage.readthedocs.io/en/latest/index.html).
+Para mais informações, visite o site [Python Record Linkage Toolkit Documentation](https://recordlinkage.readthedocs.io/en/latest/index.html).
 ### Conectores
 | Entrada | Saída |
 | --- | --- |
