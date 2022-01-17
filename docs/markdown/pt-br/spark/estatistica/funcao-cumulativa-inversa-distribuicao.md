@@ -1,6 +1,6 @@
-## Função Cumulativa Inversa de Distribuição
+# Função Cumulativa Inversa de Distribuição
 
-Transforma um atributo do conujunto de dados, aplicando a função de distribuição cumulativa inversa (CCDF). Os valores resultantes ficam contidos no intervalo [0, 1]. Use o CCDF para determinar a probabilidade de que uma observação aleatória tirada da população seja menor ou igual a um certo valor. Você também pode usar essas informações para determinar a probabilidade de uma observação ser maior do que um determinado valor ou entre dois valores.
+Transforma um atributo do conjunto de dados, aplicando a função de distribuição cumulativa inversa (CCDF). Os valores resultantes ficam contidos no intervalo [0, 1]. Use o CCDF para determinar a probabilidade de que uma observação aleatória tirada da população seja menor ou igual a um certo valor. Você também pode usar essas informações para determinar a probabilidade de uma observação ser maior do que um determinado valor ou entre dois valores.
 
 
 Conectores

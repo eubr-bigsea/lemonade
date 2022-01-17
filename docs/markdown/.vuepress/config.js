@@ -141,6 +141,16 @@ module.exports = {
 							]
 						},
 						{
+							title: 'Estatística',
+							collapsable: true,
+							sidebarDepth: 1,
+							children: [
+								//['<route>', '<label to show on sidebar>']
+								['estatistica/funcao-cumulativa-inversa-distribuicao.md', 'Função Cumulativa Inversa Distribuição'],
+								['estatistica/funcao-distributiva-acumulada.md', 'Função Distributiva Acumulada']
+							]
+						},
+						{
 							title: 'Manipulação de Dados',
 							collapsable: true,
 							sidebarDepth: 1,
@@ -157,7 +167,8 @@ module.exports = {
 								['manipulacao-de-dados/coluna-diferenca.md', 'Coluna - Diferença'],
 								['manipulacao-de-dados/linha-remover-duplicadas.md', 'Linha - Remover Duplicadas'],
 								['manipulacao-de-dados/linha-agrupar-por-funcao.md', 'Linha - Agrupar por Função'],
-								['manipulacao-de-dados/linha-adicionar-nova.md', 'Linha - Adicionar Nova(s)']
+								['manipulacao-de-dados/linha-adicionar-nova.md', 'Linha - Adicionar Nova(s)'],
+								['manipulacao-de-dados/renomeia-atributos', 'Renomeia Atributo(s)']
 							]
 						},
 						{

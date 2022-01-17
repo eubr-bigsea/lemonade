@@ -31,7 +31,6 @@ Nome da Tarefa
 ![Imagem 2](/img/spark/estatistica/funcao_distributiva_acumulada/image2.png)
 3. Execute o fluxo e visualize o resultado. O resultado possui o atributo __"fare_CDF"__.\
 ![Imagem 3](/img/spark/estatistica/funcao_distributiva_acumulada/image3.png)
-
 -----
 
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
