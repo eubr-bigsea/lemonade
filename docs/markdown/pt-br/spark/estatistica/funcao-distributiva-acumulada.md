@@ -27,10 +27,12 @@ Nome da Tarefa
 
 1. Adicione uma base de dados por meio da operação [Ler Dados][4]\
 ![Imagem 1](/img/spark/estatistica/funcao_distributiva_acumulada/image1.png)
-2. Utilize a operação *Função Cumulativa de Distribuição* para modificar o atributo. Selecione __"fare"__ no campo *Atributo(s)*. Preencha __"fare_CDF"__ no campo **Nome do novo atributo**.\
+2. Utilize a operação *Função Cumulativa de Distribuição* para modificar o atributo.Selecione __"y_up"__ no campo Atributo(s). Preencha __"y_up_cdf"__ no campo **Nome do novo atributo**.\
 ![Imagem 2](/img/spark/estatistica/funcao_distributiva_acumulada/image2.png)
-3. Execute o fluxo e visualize o resultado. O resultado possui o atributo __"fare_CDF"__.\
+3. Utilize a operação [Gráfico em Barra][5]. Selecione __"y_up"__ no atributo do eixo X e __"y_up_cdf"__ no atributo do eixo Y.\
 ![Imagem 3](/img/spark/estatistica/funcao_distributiva_acumulada/image3.png)
+4. Execute o fluxo e visualize o resultado.\
+![Imagem 4](/img/spark/estatistica/funcao_distributiva_acumulada/image4.png)
 -----
 
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br

@@ -31,13 +31,13 @@ Nome da Tarefa
 *Base de Dados:* ![Titanic](https://docs.lemonade.org.br/pt-br/spark/base-de-dados/#titanic)
 
 1. Adicione uma base de dados por meio da operação [Ler Dados][4]\
-![Imagem 1](/img/spark/estatistica/funcao_cumulativa_inversa_distribuicao/image1.png)
-2. Utilize a operação *Função Cumulativa Inversa de Distribuição* para modificar o atributo. Selecione __"fare"__ no campo *Atributo(s)*. Preencha __"fare_CCDF"__ no campo **Nome do novo atributo**.\
-3. Utilize a operação [Gráfico em Barra][5]. Selecione __"fare"__ no atributo do eixo X e __"fare_CCDF" no atributo do eixo Y.\
-![Imagem 2](/img/spark/estatistica/funcao_cumulativa_inversa_distribuicao/image2.png)
-4. Execute o fluxo e visualize o resultado. O resultado possui o atributo __"fare_CCDF"__ e o gráfico em barras.3\
-![Imagem 3](/img/spark/estatistica/funcao_cumulativa_inversa_distribuicao/image3.png)
-
+![Imagem 1](/img/spark/estatistica/funcao_inversa_distributiva_acumulada/image1.png)
+2. Utilize a operação *Função Cumulativa Inversa de Distribuição* para modificar o atributo. Selecione __"y_up"__ no campo Atributo(s). Preencha __"y_up_ccdcf"__ no campo **Nome do novo atributo**.\
+![Imagem 2](/img/spark/estatistica/funcao_inversa_distributiva_acumulada/image2.png)
+3. Utilize a operação [Gráfico em Barra][5]. Selecione __"y_up"__ no atributo do eixo X e __"y_up_ccdcf"__ no atributo do eixo Y.\
+![Imagem 3](/img/spark/estatistica/funcao_inversa_distributiva_acumulada/image3.png)
+4. Execute o fluxo e visualize o resultado.\
+![Imagem 4](/img/spark/estatistica/funcao_inversa_distributiva_acumulada/image4.png)
 ---
 Dúvidas e/ou sugestões envie um e-mail para suporte@lemonade.org.br
 
