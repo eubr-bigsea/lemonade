@@ -1,0 +1,1 @@
+# /guide/install/scalling.md

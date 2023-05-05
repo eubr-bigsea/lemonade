@@ -1,0 +1,1 @@
+# /guide/other/thanks.md
