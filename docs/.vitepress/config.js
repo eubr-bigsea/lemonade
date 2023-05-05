@@ -34,7 +34,7 @@ export default defineConfig({
                     items: [
                       {text: 'Explorar e analisar dados', link: '/guide/experiments/data-explorer/'},
                       {text: 'Criar visualizações de dados', link: '/guide/experiments/visualization-builder/'},
-                      {text: 'Criar modelos de aprendizado de máquina', link: '/guide/experiments/model-builder'}
+                      {text: 'Criar modelos de aprendizado de máquina', link: '/guide/experiments/model-builder/'}
                     ]
                   },
                   { text: 'Fluxos de trabalho', link: '/guide/workflows/' },
