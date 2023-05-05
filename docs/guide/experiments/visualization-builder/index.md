@@ -126,28 +126,3 @@ a visualização como código-fonte Python, para executá-la usando a biblioteca
 ### Criando animações em gráficos
 ### Exportação para o _Dash_
 
-
-## Visualizações disponíveis
-- [Linhas](line)
-- [Barras](bar)
-- [Barras Empilhadas](stacked-bar)
-- [Barras Horizontais](horizontal-bar)
-- [Barras Horizontais Empilhadas](stacked-horizontal-bar)
-- [Área empilhado](stacked-area)
-- [Área empilhado 100%](stacked-area-100)
-- [Pizza](pie)
-- [Rosca (Donut)](donut)
-- [Indicador](indicator)
-- [Box plot](boxplot)
-- [Bolhas](bubble)
-- [Dispersão](scatter)
-- [Mapa de pontos](scattermapbox)
-- [Mapa em Árvore (Treemap)](treemap)
-- [Gráfico de Hierarquias](sunburst)
-- [Nuvem de Pontos](pointcloud)
-- [Gráfico de Funil](funnel)
-- [Violin Plot](violin)
-- [Density Heatmap](histogram2d)
-- [Coordenadas Paralelas](parcoords)
-- [2D Histogram Contour](histogram2dcontour)
-- [Mapa de Calor (Heatmap)](heatmap)

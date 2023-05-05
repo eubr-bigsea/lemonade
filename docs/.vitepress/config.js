@@ -23,6 +23,7 @@ export default defineConfig({
                 text: 'Guia do Usuário',
                 collapsed: true,
                 items: [
+                  { text: 'Funcionalidades', link: '/guide/features.md' },
                   { text: 'Início rápido', link: '/guide/quick-start.md' },
                   { text: 'Interface de usuário', link: '/guide/concepts/user-interface.md' },
                   { text: 'Conceitos', link: '/guide/concepts/' },
@@ -54,9 +55,10 @@ export default defineConfig({
                 ]
               },
               {
-                text: 'Implantação de artefatos e MLOps',
+                text: 'Implantação de artefatos',
                 collapsed: true,
                 items: [
+                  { text: 'MLOps', link: '/guide/tutorials/mlops.md' },
                   { text: 'Implantação de modelos', link: '/guide/tutorials/basic.md' },
                   { text: 'Implantação de dashboards', link: '/guide/tutorials/advanced.md' },
                 ]
@@ -70,7 +72,7 @@ export default defineConfig({
                 ]
               },
               {
-                text: 'Estendendo o Lemonade',
+                text: 'Desenvolvimento',
                 collapsed: true,
                 items: [
                   { text: 'Conceitos', link: '/guide/dev/' },
