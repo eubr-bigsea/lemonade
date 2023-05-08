@@ -1,18 +1,3 @@
-<style scoped>
-img {
-  border: 1px solid #222;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-:root.dark img {
-  border: 1px solid #eee;
-  padding: 1px;
- 
-}
-</style>
-
 # Transformação de dados
 
 Assemelha-se a uma planilha de dados, sem permitir a edição direta de células. 

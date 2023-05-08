@@ -1,0 +1,12 @@
+img {
+  border: 1px solid #eee;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:root.dark img {
+  border: 1px solid #eee;
+  padding: 1px;
+ 
+}
