@@ -5,6 +5,8 @@ export default defineConfig({
   title: "Lemonade",
   description: "Uma ferramenta....",
   lastUpdated: true,
+  ignoreDeadLinks: 'localhostLinks',
+  base: '/publico/dist/',
   locales: {
     en: {
       label: 'English',
@@ -23,14 +25,15 @@ export default defineConfig({
             text: 'Guia do Usuário',
             collapsed: true,
             items: [
+              { text: 'O que é o Lemonade?', link: '/guide/about.md' },
               { text: 'Funcionalidades', link: '/guide/features.md' },
               {
-                text: 'Início rápido', link: '/guide/quick-start.md',
+                text: 'Início rápido', link: '/guide/quick-start/',
                 items: [
-                  { text: 'Página inicial', link: '' },
-                  { text: 'Criando uma fonte de dados', link: '' },
-                  { text: 'Criando um experimento', link: '' },
-                  { text: 'Próximos passos', link: '' },
+                  { text: 'Página inicial', link: '/guide/quick-start/start-page.md' },
+                  { text: 'Criando uma fonte de dados', link: '/guide/quick-start/creating-data-source.md' },
+                  { text: 'Criando experimentos básicos', link: '/guide/quick-start/creating-experiment.md' },
+                  { text: 'Próximos passos', link: '/guide/quick-start/next-steps.md' },
                 ]
               },
               { text: 'Interface de usuário', link: '/guide/concepts/user-interface.md' },
@@ -48,6 +51,7 @@ export default defineConfig({
               { text: 'Fluxos de trabalho', link: '/guide/workflows/' },
               { text: 'Dashboards', link: '/guide/dashboards/' },
               { text: 'Paineis interativos', link: '/guide/apps/' },
+              { text: 'Gestão de modelos de IA', link: '/guide/models/' },
             ]
           },
           {
@@ -72,21 +76,22 @@ export default defineConfig({
             ]
           },
           {
+            text: 'Desenvolvimento', link: "/guide/dev/index.md",
+            collapsed: true,
+            items: [
+              { text: 'Pré-requisitos', link: '/guide/dev/requirements.md' },
+              { text: 'Conceitos', link: '/guide/dev/concepts.md' },
+              { text: 'Serviços', link: '/guide/dev/services.md' },
+              { text: 'Utilitários', link: '/guide/dev/utilities.md' },
+              { text: 'API REST dos serviços', link: '/guide/dev/api-rest.md' },
+            ]
+          },
+          {
             text: 'Tutoriais',
             collapsed: true,
             items: [
               { text: 'Básicos', link: '/guide/tutorials/basic.md' },
               { text: 'Avançados', link: '/guide/tutorials/advanced.md' },
-            ]
-          },
-          {
-            text: 'Desenvolvimento',
-            collapsed: true,
-            items: [
-              { text: 'Conceitos', link: '/guide/dev/' },
-              { text: 'Serviços', link: '/guide/dev/services.md' },
-              { text: 'Utilitários', link: '/guide/dev/utilities.md' },
-              { text: 'API REST dos serviços', link: '/guide/dev/api-rest.md' },
             ]
           },
           {

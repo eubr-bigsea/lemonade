@@ -13,55 +13,8 @@ Há diferentes maneiras de se instalar o Lemonade:
 Atualmente, a maneira mais fácil de instalar o Lemonade é usado  o 
 [Docker Container](#instalando-pelo-docker-container). 
 
-## Instalando pelo Docker Container
-
-
-Para instalar o Lemonade e usá-lo pelo Docker container, siga estes passos:
-
-1. Instale e configure o Docker Compose em seu sistema operacional. Veja as orientações (em inglês) no [site oficial](https://docs.docker.com/compose/install/).
-
-
-2. Clone o respositório com o código disponibilizado para o Docker Compose:
-```
-git clone git@github.com:eubr-bigsea/docker-lemonade.git
-cd docker-lemonade
-
-```
-3. Certifique-se de que esteja usando o _branch_ correto do Lemonade: __master__ para a versão estável e __develop__ para a versão mais estável.
-   
-```
-git switch master
-```
-
-4. Atualize as dependências do projeto
-```
-git submodule update --init --checkout
-git submodule update --remote
-```
-
-5. Baixe as imagens dos vários serviços do Lemonade:
-
-```
-docker-compose pull
-```
-
-6. Finalmente, inicie a execução do Docker Container com as imagens do Lemonade:
-
-```
-docker-compose up -d --no-build
-```
-
-Aguarde enquanto todos os serviços iniciam. Então, acesse http://localhost:23456. 
-Na instalação padrão, o usuário administrador tem as seguintes configurações:
-
-::: tip AUTENTICAÇÃO
-- __Login__: __admin__
-- __Senha__: __123456__
-:::
-
-Para mudar a porta que o Lemonade usa para a interface web, altere o arquivo
- `docker-compose.yaml`, alterando a configuração `ports` debaixo do serviço `citrus`.
-
+## Instalando pelo Docker Compose
+Para a instalação pelo Docker Compose, veja a seção [Início rápido](../quick-start/index.md).
 
 ## Construindo as imagens a partir do código-fonte
 
