@@ -30,6 +30,7 @@ export default defineConfig({
               {
                 text: 'Início rápido', link: '/guide/quick-start/',
                 items: [
+                  {text: 'Como se autenticar no Lemonade', link: '/guide/tutorials/login-tutorial.html'},
                   { text: 'Página inicial', link: '/guide/quick-start/start-page.md' },
                   { text: 'Criando uma fonte de dados', link: '/guide/quick-start/creating-data-source.md' },
                   { text: 'Criando experimentos básicos', link: '/guide/quick-start/creating-experiment.md' },
@@ -63,7 +64,7 @@ export default defineConfig({
               { text: 'Utilização em nuvem', link: '/guide/install/cloud-install.md' },
               { text: 'Integração com outros produtos', link: '/guide/install/integration.md' },
               { text: 'Segurança', link: '/guide/install/security.md' },
-              { text: 'Configuração geral', link: '/guide/install/configuration.md' },
+              { text: 'Configuração', link: '/guide/install/configuration.md' },
             ]
           },
           {
@@ -90,7 +91,9 @@ export default defineConfig({
             text: 'Tutoriais',
             collapsed: true,
             items: [
-              { text: 'Básicos', link: '/guide/tutorials/basic.md' },
+              {
+                text: 'Básicos', link: '/guide/tutorials/basic.md',
+              },
               { text: 'Avançados', link: '/guide/tutorials/advanced.md' },
             ]
           },

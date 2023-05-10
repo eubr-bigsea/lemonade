@@ -5,18 +5,20 @@ layout: home
 
 hero:
   name: "Lemonade"
-  text: "Uma ferramenta...."
-  tagline: Um projeto DCC...
+  text: ""
+  tagline: "O Lemonade é uma plataforma visual para computação distribuída, destinada a 
+permitir a implementação, experimentação, teste e implantação de aplicações de 
+processamento de dados e aprendizado de máquina."
   actions:
     - theme: brand
       text: Início rápido
-      link: /api-examples
+      link: /guide/quick-start/
     - theme: alt
       text: Instalação
-      link: /markdown-examples
+      link: /guide/install/
     - theme: alt
       text: Referência
-      link: /api-examples
+      link: /guide/reference/
 
 
 features:
