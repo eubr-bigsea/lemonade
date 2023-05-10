@@ -5,7 +5,7 @@ transformem dados de várias fontes, incluindo bancos de dados, arquivos CSV,
 Parquet, JSON e outras fontes.
 - Exploração de dados: o Lemonade oferece recursos de visualização interativa de dados, 
 análise estatística, modelagem gráfica e exploração de dados.
-- Permite integração com bancos de dados relacionados por meio de _drivers_ JDBC.
+- Permite integração com bancos de dados relacionais utilizando _drivers_ JDBC.
 - Apresenta uma série de ferramentas para análise preliminar dos dados _brutos_.
 - Modelagem de dados: o Lemonade permite que os usuários construam modelos de 
 aprendizado de máquina e de estatística para prever resultados futuros, 

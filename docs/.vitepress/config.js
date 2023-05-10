@@ -64,7 +64,8 @@ export default defineConfig({
               { text: 'Utilização em nuvem', link: '/guide/install/cloud-install.md' },
               { text: 'Integração com outros produtos', link: '/guide/install/integration.md' },
               { text: 'Segurança', link: '/guide/install/security.md' },
-              { text: 'Configuração', link: '/guide/install/configuration.md' },
+              { text: 'Configuração', link: '/guide/admin/configuration.md' },
+              { text: 'Executores de rotinas', link: '/guide/admin/background-jobs.md' },
             ]
           },
           {
@@ -85,6 +86,7 @@ export default defineConfig({
               { text: 'Serviços', link: '/guide/dev/services.md' },
               { text: 'Utilitários', link: '/guide/dev/utilities.md' },
               { text: 'API REST dos serviços', link: '/guide/dev/api-rest.md' },
+              { text: 'Como escrever a documentação do Lemonade', link: '/guide/dev/writing-documentation.md' },
             ]
           },
           {

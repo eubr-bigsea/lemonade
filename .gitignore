@@ -11,6 +11,7 @@ cache/*
 .temp
 .vite_opt_cache
 .vscode
+tmp
 dist
 cache
 temp
