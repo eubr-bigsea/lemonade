@@ -61,7 +61,7 @@ export default defineConfig({
               { text: 'Métodos de instalação', link: '/guide/install/' },
               { text: 'Escalabilidade', link: '/guide/install/scalling.md' },
               { text: 'Utilização em nuvem', link: '/guide/install/cloud-install.md' },
-              { text: 'Integração com outros produtos', link: '/guide/workflows/' },
+              { text: 'Integração com outros produtos', link: '/guide/install/integration.md' },
               { text: 'Segurança', link: '/guide/install/security.md' },
               { text: 'Configuração geral', link: '/guide/install/configuration.md' },
             ]

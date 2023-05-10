@@ -18,65 +18,20 @@ Para a instalação pelo Docker Compose, veja a seção [Início rápido](../qui
 
 ## Construindo as imagens a partir do código-fonte
 
+Siga os mesmos passos para a baixar o código-fonte do Lemonade, mas desta vez, 
+execute também os comandos:
+
 ```
 git submodule update --init --checkout
 docker-compose up -d --build
 ```
 
 ## Configurando o Docker Swarm
------------
+
 ```
 docker stack deploy -c docker-stack.yml lemonade
 
 ```
-
-Using remote spark cluster
---------------------------
-Update the following lines in `config/juicer-config.yaml` with your own data
-```
-libprocess_advertise_ip: 127.0.0.1
-spark.driver.host: your.hostname
-```
-To allow the connection it is needed to uncomment the lines bellow in
-`docker-compose.yml` file
-```
-ports:
-  - '37100-37399:37100-37399'
-```
-If you want to use spark envent log edit the following lines in
-`config/juicer-config.yaml`
-```
-spark.eventLog.enabled: false
-spark.eventLog.dir: hdfs://<namenode>:9000/path
-spark.history.fs.logDirectory: hdfs://<namenode>:9000/path
-```
-Clusters are configured in tables from `stand` service. A user interface is under progress. If you need to add a cluster configuration, you need to connect to the MySQL service and add a record in `cluster` table:
-
-```
-% sudo docker-compose exec mysql mysql -u root -plemon stand
-mysql> INSERT INTO cluster(id, name, description, enabled, type, address, executor_cores, executor_memory, executors, general_parameters) VALUES (2, 'Spark cluster', 'Spark cluster', 1, 'MESOS', 'mesos://mesos-master:5050', 16, '2GB', 72, 'sparmesos.principal=lemonade,spark.mesos.secret=lemonade,spark.mesos.executor.home=/opt/spspark-2.3.0-bin-hadoop2.7');
-```
-The cluster type can be `MESOS`, `SPARK_LOCAL`, `SPARK` or `YARN`. The `address` must be a valid Spark master URL. The columns `executor_cores`, `executor_memory` and `executors` define the number of cores, memory and executors. These values are associated to the respective Spark parameters, as well parameters defined in `general_parameters`. They are well documented in Spark.
-
-
-Using a HDFS Cluster
---------------------
-A user interface is under progress. If you want to use a HDFS cluster, you need to connect to the MySQL service and add a record in `storage` table:
-
-```
-% sudo docker-compose exec mysql mysql -u root -plemon limonero
-mysql> INSERT INTO storage(id, name, type, url, enabled) VALUES (2, 'HDFS cluster', 'HDFS', 'hdfs://hdfs-server:9000', 1);
-```
-The `url` column must be a valid HDFS URL and the cluster must be accessible from the containers.
-
-Directories in the host machine
--------------------------------
-
-By default, Lemonade will create 2 directories in the host machine, under the parent dir `/srv`:
-- `/srv/lemonade/mysql-dev`, for the MySql database;
-- `/srv/lemonade/storage` for HDFS local file system.
-
-You can change these configurations in the `docker-compose.yaml` file.
 
 
 DockerHub autobuild containers configuration
@@ -107,5 +62,16 @@ Note que em qualquer situação, é necessário ter o _cluster_ Kubernetes dispo
 configurado e funcionando. 
 
 ## Instalação a partir do código-fonte
+FIXME
+
+## Integração do Lemonade com outros produtos
+
+O Lemonade pode ser integrado com vários produtos. A integração exigirá 
+configurações específicas para o funcionamento correto e otimizado. Por exemplo, 
+você pode querer executar o Lemonade integrado a um _cluster_ Apache Spark, 
+conectá-lo a um sistema de arquivos HDFS ou a um servidor de banco de dados MySQL.
+
+Para mais detalhes, consulte
+a página de [integração](./integration.md).
 
 
