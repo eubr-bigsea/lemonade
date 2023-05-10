@@ -1,3 +1,1 @@
-# Página inicial
-
-A página inicial do Lemonade apresenta um resumo dos diversos tipos de artefatos...
+<!--@include: ../tutorials/home-page-tutorial.md-->

@@ -2,7 +2,7 @@
 
 Há diferentes parâmetros que podem ser configurados em diferentes partes do Lemonade.
 Também há configurações que são específicas de cada [serviço](../dev/services.md) 
-e [tecnologia integrada](./integration.md).
+e [tecnologia integrada](../install/integration.md).
 Esta seção orienta como proceder com essas configurações.
 
 ## Configurações gerais
@@ -38,7 +38,7 @@ a opção `ldap`. Para um exemplo, veja a seção de [configuração do serviço
 ## Configuração do Caipirinha
 ## Configuração do Thorn (autenticação)
 
-``` yaml{6}
+``` yaml:line-numbers{6}
 thorn:
     port: 3319
     secret: xxxxx
