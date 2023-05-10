@@ -4,9 +4,33 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.logo {
+  border: none !important;
+}
 
 :root.dark img {
   border: 1px solid #eee;
   padding: 1px;
  
+}
+:root.dark .logo {
+  filter: invert(1) grayscale(1) brightness(1.8);;
+}
+
+img::before {
+  content: 'fall back';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  line-height: 200px;
+  background-color: #888;
+  color: currentColor;
+  text-align: center;
+  border-radius: 2px;
+  display: block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
 }

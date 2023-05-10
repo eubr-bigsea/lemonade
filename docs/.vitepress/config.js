@@ -52,7 +52,7 @@ export default defineConfig({
               { text: 'Fluxos de trabalho', link: '/guide/workflows/' },
               { text: 'Dashboards', link: '/guide/dashboards/' },
               { text: 'Paineis interativos', link: '/guide/apps/' },
-              { text: 'Gestão de modelos de IA', link: '/guide/models/' },
+              { text: 'Gestão de modelos de aprendizado de máquina', link: '/guide/models/' },
             ]
           },
           {
@@ -71,9 +71,9 @@ export default defineConfig({
             text: 'Implantação de artefatos',
             collapsed: true,
             items: [
-              { text: 'MLOps', link: '/guide/tutorials/mlops.md' },
-              { text: 'Implantação de modelos', link: '/guide/tutorials/basic.md' },
-              { text: 'Implantação de dashboards', link: '/guide/tutorials/advanced.md' },
+              { text: 'MLOps', link: '/guide/deploy/mlops.md' },
+              { text: 'Implantação de modelos', link: '/guide/deploy/models-deployment.md' },
+              { text: 'Implantação de dashboards', link: '/guide/deploy/dashboards-deployment.md' },
             ]
           },
           {

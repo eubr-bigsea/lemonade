@@ -38,7 +38,7 @@ a opção `ldap`. Para um exemplo, veja a seção de [configuração do serviço
 ## Configuração do Caipirinha
 ## Configuração do Thorn (autenticação)
 
-``` yaml{6}
+``` yaml:line-numbers{6}
 thorn:
     port: 3319
     secret: xxxxx
