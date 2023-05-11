@@ -1,5 +1,7 @@
 # O que é o Lemonade?
 
+![Logo](./lemonade_logo.svg){class="logo"}
+
 O nome Lemonade foi pensado como um acrônimo: 
 
 ::: info LEMONADE

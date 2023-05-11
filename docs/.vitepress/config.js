@@ -122,7 +122,7 @@ export default defineConfig({
   },
   themeConfig: {
     siteTitle: false,
-    logo: 'lemonade_logo.svg',
+    logo: '/guide/lemonade_logo.svg',
     /*locales: {
       '/': {
         selectLanguageText: 'Idioma:',

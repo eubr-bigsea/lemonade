@@ -17,7 +17,7 @@ img {
   filter: invert(1) grayscale(1) brightness(1.8);;
 }
 
-img::before {
+img.avatar-img::before {
   content: 'fall back';
   position: absolute;
   top: 0;
