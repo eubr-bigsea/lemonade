@@ -11,6 +11,9 @@ permitir a implementação, experimentação, teste e implantação de aplicaç�
 processamento de dados e aprendizado de máquina."
   actions:
     - theme: brand
+      text: O que é o Lemonade?
+      link: /guide/about.md
+    - theme: alt
       text: Início rápido
       link: /guide/quick-start/
     - theme: alt

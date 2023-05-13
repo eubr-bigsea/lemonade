@@ -43,6 +43,14 @@ const members = [
     ]
   },
   {
+    avatar: 'https://www.github.com/lucasmsp.png',
+    name: 'Lucas Ponce',
+    title: 'Desenvolvedor líder',
+    links: [
+      { icon: 'github', link: 'https://github.com/lucasmsp' },
+    ]
+  },
+  {
     avatar: 'https://www.github.com/ eduardocesar.png',
     name: 'Eduardo Ribeiro',
     title: 'Cientista de dados',
