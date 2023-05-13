@@ -2,7 +2,7 @@
 
 Há diferentes parâmetros que podem ser configurados em diferentes partes do Lemonade.
 Também há configurações que são específicas de cada [serviço](../dev/services.md) 
-e [tecnologia integrada](./integration.md).
+e [tecnologia integrada](../install/integration.md).
 Esta seção orienta como proceder com essas configurações.
 
 ## Configurações gerais
