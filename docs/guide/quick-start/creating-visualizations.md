@@ -1,8 +1,4 @@
-# Criando um experimento básico
-
-
-## Tratando os dados em um experimento
-## Visualizando os dados
+# Criando visualizações básicas
 
 Há pelo menos duas razões para você querer visualizar dados: para entender as 
 características dos atributos (nulos, tipo de dados, valores, etc) ou ainda para 
