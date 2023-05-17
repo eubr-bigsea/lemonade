@@ -26,7 +26,7 @@ export default defineConfig({
             items: [
               { text: 'Funcionalidades', link: '/guide/features.md' },
               { text: 'Histórico', link: '/guide/history.md' }
-          ],
+            ],
           },
           {
             text: 'Início rápido', link: '/guide/quick-start/', collapsed: true,
@@ -47,7 +47,20 @@ export default defineConfig({
             items: [
               { text: 'Interface de usuário', link: '/guide/concepts/user-interface.md' },
               { text: 'Conceitos', link: '/guide/concepts/' },
-              { text: 'Utilizando dados', link: '/guide/data-sources/' },
+              {
+                text: 'Registrando-se no Lemonade', 
+                items: [
+                  {text: 'Criando um usuário', link: '/guide/register/user.md'},
+                  {text: 'Perfil de usuário', link: '/guide/register/profile.md'},
+                ]
+              },
+              {
+                text: 'Utilizando dados', link: '/guide/data-sources/',
+                items: [
+                  {text: 'Fontes de Dados', link: '/guide/data-sources/data-sources.md'},
+                  {text: 'Armazenamentos', link: '/guide/data-sources/storages.md'},
+                ]
+              },
               {
                 text: 'Criando experimentos', link: '/guide/experiments/',
                 collapsed: true,

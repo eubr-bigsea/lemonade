@@ -58,7 +58,7 @@ Durante a construção da trilha, o autor de trilhas irá definir quais valores 
 filtros ele quer solicitar para o usuário de trilhas. É durante a execução que 
 este último poderá informar os valores para os filtros, no formulário de trilhas. 
 
-![Operação Filtro de Usuário](./fitler-task.png)
+![Operação Filtro de Usuário](./filter-task.png)
 
 3. Para todas as tarefas, aparecerá uma nova aba chamada `Publicação` na área de 
 Propriedades. Essa nova aba permite selecionar quais propriedades de uma 
