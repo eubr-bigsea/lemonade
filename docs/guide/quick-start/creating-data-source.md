@@ -15,6 +15,7 @@ de um comando de consulta compatível com a linguagem SQL.
 Uma vez configurada uma fonte de dados, ela pode servir como entrada para diversos processos 
 no Lemonade:
 
+- Fazer o _download_ dos dados em formato CSV ou no formato original (se compatível).
 - Você pode criar uma análise estatística inicial, gerando um relatório com análises
 uni, bi e multidimensional dos atributos da fonte de dados. 
 - Você pode solicitar uma amostra dos dados para o Lemonade. 
