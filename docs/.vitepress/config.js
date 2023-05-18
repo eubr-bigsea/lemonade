@@ -48,10 +48,19 @@ export default defineConfig({
               { text: 'Interface de usuário', link: '/guide/concepts/user-interface.md' },
               { text: 'Conceitos', link: '/guide/concepts/' },
               {
+                text: 'Registrando-se no Lemonade', 
+                items: [
+                  {text: 'Criando um usuário', link: '/guide/register/user.md'},
+                  {text: 'Perfil de usuário', link: '/guide/register/profile.md'},
+                ]
+              },
+              {
                 text: 'Utilizando dados', link: '/guide/data-sources/',
                 items: [
                   {text: 'Fontes de Dados', link: '/guide/data-sources/data-sources.md'},
                   {text: 'Armazenamentos', link: '/guide/data-sources/storages.md'},
+                  {text: 'Análise estatísticas', link: '/guide/data-sources/analysis.md'},
+                  {text: 'Validação de dados', link: '/guide/data-sources/validation.md'},
                 ]
               },
               {
