@@ -1,33 +1,4 @@
-# Integração com outros produtos
-
-## Using remote spark cluster
---------------------------
-Update the following lines in `config/juicer-config.yaml` with your own data
-```
-libprocess_advertise_ip: 127.0.0.1
-spark.driver.host: your.hostname
-```
-To allow the connection it is needed to uncomment the lines bellow in
-`docker-compose.yml` file
-```
-ports:
-  - '37100-37399:37100-37399'
-```
-If you want to use spark envent log edit the following lines in
-`config/juicer-config.yaml`
-```
-spark.eventLog.enabled: false
-spark.eventLog.dir: hdfs://<namenode>:9000/path
-spark.history.fs.logDirectory: hdfs://<namenode>:9000/path
-```
-Clusters are configured in tables from `stand` service. A user interface is under progress. If you need to add a cluster configuration, you need to connect to the MySQL service and add a record in `cluster` table:
-
-```
-% sudo docker-compose exec mysql mysql -u root -plemon stand
-mysql> INSERT INTO cluster(id, name, description, enabled, type, address, executor_cores, executor_memory, executors, general_parameters) VALUES (2, 'Spark cluster', 'Spark cluster', 1, 'MESOS', 'mesos://mesos-master:5050', 16, '2GB', 72, 'sparmesos.principal=lemonade,spark.mesos.secret=lemonade,spark.mesos.executor.home=/opt/spspark-2.3.0-bin-hadoop2.7');
-```
-The cluster type can be `MESOS`, `SPARK_LOCAL`, `SPARK` or `YARN`. The `address` must be a valid Spark master URL. The columns `executor_cores`, `executor_memory` and `executors` define the number of cores, memory and executors. These values are associated to the respective Spark parameters, as well parameters defined in `general_parameters`. They are well documented in Spark.
-
+# Integração com outros produtos (mesclado com escalabilidade, rever seção)
 
 ## Usando um _cluster_ HDFS
 
@@ -83,4 +54,39 @@ By default, Lemonade will create 2 directories in the host machine, under the pa
 - `/srv/lemonade/storage` for HDFS local file system.
 
 You can change these configurations in the `docker-compose.yaml` file.
+
+## Conexão a outras fontes de dados
+
+## Using remote spark cluster
+--------------------------
+Update the following lines in `config/juicer-config.yaml` with your own data
+```
+libprocess_advertise_ip: 127.0.0.1
+spark.driver.host: your.hostname
+```
+To allow the connection it is needed to uncomment the lines bellow in
+`docker-compose.yml` file
+```
+ports:
+  - '37100-37399:37100-37399'
+```
+If you want to use spark envent log edit the following lines in
+`config/juicer-config.yaml`
+```
+spark.eventLog.enabled: false
+spark.eventLog.dir: hdfs://<namenode>:9000/path
+spark.history.fs.logDirectory: hdfs://<namenode>:9000/path
+```
+Clusters are configured in tables from `stand` service. A user interface is under progress. If you need to add a cluster configuration, you need to connect to the MySQL service and add a record in `cluster` table:
+
+```
+% sudo docker-compose exec mysql mysql -u root -plemon stand
+mysql> INSERT INTO cluster(id, name, description, enabled, type, address, executor_cores, executor_memory, executors, general_parameters) VALUES (2, 'Spark cluster', 'Spark cluster', 1, 'MESOS', 'mesos://mesos-master:5050', 16, '2GB', 72, 'sparmesos.principal=lemonade,spark.mesos.secret=lemonade,spark.mesos.executor.home=/opt/spspark-2.3.0-bin-hadoop2.7');
+```
+The cluster type can be `MESOS`, `SPARK_LOCAL`, `SPARK` or `YARN`. The `address` must be a valid Spark master URL. The columns `executor_cores`, `executor_memory` and `executors` define the number of cores, memory and executors. These values are associated to the respective Spark parameters, as well parameters defined in `general_parameters`. They are well documented in Spark.
+
+## Usando o Kubernetes
+## Computação em nuvem
+
+## Uso de GPUs
 

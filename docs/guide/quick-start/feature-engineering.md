@@ -22,30 +22,31 @@ Representar esses valores como texto (_string_) não é eficiente, uma vez que c
 valor corresponde a 3 bytes (1 por letra). O atributo `pclass` pode ser convertido
 para `categorical` (categórico) e como tem apenas 3 valores diferentes, 1 único
 byte é suficiente para representar os valores. Há outros atributos na mesma situação.
-2. Alguns atributos foram incorretamente identificados como _string_, mas podem
-ser convertidos para números, como é o caso do atributo `age`. 
+2. Alguns atributos foram incorretamente identificados como sendo do tipo 
+ _string_, mas podem ser convertidos para números, como é o caso do atributo `age`. 
 3. Pode ser interessante extrair movos atributos, como o pronome de tratamento usado
 (Mrs., Miss. Mr., etc). 
 4. Alguns atributos têm valores nulos. Pode ser usada alguma ação para tratar esses casos.
 5. Alguns valores numéricos podem ser agrupados, formando novos atributos categóricos. 
-Por exemplo, `SibSp` e `Parch` podem ser somandos a 1, resultado no tamanho da família.
-
-Family Size with 1 are labeled as Alone
-Family Size with 2, 3 and 4 are labeled as Small
-Family Size with 5 and 6 are labeled as Medium
-Family Size with 7, 8 and 11 are labeled as Large
+Por exemplo, `SibSp` e `Parch` podem ser somandos a 1, resultado no tamanho da família: 
+- Família com tamanho 1 pode ser alterada para `sozinho`;
+- Família com tamanho 2, 3 ou 4 pode ser alterada para `pequena`;
+- Família com tamanho 5 ou 6 pode ser alterada para `média`;
+- Família com tamanho igual ou superior a 7 pode ser alterada para `grande`;
 
  is created by adding SibSp, Parch and 1. SibSp is the count of siblings and spouse, and Parch is the count of parents and children. Those columns are added in order to find the total size of families. Adding 1 at the end, is the current passenger. Graphs have clearly shown that family size is a predictor of survival because different values have different survival rates.
 
-Training set have missing values in Age, Cabin and Embarked columns
-Test set have missing values in Age, Cabin and Fare columns
-
-Missing values in Age are filled with median age, but using median age of the whole data set is not a good choice. Median age of Pclass groups is the best choice because of its high correlation with Age (0.408106) and Survived (0.338481). It is also more logical to group ages by passenger classes instead of other features.
-
-1.2.2 Embarked
-Embarked is a categorical feature and there are only 2 missing values in whole data set. Both of those passengers are female, upper class and they have the same ticket number. This means that they know each other and embarked from the same port together. The mode Embarked value for an upper class female passenger is C (Cherbourg), but this doesn't necessarily mean that they embarked from that port.
-
-1.2.3 Fare
+6. Valores ausentes em `Age` podem ser preenchidos com a média da idade, 
+  mediana ou moda. Mas ao invés de calcular a média de todo o conjunto de dados,
+  pode ser feita uma segmentação por classe (`Pclass`), uma vez que a correlação
+  entre `Age` e `Survived` é alta. Pode ser melhor agrupar as idades por classe
+  ao invés de outros atributos.
+7. `Embarked` é uma _feature_ categórica com apenas 2 valores ausentes, ambos para
+  passageiras, da 1a classe e com o mesmo número de bilhete. Provavelmente, as 
+  duas passageiras embarcaram no mesmo porto juntas. A moda para `Embarked` para 
+  a 1a classe para passageiras é `C` (`Cherbourg`), mas não necessariamente isso
+  é uma verdade para o caso.
+8. Fare
 There is only one passenger with missing Fare value. We can assume that Fare is related to family size (Parch and SibSp) and Pclass features. Median Fare value of a male with a third class ticket and no family is a logical choice to fill the missing value.
 
 https://www.kaggle.com/code/gunesevitan/titanic-advanced-feature-engineering-tutorial
