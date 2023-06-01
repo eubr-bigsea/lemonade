@@ -62,6 +62,51 @@ necessário trafegar grandes quantidades de dados pela rede.
 
 
 ### Recomendação para processamento de dados
+A recomendação para o processamento de dados com o Lemonade é configurar um 
+_cluster_ com o [Apache Spark](https://spark.apache.org/docs/latest/). 
+
+#### Processos principais do Spark
+O Spark tem diferentes tipos de processos (programas que são executados pelo Spark 
+ou que o Spark depende). São eles:
+
+1. Driver: O driver é o ponto central de controle e coordenação do Spark. É uma 
+  aplicação que inicia o processo de execução do Spark e mantém o controle 
+  sobre o fluxo de trabalho. O driver é responsável por dividir as tarefas 
+  em unidades menores chamadas de tarefas e atribuí-las aos workers para 
+  processamento. Ele também gerencia o estado do aplicativo Spark, acompanha 
+  o progresso das tarefas e coleta os resultados.
+2. Worker: Os workers são os nós de execução do Spark que executam as tarefas 
+  atribuídas pelo driver. Eles são máquinas físicas ou virtuais que possuem 
+  recursos computacionais, como CPU, memória e armazenamento. Cada worker é 
+   configurado para executar tarefas em paralelo e processar os dados 
+   distribuídos. Eles se comunicam com o driver para receber instruções, 
+   enviar atualizações de status e retornar os resultados.
+3. Escalonador: O escalonador é responsável por alocar tarefas nos workers 
+   disponíveis. Ele monitora a capacidade de processamento dos workers e 
+   decide quais tarefas serão atribuídas a cada um deles. 
+   O Spark possui diferentes escalonadores, como o modo local 
+   (para execução em uma única máquina, _default_ no Lemonade), o modo standalone 
+   (para um cluster Spark autônomo) e integrações com outros sistemas 
+   de gerenciamento de cluster, como o Kubernetes, Apache Mesos, e o Hadoop YARN.
+
+#### Recomendações de instalação para o Spark
+
+- É importante que você entenda esses conceitos e reveja como cada um pode ser 
+configurado. Em relação ao escalonador, qualquer um suportado pelo Spark pode 
+ser usado, pois o Lemonade simplesmente delaga a resposabilidade de interação
+com o escalonador para o _driver)_. 
+
+- Para o Spark, verifique os requisitos do sistema, como versões compatíveis do 
+sistema operacional, Java e outras dependências. Atualmente, o Lemonade suporta 
+o Spark 2.4.0. 
+
+- Escolha o modo de instalação adequado. O Spark pode ser instalado em modo local 
+ou em modo distribuído (para execução em um cluster). Certifique-se de escolher 
+o modo de instalação correto de acordo com suas necessidades.
+
+- Configure as variáveis de ambiente após a instalação, tais como `JAVA_HOME` e 
+`SPARK_HOME`, para apontar para os diretórios corretos do Java e do Spark. 
+Isso facilitará o acesso e a execução dos comandos do Spark.
 
 ### Integração Apache Spark e HDFS
 
@@ -102,3 +147,14 @@ Veja as seções sobre [Armazenamentos](../admin/storage.md),
 [Clusters](../admin/cluster.md) e de [Integração](./integration.md) para mais detalhes.
 
 ## Alternativas
+
+Para o processamento, o Lemonade suporta as seguintes tecnologias:
+- Scikit-learn
+- Pandas
+- Polars
+- Keras
+
+Para armazenamento:
+- AWS S3
+- NoSQL
+- 
