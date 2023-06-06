@@ -8,32 +8,37 @@ e rodar algum experimento.
 
 ## Instalação básica
 
+Você precisará clonar o repositório do Lemonade, por isso, certifique-se que o 
+computador onde você fará a instalação tenha um cliente Git instalado e configurado.
+
 A instalação básica do Lemonade é feita através do uso do Docker Compose. 
 
 Para instalar o Lemonade e usá-lo pelo Docker container, siga estes passos:
 
-1. Instale e configure o Docker Compose em seu sistema operacional. Veja as orientações (em inglês) no [site oficial](https://docs.docker.com/compose/install/).
+1. Instale e configure o Docker Compose em seu sistema operacional. 
+2. Veja as orientações (em inglês) no [site oficial](https://docs.docker.com/compose/install/).
 
 
-2. Clone o respositório com o código disponibilizado para o Docker Compose:
+3. Clone o respositório com o código disponibilizado para o Docker Compose:
 ```
-git clone git@github.com:eubr-bigsea/docker-lemonade.git
-cd docker-lemonade
+$ git clone git@github.com:eubr-bigsea/docker-lemonade.git
+$ cd docker-lemonade
 
 ```
-3. Certifique-se de que esteja usando o _branch_ correto do Lemonade: __master__ para a versão estável e __develop__ para a versão mais estável.
+4. Certifique-se de que esteja usando o _branch_ correto do Lemonade: 
+  __master__ para a versão estável e __develop__ para a versão mais recente.
    
 ```
 git switch master
 ```
 
-4. Atualize as dependências do projeto
+5. Atualize as dependências do projeto
 ```
 git submodule update --init --checkout
 git submodule update --remote
 ```
 
-5. Baixe as imagens dos vários serviços do Lemonade:
+5. Baixe as imagens dos vários serviços e dependências do Lemonade:
 
 ```
 docker-compose pull

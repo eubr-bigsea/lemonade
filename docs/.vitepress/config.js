@@ -48,19 +48,18 @@ export default defineConfig({
               { text: 'Interface de usuário', link: '/guide/concepts/user-interface.md' },
               { text: 'Conceitos', link: '/guide/concepts/' },
               {
-                text: 'Registrando-se no Lemonade', 
+                text: 'Registrando-se no Lemonade',
                 items: [
-                  {text: 'Criando um usuário', link: '/guide/register/user.md'},
-                  {text: 'Perfil de usuário', link: '/guide/register/profile.md'},
+                  { text: 'Criando um usuário', link: '/guide/register/user.md' },
+                  { text: 'Perfil de usuário', link: '/guide/register/profile.md' },
                 ]
               },
               {
                 text: 'Utilizando dados', link: '/guide/data-sources/',
                 items: [
-                  {text: 'Fontes de Dados', link: '/guide/data-sources/data-sources.md'},
-                  {text: 'Armazenamentos', link: '/guide/data-sources/storages.md'},
-                  {text: 'Análise estatísticas', link: '/guide/data-sources/analysis.md'},
-                  {text: 'Validação de dados', link: '/guide/data-sources/validation.md'},
+                  { text: 'Fontes de Dados', link: '/guide/data-sources/data-sources.md' },
+                  { text: 'Análise estatísticas', link: '/guide/data-sources/analysis.md' },
+                  { text: 'Validação de dados', link: '/guide/data-sources/validation.md' },
                 ]
               },
               {
@@ -79,15 +78,33 @@ export default defineConfig({
             ]
           },
           {
-            text: 'Instalação e Administração',
+            text: 'Instalação',
             collapsed: true,
             items: [
               { text: 'Métodos de instalação', link: '/guide/install/' },
               { text: 'Escalabilidade', link: '/guide/install/scalling.md' },
               { text: 'Utilização em nuvem', link: '/guide/install/cloud-install.md' },
+            ]
+          },
+          {
+            text: 'Administração',
+            collapsed: true,
+            items: [
               { text: 'Integração com outros produtos', link: '/guide/install/integration.md' },
-              { text: 'Segurança', link: '/guide/install/security.md' },
-              { text: 'Configuração', link: '/guide/admin/configuration.md' },
+              { text: 'Segurança', link: '/guide/install/security.md', items:[
+                { text: 'Usuários', link: '/guide/admin/users.md' },
+                { text: 'Grupos', link: '/guide/admin/groups.md' },
+                { text: 'LDAP', link: '/guide/admin/ldap.md' },
+                { text: 'WSO2 Identity Server', link: '/guide/admin/wso2.md' },
+              ] },
+              {
+                text: 'Configuração', link: '/guide/admin/configuration.md',
+                items: [
+                  { text: 'Armazenamentos', link: '/guide/admin/storages.md' },
+                  { text: 'Clusters', link: '/guide/admin/clusters.md' },
+                  { text: 'Plataformas', link: '/guide/admin/platforms.md' },
+                ]
+              },
               { text: 'Executores de rotinas', link: '/guide/admin/background-jobs.md' },
             ]
           },

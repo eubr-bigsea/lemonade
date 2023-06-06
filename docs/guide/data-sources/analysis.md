@@ -12,15 +12,18 @@ dados. Ela se concentra em examinar as propriedades e características dessa
 variável isoladamente, sem considerar outras variáveis. A análise univariada
 usa medidas estatísticas descritivas, como média, mediana, moda, desvio padrão e 
 gráficos, como histogramas e gráficos de caixa (_box plot_), para descrever e 
-compreender a distribuição e os padrões dessa variável.
+compreender a distribuição e os padrões dessa variável, tendo como propósito
+ser mais descritiva do que explicativa.
 
 Exemplo: Ao analisar a altura de um grupo de pessoas, a análise univariada se 
 concentraria apenas na altura, fornecendo estatísticas descritivas sobre a 
-média, o desvio padrão e a faixa de alturas. Análises suportadas:
+média, o desvio padrão e a faixa de alturas. 
+
+Atualmente, o Lemonade suporta as seguintes análises univariadas:
 - Histograma
 - Tabela de quantis
 - Tabela de frequência
-- Sumário estatístico (média, mediana, moda, desvio padrão, etc)
+- Sumário estatístico (média, mediana, quartis, desvio padrão, etc)
 - Gráfico de caixa (_box plot_)
 - Função de distribuição cumulativa (CDF - _Cummulative Distribution Function_)
 

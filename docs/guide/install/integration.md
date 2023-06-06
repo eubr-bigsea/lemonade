@@ -34,7 +34,8 @@ projetado para armazenar grandes volumes de dados com alta confiabilidade e esca
    processar e analisar dados armazenados no HDFS, permitindo uma grande 
    flexibilidade no processamento de dados.
 
-A integração do Lemonade é feita através do Apache Spark e também pela biblioteca PyArrow. 
+A integração do Lemonade é feita através do Apache Spark e também pela biblioteca 
+PyArrow. 
 
 Na interface de administração do Lemonade
 
