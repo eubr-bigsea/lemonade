@@ -58,6 +58,7 @@ export default defineConfig({
                 text: 'Utilizando dados', link: '/guide/data-sources/',
                 items: [
                   { text: 'Fontes de Dados', link: '/guide/data-sources/data-sources.md' },
+                  { text: 'Análise inicial dos dados', link: '/guide/data-sources/exploring.md' },
                   { text: 'Análise estatísticas', link: '/guide/data-sources/analysis.md' },
                   { text: 'Validação de dados', link: '/guide/data-sources/validation.md' },
                 ]

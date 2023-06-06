@@ -15,18 +15,23 @@ gráficos, como histogramas e gráficos de caixa (_box plot_), para descrever e
 compreender a distribuição e os padrões dessa variável, tendo como propósito
 ser mais descritiva do que explicativa.
 
-Exemplo: Ao analisar a altura de um grupo de pessoas, a análise univariada se 
+__Exemplo__: Ao analisar a altura de um grupo de pessoas, a análise univariada se 
 concentraria apenas na altura, fornecendo estatísticas descritivas sobre a 
 média, o desvio padrão e a faixa de alturas. 
 
 Atualmente, o Lemonade suporta as seguintes análises univariadas:
-- Histograma
-- Tabela de quantis
-- Tabela de frequência
 - Sumário estatístico (média, mediana, quartis, desvio padrão, etc)
+- Histograma
+- Tabela de frequência
+- Tabela de quantis
 - Gráfico de caixa (_box plot_)
 - Função de distribuição cumulativa (CDF - _Cummulative Distribution Function_)
 
+::: info Nota
+Algumas dessas análises não são suportadas para dados categóricos. O histograma
+é suportado apenas para dados numéricos, ao passo que a tabela de frequência é 
+suportado apenas para dados categóricos.
+:::
 
 ## Análise Bivariada
 A análise bivariada envolve o estudo da relação entre duas variáveis em um 
@@ -35,7 +40,7 @@ diferença entre as duas variáveis. Essa análise utiliza técnicas estatístic
 específicas, como testes de correlação, teste t de Student ou análise de 
 variância (ANOVA), para avaliar a relação entre as variáveis.
 
-Exemplo: Ao analisar a relação entre a altura e o peso de um grupo de pessoas, 
+__Exemplo__: Ao analisar a relação entre a altura e o peso de um grupo de pessoas, 
 a análise bivariada investigaria se há uma correlação entre essas duas variáveis, 
 usando um coeficiente de correlação ou um gráfico de dispersão. Análises suportadas:
 
@@ -55,7 +60,7 @@ principais (PCA - _Principal Component Analysis_), análise de _cluster_,
 regressão multivariada e análise fatorial, para explorar as relações entre as 
 variáveis e fazer previsões ou inferências mais sofisticadas.
 
-Exemplo: Ao analisar dados socioeconômicos de um conjunto de países, a análise 
+__Exemplo__: Ao analisar dados socioeconômicos de um conjunto de países, a análise 
 multivariada pode explorar as relações entre variáveis como PIB per capita, 
 taxa de desemprego, índice de desenvolvimento humano e expectativa de vida, 
 buscando identificar agrupamentos de países com características semelhantes ou 
@@ -66,6 +71,13 @@ fatores que influenciam o desenvolvimento econômico. Análises suportadas:
 
 
 ## Criando análises
+As análises, no Lemoande, são associadas a uma Fonte de Dados. Para criar, editar 
+ou visualizar análises, você precisa acessar a página de detalhes da Fonte de Dados.
+Na barra de navegação, escolha a opção __`Fonte de Dados`__ e em seguida, localize
+a Fonte de Dados que você deseja. Na página de detalhes, você tem a seção lateral
+que exibe a opção `Análises`:
+
+FIX: ADicionar figura
 
 ## Atualizando (reprocessando) as análises
 
