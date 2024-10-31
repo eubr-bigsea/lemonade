@@ -1,7 +1,5 @@
 # Pipelines
 
-Teste. 
-
 Uma Pipeline é um conjunto de etapas sequenciais que representam um único processo de ingestão de dados. Geralmente, a Pipeline estará associada a uma certa fonte de dados. Por exemplo, para dados provenientes da ANAC, uma Pipeline será criada e formada por etapas associadas a cada camada (ex. raw, stage, dataset, etc), definida no processo de ingestão de dados do MPMG.
 
 Cada etapa tem a sua própria definição de regra para execução. A etapa poderá ser disparada manualmente, recorrentemente (por meio de uma configuração de periodicidade, no estilo crontab) ou ainda ser configurada para disparar logo após o término da etapa anterior da mesma Pipeline. 
