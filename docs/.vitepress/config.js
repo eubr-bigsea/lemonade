@@ -38,6 +38,16 @@ export default defineConfig({
               { text: 'Criando visualizações básicas', link: '/guide/quick-start/creating-visualizations.md' },
               { text: 'Criando um modelo de classificação', link: '/guide/quick-start/creating-model.md' },
               { text: 'Criando um fluxo de trabalho', link: '/guide/quick-start/basic-workflow.md' },
+              { text: 'Pipelines', link: '/guide/pipelines/index.md',
+                items: [
+                  { text: 'Templates para Pipelines', link: '/guide/pipelines/pipeline-template.md' },
+                  { text: 'Gestão de Pipelines', link: '/guide/pipelines/pipeline-management.md' },
+                  { text: 'Agendamento de Execução', link: '/guide/pipelines/execution-schedule.md' },
+                  { text: 'Monitoramento de execução', link: '/guide/pipelines/monitoring.md' },
+                  { text: 'Biblioteca de Código Python', link: '/guide/pipelines/lib-codigo-python.md' },
+                  { text: 'Utilizando UDFs', link: '/guide/pipelines/udf.md' }
+                ]
+              },
               { text: 'Próximos passos', link: '/guide/quick-start/next-steps.md' },
             ]
           },

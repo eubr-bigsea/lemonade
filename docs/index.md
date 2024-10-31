@@ -43,7 +43,12 @@ features:
     icon: 🚀
     details: Acelere as atividades de ciência de dados sem necessariamente ter que 
       usar uma linguagem de programação. Mas você ainda pode exportar os artefatos
-      do Lemonade diretamente para a linguagem Python e usá-los separadamente!
+      do Lemonade diretamente para a linguagem Python e usá-los separadamente.
+  - title: Ingestão de Dados
+    icon: 🚀
+    details: Construa o seu processo de ingestão de dados baseado de forma intuítiva. É possível 
+      utilizar scripts Python, comandos SQL e User Defined Functions para a definição das etapas do processo. As execuções
+      poderão ser agendadas e monitoradas pelos usuários!
 
 
 ---
